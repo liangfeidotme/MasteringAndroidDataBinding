@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DataBindingSamples</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_basic">BasicActivity</string>
+    <string name="sample_title_basic">A simple basic example</string>
+    <string name="title_activity_custom_binding">CustomBindingActivity</string>
+    <string name="sample_title_custom_binding">Custom Binding</string>
+    <string name="title_activity_include">IncludeActivity</string>
+    <string name="sample_title_includes">includes</string>
+    <string name="title_activity_collection">CollectionActivity</string>
+    <string name="sample_title_collections">Collections</string>
+    <string name="title_activity_resource">ResourceActivity</string>
+    <string name="sample_title_resources">Resources</string>
+    <string name="nameFormat">Full Name: %1$s:%2$s</string>
+</resources>
