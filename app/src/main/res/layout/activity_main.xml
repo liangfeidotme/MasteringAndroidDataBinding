@@ -42,7 +42,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="openCollections"
+            android:onClick="openResources"
             android:text="@string/sample_title_resources" />
     </LinearLayout>
 </layout>
