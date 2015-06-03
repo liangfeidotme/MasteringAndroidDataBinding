@@ -11,6 +11,7 @@ import com.liangfeizc.databindingsamples.basic.BasicActivity;
 import com.liangfeizc.databindingsamples.collections.CollectionActivity;
 import com.liangfeizc.databindingsamples.custombindings.CustomBindingActivity;
 import com.liangfeizc.databindingsamples.includes.IncludeActivity;
+import com.liangfeizc.databindingsamples.observable.ObservableActivity;
 import com.liangfeizc.databindingsamples.resources.ResourceActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -39,5 +40,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void openResources(View view) {
         startActivity(new Intent(this, ResourceActivity.class));
+    }
+
+    public void openObservable(View view) {
+        startActivity(new Intent(this, ObservableActivity.class));
     }
 }

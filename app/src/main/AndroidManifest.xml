@@ -36,6 +36,10 @@
             android:name=".resources.ResourceActivity"
             android:label="@string/title_activity_resource" >
         </activity>
+        <activity
+            android:name=".observable.ObservableActivity"
+            android:label="@string/title_activity_observable" >
+        </activity>
     </application>
 
 </manifest>

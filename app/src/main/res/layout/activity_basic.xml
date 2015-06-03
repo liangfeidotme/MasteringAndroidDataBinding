@@ -10,9 +10,7 @@
 
         <import type="android.view.View" />
 
-        <variable
-            name="user"
-            type="User" />
+        <variable name="user" type="User" />
     </data>
 
     <TableLayout

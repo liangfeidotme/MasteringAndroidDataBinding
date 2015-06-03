@@ -22,5 +22,8 @@ public class ResourceActivity extends AppCompatActivity {
 
         binding.setFirstName("liang");
         binding.setLastName("fei");
+
+        binding.setBananaCount(2);
+        binding.setOrangeCount(10);
     }
 }

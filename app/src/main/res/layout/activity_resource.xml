@@ -4,9 +4,12 @@
         <variable name="large" type="boolean" />
         <variable name="firstName" type="String" />
         <variable name="lastName" type="String" />
+        <variable name="bananaCount" type="int" />
+        <variable name="orangeCount" type="int" />
     </data>
 
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -20,6 +23,16 @@
 
         <TextView
             android:text="@{@string/nameFormat(firstName, lastName)}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@{@plurals/banana(bananaCount)}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@{@plurals/orange(orangeCount, orangeCount)}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
