@@ -6,6 +6,7 @@
 
 Data Binding 解决了 Android UI 编程中的一个痛点，官方原生支持 MVVM 模型可以让我们在不改变既有代码框架的前提下，非常容易地使用这些新特性。其实在此之前，已经有些第三方的框架（[RoboAndroid](http://robobinding.github.io/RoboBinding/getting_started.zh.html)) 可以支持 MVVM 模型，无耐由于框架的侵入性太强，导致一直没有流行起来。 
 
+Data Binding 框架一出，是不是也意味着像 *RoboGuice、ButterKnife* 这样的依赖注入框架也会慢慢失去市场，因为在 Java 代码中直接使用 `View` 变量的情况会越来越少。
 
 ## 准备
 
@@ -75,37 +76,15 @@ apply plugin: 'com.android.databinding'
 public class User {
     private final String firstName;
     private final String lastName;
-    private String displayName;
-    private int age;
-
     public User(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
-
-    public User(String firstName, String lastName, int age) {
-        this(firstName, lastName);
-        this.age = age;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
     public String getFirstName() {
         return firstName;
     }
-
     public String getLastName() {
         return lastName;
-    }
-
-    public String getDisplayName() {
-        return firstName + " " + lastName;
-    }
-
-    public boolean isAdult() {
-        return age >= 18;
     }
 }
 ```
@@ -160,6 +139,13 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 
+除了使用框架自动生成的 `ActivityBasicBinding`，我们也可以使用自定义的类名。
+
+```xml
+<data class="com.example.CustomBinding">
+</data>
+```
+
 **注意**
 
 `ActivityBasicBinding` 类是自动生成的，所有的 set 方法也是根据 `variable` 名称生成的。例如，我们定义了两个变量。
@@ -177,6 +163,7 @@ protected void onCreate(Bundle savedInstanceState) {
 setFirstName(String firstName);
 setLastName(String lastName);
 ```
+
 
 ### 使用 Variable
 
@@ -281,7 +268,53 @@ android:text="@{user.displayName != null ? user.displayName : user.lastName}"
 
 ## Observable Binding
 
-本来这一节的标题应该叫**双向绑定**，但是很遗憾，现在的
+本来这一节的标题应该叫**双向绑定**，但是很遗憾，现在的 **Data Binding** 暂时支持单向绑定，还没有达到 **Angular.js** 的威力。
+
+要实现 Observable Binding，首先得有一个实现了 `android.databinding.Observable` 的类，为了方便，Android 原生提供了已经封装好的一个类 - `BaseObservable`，并且实现了监听器的注册机制。
+
+我们可以直接继承 `BaseObservable`。
+
+```java
+public class ObservableUser extends BaseObservable {
+    private String firstName;
+    private String lastName;
+    @Bindable
+    public String getFirstName() {
+        return firstName;
+    }
+    @Bindable
+    public String getLastName() {
+        return lastName;
+    }
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+        notifyPropertyChanged(BR.firstName);
+    }
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+        notifyPropertyChanged(BR.lastName);
+    }
+}
+```
+
+`BR` 是编译阶段生成的一个类，功能与 `R.java` 类似，用 `@Bindable` 标记过 `getter` 方法会在 `BR` 中生成一个 *entry*，当我们
+
+通过代码可以看出，当数据发生变化时还是需要手动发出通知。 通过调用`notifyPropertyChanged(BR.firstName)`来通知系统 `BR.firstName` 这个 `entry` 的数据已经发生变化，需要更新 UI。
+
+
+除此之外，还有一种更细粒度的绑定方式，可以具体到成员变量，这种方式无需继承 `BaseObservable`，一个简单的 **POJO** 就可以实现。
+
+```java
+public class PlainUser {
+    public final ObservableField<String> firstName = new ObservableField<>();
+    public final ObservableField<String> lastName = new ObservableField<>();
+    public final ObservableInt age = new ObservableInt();
+}
+```
+
+系统为我们提供了所有的 **primitive type** 所对应的 **Observable**类，例如 `ObservableInt`、`ObservableFloat`、`ObservableBoolean` 等等，还有一个 `ObservableField` 对应着 **reference type**。
+
+剩下的数据绑定与前面介绍的方式一样，具体可参考[ObservableActivity](https://github.com/LyndonChin/MasteringAndroidDataBinding/blob/master/app/src/main/java/com/liangfeizc/databindingsamples/observable/ObservableActivity.java)
 
 未完待续
 ---
