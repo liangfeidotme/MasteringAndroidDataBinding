@@ -279,6 +279,10 @@ android:text="@{user.displayName != null ? user.displayName : user.lastName}"
     android:text="@string/hello_world" />
 ```
 
+## Observable Binding
+
+本来这一节的标题应该叫**双向绑定**，但是很遗憾，现在的
+
 未完待续
 ---
 

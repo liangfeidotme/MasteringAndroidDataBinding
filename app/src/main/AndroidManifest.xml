@@ -21,11 +21,11 @@
             android:label="@string/title_activity_basic" >
         </activity>
         <activity
-            android:name=".custombinding.CustomBindingActivity"
+            android:name=".custombindings.CustomBindingActivity"
             android:label="@string/title_activity_custom_binding" >
         </activity>
         <activity
-            android:name=".include.IncludeActivity"
+            android:name=".includes.IncludeActivity"
             android:label="@string/title_activity_include" >
         </activity>
         <activity

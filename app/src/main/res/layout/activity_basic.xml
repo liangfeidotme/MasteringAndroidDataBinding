@@ -1,13 +1,8 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
-
         <import type="com.liangfeizc.databindingsamples.basic.User" />
-
-        <import
-            alias="StringUtils"
-            type="com.liangfeizc.databindingsamples.utils.MyStringUtils" />
-
+        <import type="com.liangfeizc.databindingsamples.utils.MyStringUtils" alias="StringUtils" />
         <import type="android.view.View" />
 
         <variable name="user" type="User" />
@@ -18,9 +13,7 @@
         android:layout_height="match_parent"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp">
-
         <TableRow>
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

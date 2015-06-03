@@ -17,7 +17,6 @@ public class ResourceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         ResourceBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_resource);
 
-        //binding.setUser(user);
         binding.setLarge(true);
 
         binding.setFirstName("liang");
