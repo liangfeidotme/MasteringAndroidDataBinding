@@ -50,5 +50,11 @@
             android:layout_height="wrap_content"
             android:onClick="openObservable"
             android:text="@string/sample_title_observable" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openViewWithIDs"
+            android:text="@string/sample_title_viewwithids" />
     </LinearLayout>
 </layout>
