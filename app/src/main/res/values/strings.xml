@@ -31,4 +31,5 @@
     </plurals>
     <string name="title_activity_observable">ObservableActivity</string>
     <string name="sample_title_observable">Observable</string>
+    <string name="title_activity_view_with_ids">ViewWithIDsActivity</string>
 </resources>

@@ -40,6 +40,10 @@
             android:name=".observable.ObservableActivity"
             android:label="@string/title_activity_observable" >
         </activity>
+        <activity
+            android:name=".viewids.ViewWithIDsActivity"
+            android:label="@string/title_activity_view_with_ids" >
+        </activity>
     </application>
 
 </manifest>
