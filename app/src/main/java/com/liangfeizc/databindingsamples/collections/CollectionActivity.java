@@ -1,5 +1,6 @@
 package com.liangfeizc.databindingsamples.collections;
 
+import android.app.job.JobInfo;
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -47,4 +48,3 @@ public class CollectionActivity extends AppCompatActivity {
         binding.setMap(map);
     }
 }
-

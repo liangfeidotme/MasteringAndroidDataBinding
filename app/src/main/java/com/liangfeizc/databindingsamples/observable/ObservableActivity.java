@@ -1,6 +1,7 @@
 package com.liangfeizc.databindingsamples.observable;
 
 import android.databinding.DataBindingUtil;
+import android.databinding.ObservableArrayMap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ public class ObservableActivity extends AppCompatActivity {
 
     private ObservableUser user = new ObservableUser();
     private PlainUser plainUser = new PlainUser();
+    private ObservableArrayMap<String, Object> mapUser = new ObservableArrayMap<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,7 @@ public class ObservableActivity extends AppCompatActivity {
 
         binding.setUser(user);
         binding.setPlainUser(plainUser);
+        binding.setMapUser(mapUser);
     }
 
     public void setOtherName(View view) {
@@ -33,6 +36,10 @@ public class ObservableActivity extends AppCompatActivity {
         plainUser.firstName.set("zhu");
         plainUser.lastName.set("chen");
         plainUser.age.set(27);
+
+        mapUser.put("firstName", "zhu");
+        mapUser.put("lastName", "chen");
+        mapUser.put("age", 27);
     }
 
     public void setMyName(View view) {
@@ -42,5 +49,9 @@ public class ObservableActivity extends AppCompatActivity {
         plainUser.firstName.set("liang");
         plainUser.lastName.set("fei");
         plainUser.age.set(27);
+
+        mapUser.put("firstName", "liang");
+        mapUser.put("lastName", "fei");
+        mapUser.put("age", 27);
     }
 }

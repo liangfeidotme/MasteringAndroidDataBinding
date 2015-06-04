@@ -3,9 +3,10 @@
     <data>
 
         <import type="com.liangfeizc.databindingsamples.observable.PlainUser" />
-
+        <import type="android.databinding.ObservableMap" />
         <variable name="user" type="com.liangfeizc.databindingsamples.observable.ObservableUser" />
         <variable name="plainUser" type="PlainUser" />
+        <variable name="mapUser" type="ObservableMap&lt;String, Object>" />
     </data>
 
     <LinearLayout
@@ -18,13 +19,33 @@
         android:paddingTop="@dimen/activity_vertical_margin">
 
         <TextView
+            android:text="Observable Object"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{@string/nameFormat(user.firstName, user.lastName)}" />
 
         <TextView
+            android:text="Observable Field"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
             android:text="@{@string/nameFormatWithAge(plainUser.firstName, plainUser.lastName, plainUser.age)}"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Observable Collection"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@{@string/nameFormatWithAge(mapUser[`firstName`], mapUser[`lastName`], 1 + (Integer)mapUser[`age`])}"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <LinearLayout
             android:orientation="horizontal"
