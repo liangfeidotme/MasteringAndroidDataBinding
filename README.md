@@ -314,9 +314,25 @@ public class PlainUser {
 
 剩下的数据绑定与前面介绍的方式一样，具体可参考[ObservableActivity](https://github.com/LyndonChin/MasteringAndroidDataBinding/blob/master/app/src/main/java/com/liangfeizc/databindingsamples/observable/ObservableActivity.java)
 
-未完待续
----
+## 带 ID 的 View
 
-* [Generated Binding](https://developer.android.com/tools/data-binding/guide.html#generated_binding)
-* [Attribute Setters](https://developer.android.com/tools/data-binding/guide.html#attribute_setters)
-* [Converters](https://developer.android.com/tools/data-binding/guide.html#converters)
+**Data Binding** 有效降低了代码的冗余性，甚至完全没有必要再去获取一个 View 实例，但是情况不是绝对的，万一我们真的就需要了呢？不用担心，只要给 View 定义一个 ID，**Data Binding** 就会为我们生成一个对应的 `final` 变量。
+
+```xml
+<TextView
+    android:id="@+id/firstName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+```
+
+上面代码中定义了一个 ID 为 *firstName** 的 `TextView`，那么它对应的变量就是 
+
+```java
+public final TextView firstName;
+```
+
+具体代码可参考 [ViewWithIDsActivity.java](https://github.com/LyndonChin/MasteringAndroidDataBinding/blob/master/app/src/main/java/com/liangfeizc/databindingsamples/viewids/ViewWithIDsActivity.java) 。
+
+
+
+> 未完待续
