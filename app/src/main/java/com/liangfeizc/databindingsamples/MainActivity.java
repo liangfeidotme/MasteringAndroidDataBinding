@@ -14,6 +14,7 @@ import com.liangfeizc.databindingsamples.includes.IncludeActivity;
 import com.liangfeizc.databindingsamples.observable.ObservableActivity;
 import com.liangfeizc.databindingsamples.resources.ResourceActivity;
 import com.liangfeizc.databindingsamples.viewids.ViewWithIDsActivity;
+import com.liangfeizc.databindingsamples.viewstub.ViewStubActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -49,5 +50,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void openViewWithIDs(View view) {
         startActivity(new Intent(this, ViewWithIDsActivity.class));
+    }
+
+    public void openViewStub(View view) {
+        startActivity(new Intent(this, ViewStubActivity.class));
     }
 }

@@ -56,5 +56,11 @@
             android:layout_height="wrap_content"
             android:onClick="openViewWithIDs"
             android:text="@string/sample_title_viewwithids" />
+
+        <Button
+            android:text="Open ViewStub"
+            android:onClick="openViewStub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 </layout>

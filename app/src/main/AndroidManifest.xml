@@ -44,6 +44,10 @@
             android:name=".viewids.ViewWithIDsActivity"
             android:label="@string/title_activity_view_with_ids" >
         </activity>
+        <activity
+            android:name=".viewstub.ViewStubActivity"
+            android:label="@string/title_activity_view_stub" >
+        </activity>
     </application>
 
 </manifest>

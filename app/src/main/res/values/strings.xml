@@ -33,4 +33,5 @@
     <string name="sample_title_observable">Observable</string>
     <string name="title_activity_view_with_ids">ViewWithIDsActivity</string>
     <string name="sample_title_viewwithids">View with IDs</string>
+    <string name="title_activity_view_stub">ViewStubActivity</string>
 </resources>
