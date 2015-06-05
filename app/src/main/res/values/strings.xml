@@ -13,6 +13,7 @@
     <string name="sample_title_collections">Collections</string>
     <string name="title_activity_resource">ResourceActivity</string>
     <string name="sample_title_resources">Resources</string>
+
     <string name="nameFormat">Full Name: %1$s:%2$s</string>
     <string name="nameFormatWithAge">Hello %1$s %2$s, %3$d ages</string>
     

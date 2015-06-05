@@ -333,6 +333,36 @@ public final TextView firstName;
 
 具体代码可参考 [ViewWithIDsActivity.java](https://github.com/LyndonChin/MasteringAndroidDataBinding/blob/master/app/src/main/java/com/liangfeizc/databindingsamples/viewids/ViewWithIDsActivity.java) 。
 
+## ViewStubs
 
+xml中的 `ViewStub` 经过 binding 之后会转换成 `ViewStubProxy`, 具体代码可参考 [ViewStubActivity.java](https://github.com/LyndonChin/MasteringAndroidDataBinding/blob/master/app/src/main/java/com/liangfeizc/databindingsamples/viewstub/ViewStubActivity.java)
+
+简单用代码说明一下，xml 文件与之前的代码一样，根节点改为 `layout`，在 `LinearLayout` 中添加一个 `ViewStub`，添加 **ID**。
+
+```xml
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        ...>
+        <ViewStub
+            android:id="@+id/view_stub"
+            android:layout="@layout/view_stub"
+            ... />
+    </LinearLayout>
+</layout>
+```
+
+在 Java 代码中获取 `binding` 实例，为 `ViewStubProy` 注册 `ViewStub.OnInflateListener` 事件，搞定！
+
+```java
+binding = DataBindingUtil.setContentView(this, R.layout.activity_view_stub);
+binding.viewStub.setOnInflateListener(new ViewStub.OnInflateListener() {
+	@Override
+	public void onInflate(ViewStub stub, View inflated) {
+		ViewStubBinding binding = DataBindingUtil.bind(inflated);
+		User user = new User("fee", "lang");
+		binding.setUser(user);
+	}
+});
+```
 
 > 未完待续
