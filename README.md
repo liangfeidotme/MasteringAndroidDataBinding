@@ -1,6 +1,6 @@
 # 完全掌握 Android Data Binding
 
-> 微博求粉 [Feelang-Android]()
+> 微博求粉 [Feelang-Android](http://weibo.com/u/1670598115)
 
 本教程是跟着 [Data Binding Guide](https://developer.android.com/tools/data-binding/guide.html) 学习过程中得出的一些实践经验，同时修改了官方教程的一些错误，每一个知识点都有对应的源码，争取做到实践与理论相结合。
 
