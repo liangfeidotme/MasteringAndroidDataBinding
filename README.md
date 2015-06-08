@@ -1,5 +1,7 @@
 # 完全掌握 Android Data Binding
 
+> 微博求粉 [Feelang-Android]()
+
 本教程是跟着 [Data Binding Guide](https://developer.android.com/tools/data-binding/guide.html) 学习过程中得出的一些实践经验，同时修改了官方教程的一些错误，每一个知识点都有对应的源码，争取做到实践与理论相结合。
 
 Data Binding 解决了 Android UI 编程中的一个痛点，官方原生支持 MVVM 模型可以让我们在不改变既有代码框架的前提下，非常容易地使用这些新特性。其实在此之前，已经有些第三方的框架（[RoboAndroid](http://robobinding.github.io/RoboBinding/getting_started.zh.html)) 可以支持 MVVM 模型，无耐由于框架的侵入性太强，导致一直没有流行起来。 
@@ -363,6 +365,54 @@ binding.viewStub.setOnInflateListener(new ViewStub.OnInflateListener() {
 		binding.setUser(user);
 	}
 });
+```
+
+## Dynamic Variables
+
+完整代码可以参考 [dynamic](https://github.com/LyndonChin/MasteringAndroidDataBinding/tree/master/app/src/main/java/com/liangfeizc/databindingsamples/dynamic)
+
+以 `RecyclerView` 为例，`Adapter` 的 **DataBinding** 需要动态生成，因此我们可以在 `onCreateViewHolder` 的时候创建这个 **DataBinding**，然后在 `onBindViewHolder` 中获取这个 **DataBinding**。
+
+```java
+public static class BindingHolder extends RecyclerView.ViewHolder {
+    private ViewDataBinding binding;
+    public BindingHolder(View itemView) {
+        super(itemView);
+    }
+    public ViewDataBinding getBinding() {
+        return binding;
+    }
+    public void setBinding(ViewDataBinding binding) {
+        this.binding = binding;
+    }
+}
+@Override
+public BindingHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
+    ViewDataBinding binding = DataBindingUtil.inflate(
+            LayoutInflater.from(viewGroup.getContext()),
+            R.layout.list_item,
+            viewGroup,
+            false);
+    BindingHolder holder = new BindingHolder(binding.getRoot());
+    holder.setBinding(binding);
+    return holder;
+}
+@Override
+public void onBindViewHolder(BindingHolder holder, int position) {
+    User user = users.get(position);
+    holder.getBinding().setVariable(BR.user, user);
+    holder.getBinding().executePendingBindings();
+}
+```	
+
+注意此处 `DataBindingUtil` 的用法：
+
+```java
+ViewDataBinding binding = DataBindingUtil.inflate(
+	LayoutInflater.from(viewGroup.getContext()),
+	R.layout.list_item,
+	viewGroup,
+	false);
 ```
 
 > 未完待续

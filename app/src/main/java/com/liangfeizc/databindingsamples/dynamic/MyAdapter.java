@@ -24,6 +24,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.BindingHolder> {
         users = new ArrayList<>(10);
         for (int i = 0; i < 10;i ++) {
             User user = new User("liang", "fei");
+            users.add(user);
         }
     }
     public static class BindingHolder extends RecyclerView.ViewHolder {
