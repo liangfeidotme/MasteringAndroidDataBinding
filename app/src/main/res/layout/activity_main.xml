@@ -58,8 +58,14 @@
             android:text="@string/sample_title_viewwithids" />
 
         <Button
-            android:text="Open ViewStub"
+            android:text="ViewStubs"
             android:onClick="openViewStub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="Dynamic Variables"
+            android:onClick="openDynamicVariables"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>

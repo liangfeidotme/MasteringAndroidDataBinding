@@ -3,6 +3,7 @@ package com.liangfeizc.databindingsamples;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.style.DynamicDrawableSpan;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.view.View;
 import com.liangfeizc.databindingsamples.basic.BasicActivity;
 import com.liangfeizc.databindingsamples.collections.CollectionActivity;
 import com.liangfeizc.databindingsamples.custombindings.CustomBindingActivity;
+import com.liangfeizc.databindingsamples.dynamic.DynamicActivity;
 import com.liangfeizc.databindingsamples.includes.IncludeActivity;
 import com.liangfeizc.databindingsamples.observable.ObservableActivity;
 import com.liangfeizc.databindingsamples.resources.ResourceActivity;
@@ -54,5 +56,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void openViewStub(View view) {
         startActivity(new Intent(this, ViewStubActivity.class));
+    }
+
+    public void openDynamicVariables(View view) {
+        startActivity(new Intent(this, DynamicActivity.class));
     }
 }

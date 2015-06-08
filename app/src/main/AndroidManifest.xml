@@ -48,6 +48,10 @@
             android:name=".viewstub.ViewStubActivity"
             android:label="@string/title_activity_view_stub" >
         </activity>
+        <activity
+            android:name=".dynamic.DynamicActivity"
+            android:label="@string/title_activity_dynamic" >
+        </activity>
     </application>
 
 </manifest>
