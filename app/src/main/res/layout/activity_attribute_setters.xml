@@ -1,0 +1,17 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="com.liangfeizc.databindingsamples.attributesetters.AttributeSettersActivity" />
+        <variable name="activity" />
+    </data>
+    <merge>
+        <com.liangfeizc.databindingsamples.attributesetters.UserView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:clickListener="@{activity.clickListener}"
+            app:firstName="@{@string/firstName}"
+            app:lastName="@{@string/lastName}"
+            app:age="27" />
+    </merge>
+</layout>

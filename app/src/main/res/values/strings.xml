@@ -36,4 +36,8 @@
     <string name="sample_title_viewwithids">View with IDs</string>
     <string name="title_activity_view_stub">ViewStubActivity</string>
     <string name="title_activity_dynamic">DynamicActivity</string>
+    <string name="title_activity_attribute_setters">AttributeSettersActivity</string>
+
+    <string name="firstName">Liang</string>
+    <string name="lastName">Fei</string>
 </resources>

@@ -68,5 +68,11 @@
             android:onClick="openDynamicVariables"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
+        <Button
+            android:text="Attribute Setters"
+            android:onClick="openAttributeSetters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 </layout>

@@ -52,6 +52,10 @@
             android:name=".dynamic.DynamicActivity"
             android:label="@string/title_activity_dynamic" >
         </activity>
+        <activity
+            android:name=".attributesetters.AttributeSettersActivity"
+            android:label="@string/title_activity_attribute_setters" >
+        </activity>
     </application>
 
 </manifest>

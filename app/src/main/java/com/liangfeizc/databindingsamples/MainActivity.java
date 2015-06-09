@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.liangfeizc.databindingsamples.attributesetters.AttributeSettersActivity;
 import com.liangfeizc.databindingsamples.basic.BasicActivity;
 import com.liangfeizc.databindingsamples.collections.CollectionActivity;
 import com.liangfeizc.databindingsamples.custombindings.CustomBindingActivity;
@@ -60,5 +61,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void openDynamicVariables(View view) {
         startActivity(new Intent(this, DynamicActivity.class));
+    }
+
+    public void openAttributeSetters(View view) {
+        startActivity(new Intent(this, AttributeSettersActivity.class));
     }
 }
