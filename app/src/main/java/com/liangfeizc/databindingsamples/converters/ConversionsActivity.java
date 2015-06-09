@@ -5,6 +5,7 @@ import android.databinding.BindingConversion;
 import android.databinding.DataBindingUtil;
 import android.databinding.ObservableBoolean;
 import android.databinding.layouts.DataBindingInfo;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,10 +13,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.liangfeizc.databindingsamples.BaseActivity;
 import com.liangfeizc.databindingsamples.R;
 import com.liangfeizc.databindingsamples.databinding.ActivityConversionsBinding;
 
-public class ConversionsActivity extends AppCompatActivity {
+public class ConversionsActivity extends BaseActivity {
 
     private ObservableBoolean mIsError = new ObservableBoolean();
 
@@ -36,7 +38,17 @@ public class ConversionsActivity extends AppCompatActivity {
 
     @BindingConversion
     public static ColorDrawable convertColorToDrawable(int color) {
-        return new ColorDrawable(color ^ 0xffffff);
+        return new ColorDrawable(color);
+    }
+
+    @BindingConversion
+    public static int convertColorToString(int color) {
+        switch (color) {
+            case Color.RED:
+                return R.string.red;
+            case Color.WHITE:
+                return R.string.white;
+        }
+        return R.string.app_name;
     }
 }
-

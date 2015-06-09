@@ -6,12 +6,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.liangfeizc.databindingsamples.BaseActivity;
 import com.liangfeizc.databindingsamples.R;
 import com.liangfeizc.databindingsamples.basic.User;
 import com.liangfeizc.databindingsamples.custombindings.Contact;
 import com.liangfeizc.databindingsamples.databinding.ActivityIncludeBinding;
 
-public class IncludeActivity extends AppCompatActivity {
+public class IncludeActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -8,10 +8,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.liangfeizc.databindingsamples.BaseActivity;
 import com.liangfeizc.databindingsamples.R;
 import com.liangfeizc.databindingsamples.databinding.ActivityDynamicBinding;
 
-public class DynamicActivity extends AppCompatActivity {
+public class DynamicActivity extends BaseActivity {
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;

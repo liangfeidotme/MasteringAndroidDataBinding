@@ -42,6 +42,6 @@
     <string name="lastName">Fei</string>
     <string name="title_activity_conversions">ConversionsActivity</string>
 
-    <string name="large">large</string>
-    <string name="small">small</string>
+    <string name="red">red</string>
+    <string name="white">white</string>
 </resources>

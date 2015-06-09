@@ -5,10 +5,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.liangfeizc.databindingsamples.BaseActivity;
 import com.liangfeizc.databindingsamples.R;
 import com.liangfeizc.databindingsamples.databinding.ActivityViewWithIdsBinding;
 
-public class ViewWithIDsActivity extends AppCompatActivity {
+public class ViewWithIDsActivity extends BaseActivity {
 
     ActivityViewWithIdsBinding binding;
 

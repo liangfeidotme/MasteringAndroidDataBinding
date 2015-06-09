@@ -8,6 +8,7 @@ import android.util.SparseArray;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.liangfeizc.databindingsamples.BaseActivity;
 import com.liangfeizc.databindingsamples.R;
 import com.liangfeizc.databindingsamples.databinding.CollectionsBinding;
 
@@ -16,7 +17,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class CollectionActivity extends AppCompatActivity {
+public class CollectionActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

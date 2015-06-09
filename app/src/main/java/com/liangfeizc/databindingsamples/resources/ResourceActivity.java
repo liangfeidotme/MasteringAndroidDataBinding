@@ -6,11 +6,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.liangfeizc.databindingsamples.BaseActivity;
 import com.liangfeizc.databindingsamples.R;
 import com.liangfeizc.databindingsamples.basic.User;
 import com.liangfeizc.databindingsamples.databinding.ResourceBinding;
 
-public class ResourceActivity extends AppCompatActivity {
+public class ResourceActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

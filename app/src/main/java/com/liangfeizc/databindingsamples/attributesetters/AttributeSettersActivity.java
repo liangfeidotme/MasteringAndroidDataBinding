@@ -9,11 +9,12 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.liangfeizc.databindingsamples.BaseActivity;
 import com.liangfeizc.databindingsamples.R;
 import com.liangfeizc.databindingsamples.databinding.ActivityAttributeSettersBinding;
 import com.squareup.picasso.Picasso;
 
-public class AttributeSettersActivity extends AppCompatActivity {
+public class AttributeSettersActivity extends BaseActivity {
     private static final String TAG = "AttributeSetters";
     public static final String IMG_URL = "http://tvfan.kyodo.co.jp/wp-content/uploads/2015/01/15027b37a4104edd85fb5b79a6c9e3ac-344x516.jpg";
     public View.OnClickListener clickListener = new View.OnClickListener() {

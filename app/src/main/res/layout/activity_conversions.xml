@@ -20,7 +20,7 @@
 
         <Button
             android:onClick="toggleIsError"
-            android:text="toggle isError"
+            android:text="@{isError.get() ? @color/red : @color/white}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>

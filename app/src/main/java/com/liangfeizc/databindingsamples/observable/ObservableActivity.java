@@ -2,14 +2,14 @@ package com.liangfeizc.databindingsamples.observable;
 
 import android.databinding.DataBindingUtil;
 import android.databinding.ObservableArrayMap;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.liangfeizc.databindingsamples.BaseActivity;
 import com.liangfeizc.databindingsamples.R;
 import com.liangfeizc.databindingsamples.databinding.ActivityObservableBinding;
 
-public class ObservableActivity extends AppCompatActivity {
+public class ObservableActivity extends BaseActivity {
 
     private ObservableUser user = new ObservableUser();
     private PlainUser plainUser = new PlainUser();

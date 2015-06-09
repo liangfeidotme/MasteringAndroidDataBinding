@@ -6,12 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewStub;
 
+import com.liangfeizc.databindingsamples.BaseActivity;
 import com.liangfeizc.databindingsamples.R;
 import com.liangfeizc.databindingsamples.basic.User;
 import com.liangfeizc.databindingsamples.databinding.ActivityViewStubBinding;
 import com.liangfeizc.databindingsamples.databinding.ViewStubBinding;
 
-public class ViewStubActivity extends AppCompatActivity {
+public class ViewStubActivity extends BaseActivity {
     private ActivityViewStubBinding binding;
 
     @Override

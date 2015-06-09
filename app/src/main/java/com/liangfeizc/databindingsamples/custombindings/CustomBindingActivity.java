@@ -6,10 +6,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.liangfeizc.databindingsamples.BaseActivity;
 import com.liangfeizc.databindingsamples.ContactBinding;
 import com.liangfeizc.databindingsamples.R;
 
-public class CustomBindingActivity extends AppCompatActivity {
+public class CustomBindingActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
