@@ -3,15 +3,17 @@
 
     <data>
         <import type="com.liangfeizc.databindingsamples.attributesetters.AttributeSettersActivity" />
-        <variable name="activity" />
+        <variable name="activity" type="AttributeSettersActivity"/>
     </data>
-    <merge>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
         <com.liangfeizc.databindingsamples.attributesetters.UserView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:clickListener="@{activity.clickListener}"
+            app:onClickListener="@{activity.clickListener}"
             app:firstName="@{@string/firstName}"
             app:lastName="@{@string/lastName}"
             app:age="27" />
-    </merge>
+    </RelativeLayout>
 </layout>

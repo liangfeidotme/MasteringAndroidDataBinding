@@ -65,8 +65,4 @@ public class UserView extends LinearLayout {
     public void setAge(int age) {
         mAgeView.setText(String.valueOf(age));
     }
-
-    public void setClickListener(View.OnClickListener listener) {
-
-    }
 }
