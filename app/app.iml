@@ -102,6 +102,7 @@
     <orderEntry type="library" exported="" name="antlr-runtime-3.5.2" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-22.2.0" level="project" />
     <orderEntry type="library" exported="" name="kotlin-stdlib-0.11.91" level="project" />
+    <orderEntry type="library" exported="" name="picasso-2.5.2" level="project" />
     <orderEntry type="library" exported="" name="commons-io-2.4" level="project" />
     <orderEntry type="library" exported="" name="baseLibrary-1.0-rc0" level="project" />
     <orderEntry type="library" exported="" name="commons-lang3-3.3.2" level="project" />
@@ -111,8 +112,8 @@
     <orderEntry type="library" exported="" name="guava-17.0" level="project" />
     <orderEntry type="library" exported="" name="commons-codec-1.10" level="project" />
     <orderEntry type="library" exported="" name="support-v4-22.2.0" level="project" />
-    <orderEntry type="library" exported="" name="compiler-1.0-rc0" level="project" />
     <orderEntry type="library" exported="" name="antlr4-annotations-4.4" level="project" />
+    <orderEntry type="library" exported="" name="compiler-1.0-rc0" level="project" />
     <orderEntry type="library" exported="" name="library-1.0-rc0" level="project" />
     <orderEntry type="library" exported="" name="ST4-4.0.8" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-22.2.0" level="project" />

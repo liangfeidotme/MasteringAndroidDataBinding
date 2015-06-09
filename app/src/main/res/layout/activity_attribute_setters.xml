@@ -4,16 +4,26 @@
     <data>
         <import type="com.liangfeizc.databindingsamples.attributesetters.AttributeSettersActivity" />
         <variable name="activity" type="AttributeSettersActivity"/>
+        <variable name="imageUrl" type="String" />
     </data>
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <com.liangfeizc.databindingsamples.attributesetters.UserView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/largePadding"
             app:onClickListener="@{activity.clickListener}"
             app:firstName="@{@string/firstName}"
             app:lastName="@{@string/lastName}"
             app:age="27" />
-    </RelativeLayout>
+
+        <ImageView
+            app:imageUrl="@{imageUrl}"
+            app:error="@{@drawable/error}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
 </layout>
