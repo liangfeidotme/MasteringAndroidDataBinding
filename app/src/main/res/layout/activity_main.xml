@@ -7,72 +7,83 @@
             type="com.liangfeizc.databindingsamples.utils.MyStringUtils" />
     </data>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-
-        <Button
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="openBasic"
-            android:text="@string/sample_title_basic" />
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="openCustomBinding"
-            android:text="@string/sample_title_custom_binding" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="openIncludes"
-            android:text="@string/sample_title_includes" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="openBasic"
+                android:text="@string/sample_title_basic" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="openCollections"
-            android:text="@string/sample_title_collections" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="openCustomBinding"
+                android:text="@string/sample_title_custom_binding" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="openResources"
-            android:text="@string/sample_title_resources" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="openIncludes"
+                android:text="@string/sample_title_includes" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="openObservable"
-            android:text="@string/sample_title_observable" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="openCollections"
+                android:text="@string/sample_title_collections" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="openViewWithIDs"
-            android:text="@string/sample_title_viewwithids" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="openResources"
+                android:text="@string/sample_title_resources" />
 
-        <Button
-            android:text="ViewStubs"
-            android:onClick="openViewStub"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="openObservable"
+                android:text="@string/sample_title_observable" />
 
-        <Button
-            android:text="Dynamic Variables"
-            android:onClick="openDynamicVariables"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="openViewWithIDs"
+                android:text="@string/sample_title_viewwithids" />
 
-        <Button
-            android:text="Attribute Setters"
-            android:onClick="openAttributeSetters"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="openViewStub"
+                android:text="ViewStubs" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="openDynamicVariables"
+                android:text="Dynamic Variables" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="openAttributeSetters"
+                android:text="Attribute Setters" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="openConverters"
+                android:text="Converters" />
+        </LinearLayout>
+    </ScrollView>
 </layout>

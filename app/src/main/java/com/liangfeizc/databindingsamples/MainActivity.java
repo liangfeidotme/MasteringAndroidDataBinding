@@ -11,6 +11,7 @@ import android.view.View;
 import com.liangfeizc.databindingsamples.attributesetters.AttributeSettersActivity;
 import com.liangfeizc.databindingsamples.basic.BasicActivity;
 import com.liangfeizc.databindingsamples.collections.CollectionActivity;
+import com.liangfeizc.databindingsamples.converters.ConversionsActivity;
 import com.liangfeizc.databindingsamples.custombindings.CustomBindingActivity;
 import com.liangfeizc.databindingsamples.dynamic.DynamicActivity;
 import com.liangfeizc.databindingsamples.includes.IncludeActivity;
@@ -65,5 +66,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void openAttributeSetters(View view) {
         startActivity(new Intent(this, AttributeSettersActivity.class));
+    }
+
+    public void openConverters(View view) {
+        startActivity(new Intent(this, ConversionsActivity.class));
     }
 }

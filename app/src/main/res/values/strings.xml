@@ -40,4 +40,8 @@
 
     <string name="firstName">Liang</string>
     <string name="lastName">Fei</string>
+    <string name="title_activity_conversions">ConversionsActivity</string>
+
+    <string name="large">large</string>
+    <string name="small">small</string>
 </resources>

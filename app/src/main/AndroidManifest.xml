@@ -58,6 +58,10 @@
             android:name=".attributesetters.AttributeSettersActivity"
             android:label="@string/title_activity_attribute_setters" >
         </activity>
+        <activity
+            android:name=".converters.ConversionsActivity"
+            android:label="@string/title_activity_conversions" >
+        </activity>
     </application>
 
 </manifest>
