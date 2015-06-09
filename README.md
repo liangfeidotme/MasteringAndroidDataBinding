@@ -415,4 +415,58 @@ ViewDataBinding binding = DataBindingUtil.inflate(
 	false);
 ```
 
-> 未完待续
+## Attribute setters
+
+有了 **Data Binding**，即使属性没有在 `declare-styleable` 中定义，我们也可以通过 xml 进行赋值操作。
+为了演示这个功能，我自定义了一个 View - [UserView](https://github.com/LyndonChin/MasteringAndroidDataBinding/blob/master/app/src/main/java/com/liangfeizc/databindingsamples/attributesetters/UserView.java)，其中 [R.styleable.UserView](https://github.com/LyndonChin/MasteringAndroidDataBinding/blob/master/app/src/main/res/values/styles.xml) 中只定义了一个 `age` 属性，其中 `firstName` 和 `lastName` 只有对应的两个 `setter` 方法。
+
+只要有 `setter` 方法就可以这样为属性赋值：
+
+```xml
+<com.liangfeizc.databindingsamples.attributesetters.UserView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/largePadding"
+    app:onClickListener="@{activity.clickListener}"
+    app:firstName="@{@string/firstName}"
+    app:lastName="@{@string/lastName}"
+    app:age="27" />
+```
+
+`onClickListener` 也是同样道理，只不过我们是在 `Activity` 中定义了一个 `Listener`。
+
+## 转换器 (Converters)
+
+具体代码可参考 [ConversionsActivity.java](https://github.com/LyndonChin/MasteringAndroidDataBinding/blob/master/app/src/main/java/com/liangfeizc/databindingsamples/converters/ConversionsActivity.java)。
+
+在 xml 中为属性赋值时，如果变量的类型与属性不一致，通过 **DataBinding** 可以进行转换。
+
+```xml
+<Button
+    android:onClick="toggleIsError"
+    android:text="@{isError.get() ? @color/red : @color/white}"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+```
+
+只需要定义一个标记了 `@BindingConversion` 的静态方法即可：
+
+```java
+@BindingConversion
+public static int convertColorToString(int color) {
+    switch (color) {
+        case Color.RED:
+            return R.string.red;
+        case Color.WHITE:
+            return R.string.white;
+    }
+    return R.string.app_name;
+}
+```
+
+> 至此，官网所介绍的用法都在代码中实践过了，如果你喜欢，请为我点赞 ：）
+
+* [我的微博](http://weibo.com/u/1670598115)
+* [个人博客](http://www.liangfeizc.com)
+* [twitter](https://twitter.com/JpRyouhi)
+* [facebook](https://www.facebook.com/fee.lang.zc)
