@@ -464,6 +464,12 @@ public static int convertColorToString(int color) {
 }
 ```
 
+## include
+
+用法可以参考代码 [IncludeActivity.java](https://github.com/LyndonChin/MasteringAndroidDataBinding/blob/master/app/src/main/java/com/liangfeizc/databindingsamples/includes/IncludeActivity.java)。
+
+如果在非根节点的 ViewGroup 中使用 `include` 会导致 crash，已经在 StackOverflow 上提了一个问题[Android Data Binding makes app crash when using include tag in a non-root ViewGroup](http://stackoverflow.com/questions/30887906/android-data-binding-makes-app-crash-when-using-include-tag-in-a-non-root-viewgr)
+
 > 至此，官网所介绍的用法都在代码中实践过了，如果你喜欢，请为我点赞 ：）
 
 * [我的微博](http://weibo.com/u/1670598115)
