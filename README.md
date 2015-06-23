@@ -37,14 +37,6 @@ classpath 'com.android.databinding:dataBinder:1.0-rc0'
 apply plugin: 'com.android.databinding'
 ```
 
-
-**注意**
-
-如果 Module 用到的 **buildToolsVersion** 高于 **22.0.1**，比如 **23 rc1**，那 `com.android.databinding:dataBinder` 的版本要改为 **1.3.0-beta1**，否则会出现如下错误：
-
-<img src="http://img02.taobaocdn.com/imgextra/i2/160310864/TB2r9D5cVXXXXaPXpXXXXXXXXXX_!!160310864.png" style="width:100%">
-
-
 ## 基础
 
 
