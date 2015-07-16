@@ -1,6 +1,6 @@
 # 完全掌握 Android Data Binding
 
-> 微博求粉 [Feelang-Android](http://weibo.com/u/1670598115)
+> 微博求粉 [liangfeizc-Android](http://weibo.com/u/1670598115)
 
 本教程是跟着 [Data Binding Guide](https://developer.android.com/tools/data-binding/guide.html) 学习过程中得出的一些实践经验，同时修改了官方教程的一些错误，每一个知识点都有对应的源码，争取做到实践与理论相结合。
 
@@ -429,6 +429,12 @@ ViewDataBinding binding = DataBindingUtil.inflate(
 
 ## 转换器 (Converters)
 
+**重要**
+
+使用 **Converter** 一定要保证它不会影响到其他的属性，例如这个 `@BindingConversion` - [](https://github.com/LyndonChin/MasteringAndroidDataBinding/blob/master/app/src/main/java/com/liangfeizc/databindingsamples/converters/ConversionsActivity.java#L44-57) 就会影响到[android:visibility](https://github.com/LyndonChin/MasteringAndroidDataBinding/blob/master/app/src/main/res/layout/activity_basic.xml#L76), 因为他们都是都符合从 int 到 int 的转换。
+
+---
+
 具体代码可参考 [ConversionsActivity.java](https://github.com/LyndonChin/MasteringAndroidDataBinding/blob/master/app/src/main/java/com/liangfeizc/databindingsamples/converters/ConversionsActivity.java)。
 
 在 xml 中为属性赋值时，如果变量的类型与属性不一致，通过 **DataBinding** 可以进行转换。
@@ -462,7 +468,7 @@ public static int convertColorToString(int color) {
 
 如果在非根节点的 ViewGroup 中使用 `include` 会导致 crash，已经在 StackOverflow 上提了一个问题[Android Data Binding makes app crash when using include tag in a non-root ViewGroup](http://stackoverflow.com/questions/30887906/android-data-binding-makes-app-crash-when-using-include-tag-in-a-non-root-viewgr)
 
-> 至此，官网所介绍的用法都在代码中实践过了，如果你喜欢，请为我点赞 ：）
+---
 
 * [我的微博](http://weibo.com/u/1670598115)
 * [个人博客](http://www.liangfeizc.com)
