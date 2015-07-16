@@ -16,7 +16,7 @@ public class BasicActivity extends BaseActivity {
 
         ActivityBasicBinding binding = DataBindingUtil.setContentView(
                 this, R.layout.activity_basic);
-        User user = new User("fei", "Liang");
+        User user = new User("fei", "Liang", 27);
         binding.setUser(user);
     }
 }

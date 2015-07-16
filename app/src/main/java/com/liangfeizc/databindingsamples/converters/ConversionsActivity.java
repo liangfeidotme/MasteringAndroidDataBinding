@@ -41,6 +41,10 @@ public class ConversionsActivity extends BaseActivity {
         return new ColorDrawable(color);
     }
 
+    /** !!! Binding conversion should be forbidden, otherwise it will conflict with
+     *  {@code android:visiblity} attribute.
+     */
+    /*
     @BindingConversion
     public static int convertColorToString(int color) {
         switch (color) {
@@ -50,5 +54,5 @@ public class ConversionsActivity extends BaseActivity {
                 return R.string.white;
         }
         return R.string.app_name;
-    }
+    }*/
 }
