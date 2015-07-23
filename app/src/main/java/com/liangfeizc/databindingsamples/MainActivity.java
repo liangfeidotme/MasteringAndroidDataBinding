@@ -1,12 +1,16 @@
 package com.liangfeizc.databindingsamples;
 
 import android.content.Intent;
+import android.databinding.BindingAdapter;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.style.DynamicDrawableSpan;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.liangfeizc.databindingsamples.attributesetters.AttributeSettersActivity;
@@ -20,6 +24,7 @@ import com.liangfeizc.databindingsamples.observable.ObservableActivity;
 import com.liangfeizc.databindingsamples.resources.ResourceActivity;
 import com.liangfeizc.databindingsamples.viewids.ViewWithIDsActivity;
 import com.liangfeizc.databindingsamples.viewstub.ViewStubActivity;
+import com.squareup.picasso.Picasso;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -5,6 +5,7 @@
         <import type="com.liangfeizc.databindingsamples.attributesetters.AttributeSettersActivity" />
         <variable name="activity" type="AttributeSettersActivity"/>
         <variable name="imageUrl" type="String" />
+        <variable name="user" type="com.liangfeizc.databindingsamples.basic.User" />
     </data>
     <LinearLayout
         android:orientation="vertical"
@@ -15,13 +16,14 @@
             android:layout_height="wrap_content"
             android:paddingLeft="@dimen/largePadding"
             app:onClickListener="@{activity.clickListener}"
-            app:firstName="@{@string/firstName}"
+            app:firstName="@{user.firstName}"
             app:lastName="@{@string/lastName}"
             app:age="27" />
 
         <ImageView
             app:imageUrl="@{imageUrl}"
             app:error="@{@color/red}"
+            app:namespace="@{activity.NAMESPACE}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

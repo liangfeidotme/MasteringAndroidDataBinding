@@ -29,6 +29,7 @@ public class ConversionsActivity extends BaseActivity {
                 DataBindingUtil.setContentView(this, R.layout.activity_conversions);
 
         mIsError.set(true);
+
         binding.setIsError(mIsError);
     }
 
@@ -36,10 +37,10 @@ public class ConversionsActivity extends BaseActivity {
         mIsError.set(!mIsError.get());
     }
 
-    @BindingConversion
+    /*@BindingConversion
     public static ColorDrawable convertColorToDrawable(int color) {
         return new ColorDrawable(color);
-    }
+    }*/
 
     /** !!! Binding conversion should be forbidden, otherwise it will conflict with
      *  {@code android:visiblity} attribute.

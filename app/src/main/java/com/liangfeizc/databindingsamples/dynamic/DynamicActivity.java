@@ -30,8 +30,7 @@ public class DynamicActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ActivityDynamicBinding binding = DataBindingUtil.setContentView(
-                this, R.layout.activity_dynamic);
+        ActivityDynamicBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_dynamic);
 
         mRecyclerView = binding.recyclerView;
 

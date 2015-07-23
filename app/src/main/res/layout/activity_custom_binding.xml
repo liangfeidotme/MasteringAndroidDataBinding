@@ -1,6 +1,6 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <data class=".ContactBinding">
+    <data class=".ContactHJBinding">
         <variable
             name="contact"
             type="com.liangfeizc.databindingsamples.custombindings.Contact" />

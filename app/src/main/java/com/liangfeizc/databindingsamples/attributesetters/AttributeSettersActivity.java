@@ -4,21 +4,26 @@ import android.databinding.BindingAdapter;
 import android.databinding.DataBindingUtil;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.liangfeizc.databindingsamples.BaseActivity;
 import com.liangfeizc.databindingsamples.R;
+import com.liangfeizc.databindingsamples.basic.User;
 import com.liangfeizc.databindingsamples.databinding.ActivityAttributeSettersBinding;
 import com.squareup.picasso.Picasso;
 
 public class AttributeSettersActivity extends BaseActivity {
     private ActivityAttributeSettersBinding binding;
     private static final String TAG = "AttributeSetters";
-    public static final String IMG_URL = "http://tvfan.kyodo.co.jp/wp-content/uploads/2015/01/15027b37a4104edd85fb5b79a6c9e3ac-344x516.jpg";
+    public static final String IMG_URL = "https://avatars2.githubusercontent.com/u/8111106?v=3&s=460";
+            //"http://tvfan.kyodo.co.jp/wp-content/uploads/2015/01/15027b37a4104edd85fb5b79a6c9e3ac-344x516.jpg";
+    public static final String NAMESPACE = "AttributeSettersActivity";
     public View.OnClickListener clickListener,firstClickListener,secondClickListener;
     private static boolean ifFirst = true;
+    private User user = new User("Jue","Huang",24);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +33,7 @@ public class AttributeSettersActivity extends BaseActivity {
         initListener();
         binding.setActivity(this);
         binding.setImageUrl(IMG_URL);
+        binding.setUser(user);
 
     }
 
@@ -65,9 +71,14 @@ public class AttributeSettersActivity extends BaseActivity {
         binding.setActivity(this);
     }
 
-    @BindingAdapter({"bind:imageUrl", "bind:error"})
-    public static void loadImage(ImageView view, String url, Drawable error) {
-        Picasso.with(view.getContext()).load(url).error(error).into(view);
+    //这个函数可以写在任何一个class当中，所有imageview满足以下三个入参的都会运行该函数
+    @BindingAdapter({"bind:imageUrl", "bind:error","bind:namespace"})
+    public static void loadImage(ImageView view, String url, Drawable error,String namespace) {
+        if (namespace.equals(NAMESPACE)){
+            Picasso.with(view.getContext()).load(url).error(error).into(view);
+            Toast.makeText(view.getContext(), "loading:"+namespace, Toast.LENGTH_SHORT).show();
+        }
+
     }
 }
 

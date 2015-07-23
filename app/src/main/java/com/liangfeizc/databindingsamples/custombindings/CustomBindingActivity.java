@@ -7,7 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.liangfeizc.databindingsamples.BaseActivity;
-import com.liangfeizc.databindingsamples.ContactBinding;
+import com.liangfeizc.databindingsamples.ContactHJBinding;
 import com.liangfeizc.databindingsamples.R;
 
 public class CustomBindingActivity extends BaseActivity {
@@ -16,7 +16,7 @@ public class CustomBindingActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ContactBinding binding = DataBindingUtil.setContentView(
+        ContactHJBinding binding = DataBindingUtil.setContentView(
                 this, R.layout.activity_custom_binding);
 
         Contact contact = new Contact("111", "Japan");
