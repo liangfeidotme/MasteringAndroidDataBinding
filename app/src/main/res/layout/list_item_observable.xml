@@ -13,7 +13,9 @@
         <TextView
             android:text="@{user.firstName}"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor=
+                "@{user.firstName==&quot;Jue&quot;? @color/red: @color/white}"/>
 
         <TextView
             android:text="@{user.lastName}"
