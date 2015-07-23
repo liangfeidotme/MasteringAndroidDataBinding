@@ -7,6 +7,7 @@ import android.text.style.DynamicDrawableSpan;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.liangfeizc.databindingsamples.attributesetters.AttributeSettersActivity;
 import com.liangfeizc.databindingsamples.basic.BasicActivity;

@@ -24,6 +24,6 @@ public class ResourceActivity extends BaseActivity {
         binding.setLastName("fei");
 
         binding.setBananaCount(2);
-        binding.setOrangeCount(10);
+        binding.setOrangeCount(0);
     }
 }

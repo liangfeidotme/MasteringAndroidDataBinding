@@ -21,7 +21,7 @@
 
         <ImageView
             app:imageUrl="@{imageUrl}"
-            app:error="@{@drawable/error}"
+            app:error="@{@color/red}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

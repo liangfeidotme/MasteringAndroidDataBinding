@@ -9,18 +9,17 @@ import android.view.ViewGroup;
 
 import com.liangfeizc.databindingsamples.BR;
 import com.liangfeizc.databindingsamples.R;
-import com.liangfeizc.databindingsamples.basic.User;
+import com.liangfeizc.databindingsamples.observable.ObservableUser;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by rufi on 6/5/15.
  */
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.BindingHolder> {
-    private List<User> users;
+public class ObservableAdapter extends RecyclerView.Adapter<ObservableAdapter.BindingHolder> {
+    private List<ObservableUser> users;
 
-    public MyAdapter(List<User> mUsers) {
+    public ObservableAdapter(List<ObservableUser> mUsers) {
         users = mUsers;
     }
     public static class BindingHolder extends RecyclerView.ViewHolder {
@@ -43,7 +42,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.BindingHolder> {
     public BindingHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         ViewDataBinding binding = DataBindingUtil.inflate(
                 LayoutInflater.from(viewGroup.getContext()),
-                R.layout.list_item,
+                R.layout.list_item_observable,
                 viewGroup,
                 false);
 
@@ -55,15 +54,17 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.BindingHolder> {
 
     @Override
     public void onBindViewHolder(BindingHolder holder, int position) {
-        User user = users.get(position);
+        ObservableUser user = users.get(position);
         holder.getBinding().setVariable(BR.user, user);
-        //executePendingBindings用于在主线程刷新view，如果不加这句话，则可以在后台刷新
-        holder.getBinding().executePendingBindings();
+
+        //holder.getBinding().executePendingBindings();
     }
 
     @Override
     public int getItemCount() {
         return users.size();
     }
+
+
 }
 
