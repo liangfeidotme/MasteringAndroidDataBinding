@@ -33,6 +33,7 @@ public class ObservableActivity extends BaseActivity {
         user.setFirstName("zhu");
         user.setLastName("chen");
 
+
         plainUser.firstName.set("zhu");
         plainUser.lastName.set("chen");
         plainUser.age.set(27);
