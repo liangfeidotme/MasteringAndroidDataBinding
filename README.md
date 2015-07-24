@@ -23,22 +23,21 @@ Data Binding 框架一出，是不是也意味着像 *RoboGuice、ButterKnife* �
 
 ### 新建一个 Project
 
-修改 Project 的 [build.gradle](https://github.com/LyndonChin/MasteringAndroidDataBinding/blob/master/build.gradle)，为 build script 添加一条依赖，Gradle 版本为 1.2.3。
+修改 Project 的 [build.gradle](https://github.com/LyndonChin/MasteringAndroidDataBinding/blob/master/build.gradle)，保持 `gradle` 和 `dataBinder` 都是最新版，否则会由于 Android Studio 的一次升级导致 Data Binding 失效。
 
 
 ```groovy
-classpath 'com.android.tools.build:gradle:1.2.3'
-classpath 'com.android.databinding:dataBinder:1.0-rc0'
+classpath 'com.android.tools.build:gradle:1.3.+'
+classpath 'com.android.databinding:dataBinder:1.+'
 ```
 
-为用到 Data Binding 的模块添加插件，修改对应的 [build.gradle](https://github.com/LyndonChin/MasteringAndroidDataBinding/blob/master/app/build.gradle)。
+为用到 Data Binding 的模块(Module)添加插件，修改对应的 [build.gradle](https://github.com/LyndonChin/MasteringAndroidDataBinding/blob/master/app/build.gradle)。
 
 ```groovy
 apply plugin: 'com.android.databinding'
 ```
 
 ## 基础
-
 
 工程创建完成后，我们通过一个最简单的例子来说明 Data Binding 的基本用法。
 
