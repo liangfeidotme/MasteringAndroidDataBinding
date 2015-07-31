@@ -1,7 +1,9 @@
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
         <variable name="isError" type="android.databinding.ObservableBoolean" />
+        <variable name="height" type="float" />
     </data>
     <LinearLayout
         android:orientation="vertical"
@@ -16,7 +18,8 @@
         <View
             android:background="@{isError.get() ? @color/red : @color/white}"
             android:layout_width="match_parent"
-            android:layout_height="200dp" />
+            android:layout_height="wrap_content"
+            app:layout_height="@{height}" />
 
         <Button
             android:onClick="toggleIsError"
