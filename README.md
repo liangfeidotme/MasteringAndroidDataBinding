@@ -4,7 +4,7 @@
 
 本教程是跟着 [Data Binding Guide](https://developer.android.com/tools/data-binding/guide.html) 学习过程中得出的一些实践经验，同时修改了官方教程的一些错误，每一个知识点都有对应的源码，争取做到实践与理论相结合。
 
-Data Binding 解决了 Android UI 编程中的一个痛点，官方原生支持 MVVM 模型可以让我们在不改变既有代码框架的前提下，非常容易地使用这些新特性。其实在此之前，已经有些第三方的框架（[RoboAndroid](http://robobinding.github.io/RoboBinding/getting_started.zh.html)) 可以支持 MVVM 模型，无耐由于框架的侵入性太强，导致一直没有流行起来。 
+Data Binding 解决了 Android UI 编程中的一个痛点，官方原生支持 MVVM 模型可以让我们在不改变既有代码框架的前提下，非常容易地使用这些新特性。
 
 Data Binding 框架一出，是不是也意味着像 *RoboGuice、ButterKnife* 这样的依赖注入框架也会慢慢失去市场，因为在 Java 代码中直接使用 `View` 变量的情况会越来越少。
 
