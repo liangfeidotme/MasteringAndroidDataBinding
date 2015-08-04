@@ -233,7 +233,7 @@ android:text="@{user.displayName != null ? user.displayName : user.lastName}"
 
 ### 属性值
 
-通过 `${}` 可以直接把 Java 中定义的属性值赋值给 xml 属性。
+通过 `@{}` 可以直接把 Java 中定义的属性值赋值给 xml 属性。
 
 ```xml
 <TextView
