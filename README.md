@@ -144,7 +144,7 @@ protected void onCreate(Bundle savedInstanceState) {
 ```xml
 <data>
     <variable name="firstName" type="String" />
-    <variable name="firstName" type=""
+    <variable name="lastName" type=""
 </data>
 ```
 
