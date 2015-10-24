@@ -2,24 +2,23 @@ package com.liangfeizc.databinding.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.databinding.DataBindingUtil;
 import android.support.annotation.IntRange;
 import android.support.annotation.NonNull;
 import android.util.AttributeSet;
-import android.view.Gravity;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.liangfeizc.databinding.R;
-import com.liangfeizc.databinding.databinding.NameCardBinding;
 
 
 /**
  * Created by rufi on 6/9/15.
  */
 public class NameCard extends LinearLayout {
-    private NameCardBinding mBinding;
-
     private int mAge;
+
+    private TextView mFirstName;
+    private TextView mLastName;
 
     public NameCard(Context context) {
         this(context, null);
@@ -44,18 +43,17 @@ public class NameCard extends LinearLayout {
     }
 
     private void init() {
-        setGravity(Gravity.CENTER);
-        setOrientation(VERTICAL);
-
-        mBinding = DataBindingUtil.bind(inflate(getContext(), R.layout.name_card, this));
+        inflate(getContext(), R.layout.name_card, this);
+        mFirstName = (TextView) findViewById(R.id.first_name);
+        mLastName = (TextView) findViewById(R.id.last_name);
     }
 
     public void setFirstName(@NonNull final String firstName) {
-        mBinding.setFirstName(firstName);
+        mFirstName.setText(firstName);
     }
 
     public void setLastName(@NonNull final String lastName) {
-        mBinding.setLastName(lastName);
+        mLastName.setText(lastName);
     }
 
     public void setAge(@IntRange(from=1) int age) {

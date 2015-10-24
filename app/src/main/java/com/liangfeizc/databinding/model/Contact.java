@@ -1,22 +1,22 @@
 package com.liangfeizc.databinding.model;
 
 /**
- * Created by rufi on 6/2/15.
+ * Created by liangfeizc on 6/2/15.
  */
 public class Contact {
-    private final String tel;
-    private final String address;
+    private final String mTel;
+    private final String mAddress;
 
     public Contact(String tel, String address) {
-        this.tel = tel;
-        this.address = address;
+        mTel = tel;
+        mAddress = address;
     }
 
     public String getTel() {
-        return tel;
+        return mTel;
     }
 
     public String getAddress() {
-        return address;
+        return mAddress;
     }
 }

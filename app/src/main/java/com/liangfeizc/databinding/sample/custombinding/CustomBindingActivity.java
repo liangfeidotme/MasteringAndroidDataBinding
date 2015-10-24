@@ -1,11 +1,11 @@
-package com.liangfeizc.databinding.sample.custombindings;
+package com.liangfeizc.databinding.sample.custombinding;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 
 import com.liangfeizc.databinding.ContractBinding;
 import com.liangfeizc.databinding.R;
-import com.liangfeizc.databinding.core.BaseActivity;
+import com.liangfeizc.databinding.sample.BaseActivity;
 import com.liangfeizc.databinding.model.Contact;
 
 public class CustomBindingActivity extends BaseActivity {

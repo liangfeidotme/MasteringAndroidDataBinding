@@ -3,7 +3,7 @@
 
     <data>
 
-        <import type="com.liangfeizc.databinding.sample.attributesetters.AttributeSettersActivity"/>
+        <import type="com.liangfeizc.databinding.sample.attributesetter.AttributeSettersActivity"/>
 
         <variable
             name="activity"
@@ -21,19 +21,22 @@
 
         <com.liangfeizc.databinding.view.NameCard
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="@dimen/largePadding"
-            android:paddingStart="@dimen/largePadding"
+            android:layout_height="200dp"
+            android:layout_marginEnd="@dimen/largePadding"
+            android:layout_marginLeft="@dimen/largePadding"
+            android:layout_marginRight="@dimen/largePadding"
+            android:layout_marginStart="@dimen/largePadding"
+            android:gravity="center"
             app:age="27"
             app:firstName="@{@string/firstName}"
-            app:lastName="@{@string/lastName}"
-            app:onClickListener="@{activity.avatarClickListener}"/>
+            app:lastName="@{@string/lastName}"/>
 
         <com.liangfeizc.avatarview.AvatarView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:error="@{@drawable/error}"
-            app:imageUrl="@{imageUrl}"/>
+            app:imageUrl="@{imageUrl}"
+            app:onClickListener="@{activity.avatarClickListener}"/>
 
     </LinearLayout>
 </layout>

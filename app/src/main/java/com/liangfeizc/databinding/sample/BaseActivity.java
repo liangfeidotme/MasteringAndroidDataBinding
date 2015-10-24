@@ -1,4 +1,4 @@
-package com.liangfeizc.databinding.core;
+package com.liangfeizc.databinding.sample;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;

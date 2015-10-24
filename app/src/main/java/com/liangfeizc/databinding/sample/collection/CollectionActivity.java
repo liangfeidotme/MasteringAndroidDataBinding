@@ -1,11 +1,11 @@
-package com.liangfeizc.databinding.sample.collections;
+package com.liangfeizc.databinding.sample.collection;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.util.SparseArray;
 
 import com.liangfeizc.databinding.R;
-import com.liangfeizc.databinding.core.BaseActivity;
+import com.liangfeizc.databinding.sample.BaseActivity;
 import com.liangfeizc.databinding.databinding.CollectionsBinding;
 
 import java.util.ArrayList;

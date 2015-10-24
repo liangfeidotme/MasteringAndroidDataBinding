@@ -1,10 +1,10 @@
-package com.liangfeizc.databinding.sample.resources;
+package com.liangfeizc.databinding.sample.resource;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 
 import com.liangfeizc.databinding.R;
-import com.liangfeizc.databinding.core.BaseActivity;
+import com.liangfeizc.databinding.sample.BaseActivity;
 import com.liangfeizc.databinding.databinding.ResourceBinding;
 
 public class ResourceActivity extends BaseActivity {

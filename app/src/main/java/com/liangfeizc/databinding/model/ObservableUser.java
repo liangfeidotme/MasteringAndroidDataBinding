@@ -9,26 +9,26 @@ import com.liangfeizc.databinding.BR;
  * Created by liangfeizc on 6/3/15.
  */
 public class ObservableUser extends BaseObservable {
-    private String firstName;
-    private String lastName;
+    private String mFirstName;
+    private String mLastName;
 
     @Bindable
     public String getFirstName() {
-        return firstName;
+        return mFirstName;
     }
 
     @Bindable
     public String getLastName() {
-        return lastName;
+        return mLastName;
     }
 
     public void setFirstName(String firstName) {
-        this.firstName = firstName;
+        mFirstName = firstName;
         notifyPropertyChanged(BR.firstName);
     }
 
     public void setLastName(String lastName) {
-        this.lastName = lastName;
+        mLastName = lastName;
         notifyPropertyChanged(BR.lastName);
     }
 }

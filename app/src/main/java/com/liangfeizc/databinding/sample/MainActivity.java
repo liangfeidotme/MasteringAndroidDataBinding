@@ -6,16 +6,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.liangfeizc.databinding.R;
-import com.liangfeizc.databinding.sample.attributesetters.AttributeSettersActivity;
+import com.liangfeizc.databinding.sample.attributesetter.AttributeSettersActivity;
 import com.liangfeizc.databinding.sample.basic.BasicActivity;
-import com.liangfeizc.databinding.sample.collections.CollectionActivity;
-import com.liangfeizc.databinding.sample.converters.ConversionsActivity;
-import com.liangfeizc.databinding.sample.custombindings.CustomBindingActivity;
+import com.liangfeizc.databinding.sample.collection.CollectionActivity;
+import com.liangfeizc.databinding.sample.converter.ConversionsActivity;
+import com.liangfeizc.databinding.sample.custombinding.CustomBindingActivity;
 import com.liangfeizc.databinding.sample.dynamic.DynamicActivity;
-import com.liangfeizc.databinding.sample.includes.IncludeActivity;
+import com.liangfeizc.databinding.sample.include.IncludeActivity;
 import com.liangfeizc.databinding.sample.observable.ObservableActivity;
-import com.liangfeizc.databinding.sample.resources.ResourceActivity;
-import com.liangfeizc.databinding.sample.viewids.ViewWithIDsActivity;
+import com.liangfeizc.databinding.sample.resource.ResourceActivity;
+import com.liangfeizc.databinding.sample.viewid.ViewWithIDsActivity;
 import com.liangfeizc.databinding.sample.viewstub.ViewStubActivity;
 
 public class MainActivity extends AppCompatActivity {

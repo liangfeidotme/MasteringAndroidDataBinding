@@ -1,10 +1,10 @@
-package com.liangfeizc.databinding.sample.includes;
+package com.liangfeizc.databinding.sample.include;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 
 import com.liangfeizc.databinding.R;
-import com.liangfeizc.databinding.core.BaseActivity;
+import com.liangfeizc.databinding.sample.BaseActivity;
 import com.liangfeizc.databinding.databinding.ActivityIncludeBinding;
 import com.liangfeizc.databinding.model.Contact;
 import com.liangfeizc.databinding.model.User;

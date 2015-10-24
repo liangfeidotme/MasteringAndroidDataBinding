@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name="com.liangfeizc.databinding.core.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -23,19 +24,19 @@
             android:label="@string/title_activity_basic" >
         </activity>
         <activity
-            android:name="com.liangfeizc.databinding.sample.custombindings.CustomBindingActivity"
+            android:name="com.liangfeizc.databinding.sample.custombinding.CustomBindingActivity"
             android:label="@string/title_activity_custom_binding" >
         </activity>
         <activity
-            android:name="com.liangfeizc.databinding.sample.includes.IncludeActivity"
+            android:name="com.liangfeizc.databinding.sample.include.IncludeActivity"
             android:label="@string/title_activity_include" >
         </activity>
         <activity
-            android:name="com.liangfeizc.databinding.sample.collections.CollectionActivity"
+            android:name="com.liangfeizc.databinding.sample.collection.CollectionActivity"
             android:label="@string/title_activity_collection" >
         </activity>
         <activity
-            android:name="com.liangfeizc.databinding.sample.resources.ResourceActivity"
+            android:name="com.liangfeizc.databinding.sample.resource.ResourceActivity"
             android:label="@string/title_activity_resource" >
         </activity>
         <activity
@@ -43,7 +44,7 @@
             android:label="@string/title_activity_observable" >
         </activity>
         <activity
-            android:name="com.liangfeizc.databinding.sample.viewids.ViewWithIDsActivity"
+            android:name="com.liangfeizc.databinding.sample.viewid.ViewWithIDsActivity"
             android:label="@string/title_activity_view_with_ids" >
         </activity>
         <activity
@@ -55,11 +56,11 @@
             android:label="@string/title_activity_dynamic" >
         </activity>
         <activity
-            android:name="com.liangfeizc.databinding.sample.attributesetters.AttributeSettersActivity"
+            android:name="com.liangfeizc.databinding.sample.attributesetter.AttributeSettersActivity"
             android:label="@string/title_activity_attribute_setters" >
         </activity>
         <activity
-            android:name="com.liangfeizc.databinding.sample.converters.ConversionsActivity"
+            android:name="com.liangfeizc.databinding.sample.converter.ConversionsActivity"
             android:label="@string/title_activity_conversions" >
         </activity>
     </application>

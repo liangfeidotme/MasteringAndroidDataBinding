@@ -1,33 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
+<merge
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <data>
+    <TextView
+        android:id="@+id/first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
-        <variable
-            name="firstName"
-            type="String"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" ◉ ︎"/>
 
-        <variable
-            name="lastName"
-            type="String"/>
-    </data>
+    <TextView
+        android:id="@+id/last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
-    <merge>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@{firstName}"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" ◉ ︎"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@{lastName}"/>
-    </merge>
-</layout>
+</merge>

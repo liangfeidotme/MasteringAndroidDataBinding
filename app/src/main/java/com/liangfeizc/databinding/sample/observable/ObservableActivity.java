@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.liangfeizc.databinding.R;
-import com.liangfeizc.databinding.core.BaseActivity;
+import com.liangfeizc.databinding.sample.BaseActivity;
 import com.liangfeizc.databinding.databinding.ActivityObservableBinding;
 import com.liangfeizc.databinding.model.ObservableUser;
 import com.liangfeizc.databinding.model.PlainUser;

@@ -1,4 +1,4 @@
-package com.liangfeizc.databinding.sample.converters;
+package com.liangfeizc.databinding.sample.converter;
 
 import android.databinding.BindingAdapter;
 import android.databinding.BindingConversion;
@@ -10,15 +10,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.liangfeizc.databinding.R;
-import com.liangfeizc.databinding.core.BaseActivity;
+import com.liangfeizc.databinding.sample.BaseActivity;
 import com.liangfeizc.databinding.databinding.ActivityConversionsBinding;
 import com.liangfeizc.databinding.utils.ScreenUtils;
 
 public class ConversionsActivity extends BaseActivity {
 
     private ObservableBoolean mIsError = new ObservableBoolean();
-
-    public float height;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +27,8 @@ public class ConversionsActivity extends BaseActivity {
 
         mIsError.set(true);
 
-        height = ScreenUtils.dp2px(this, 200);
-
         binding.setIsError(mIsError);
-        binding.setHeight(height);
+        binding.setHeight(ScreenUtils.dp2px(this, 200));
 
     }
 
