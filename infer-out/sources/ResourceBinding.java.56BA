@@ -1,0 +1,251 @@
+package com.liangfeizc.databinding.databinding;
+import com.liangfeizc.databinding.R;
+import com.liangfeizc.databinding.BR;
+import android.view.View;
+public class ResourceBinding extends android.databinding.ViewDataBinding {
+    
+    private static final android.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = null;
+    }
+    // views
+    private final android.widget.LinearLayout mboundView0;
+    private final android.widget.TextView mboundView1;
+    private final android.widget.TextView mboundView2;
+    private final android.widget.TextView mboundView3;
+    private final android.widget.TextView mboundView4;
+    // variables
+    private java.lang.String mLastName;
+    private boolean mLarge;
+    private java.lang.String mFirstName;
+    private int mBananaCount;
+    private int mOrangeCount;
+    // values
+    // listeners
+    
+    public ResourceBinding(android.databinding.DataBindingComponent bindingComponent, View root) {
+        super(bindingComponent, root, 0);
+        final Object[] bindings = mapBindings(bindingComponent, root, 5, sIncludes, sViewsWithIds);
+        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
+        this.mboundView0.setTag(null);
+        this.mboundView1 = (android.widget.TextView) bindings[1];
+        this.mboundView1.setTag(null);
+        this.mboundView2 = (android.widget.TextView) bindings[2];
+        this.mboundView2.setTag(null);
+        this.mboundView3 = (android.widget.TextView) bindings[3];
+        this.mboundView3.setTag(null);
+        this.mboundView4 = (android.widget.TextView) bindings[4];
+        this.mboundView4.setTag(null);
+        setRootTag(root);
+        invalidateAll();
+    }
+    
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+            mDirtyFlags = 0b100000L;
+        }
+        requestRebind();
+    }
+    
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    public boolean setVariable(int variableId, Object variable) {
+        switch(variableId) {
+            case BR.lastName :
+                setLastName((java.lang.String) variable);
+                return true;
+            case BR.large :
+                setLarge((boolean) variable);
+                return true;
+            case BR.firstName :
+                setFirstName((java.lang.String) variable);
+                return true;
+            case BR.bananaCount :
+                setBananaCount((int) variable);
+                return true;
+            case BR.orangeCount :
+                setOrangeCount((int) variable);
+                return true;
+        }
+        return false;
+    }
+    
+    public void setLastName(java.lang.String lastName) {
+        this.mLastName = lastName;
+        synchronized(this) {
+            mDirtyFlags |= 0b1L;
+        }
+        super.requestRebind();
+    }
+    public java.lang.String getLastName() {
+        return mLastName;
+    }
+    public void setLarge(boolean large) {
+        this.mLarge = large;
+        synchronized(this) {
+            mDirtyFlags |= 0b10L;
+        }
+        super.requestRebind();
+    }
+    public boolean getLarge() {
+        return mLarge;
+    }
+    public void setFirstName(java.lang.String firstName) {
+        this.mFirstName = firstName;
+        synchronized(this) {
+            mDirtyFlags |= 0b100L;
+        }
+        super.requestRebind();
+    }
+    public java.lang.String getFirstName() {
+        return mFirstName;
+    }
+    public void setBananaCount(int bananaCount) {
+        this.mBananaCount = bananaCount;
+        synchronized(this) {
+            mDirtyFlags |= 0b1000L;
+        }
+        super.requestRebind();
+    }
+    public int getBananaCount() {
+        return mBananaCount;
+    }
+    public void setOrangeCount(int orangeCount) {
+        this.mOrangeCount = orangeCount;
+        synchronized(this) {
+            mDirtyFlags |= 0b10000L;
+        }
+        super.requestRebind();
+    }
+    public int getOrangeCount() {
+        return mOrangeCount;
+    }
+    
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+        }
+        return false;
+    }
+    
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        java.lang.String lastName = mLastName;
+        boolean large = mLarge;
+        java.lang.String firstName = mFirstName;
+        int LargeIntAndroidDimen = 0;
+        java.lang.String AndroidPluralsBanana = null;
+        java.lang.String AndroidPluralsOrange = null;
+        int bananaCount = mBananaCount;
+        int orangeCount = mOrangeCount;
+        java.lang.String AndroidStringNameFor = null;
+    
+        if ((dirtyFlags & 0b100101L) != 0) {
+            // read lastName~
+            lastName = lastName;
+            // read firstName~
+            firstName = firstName;
+        
+            // read @android:string/nameFormat~firstName~~lastName~
+            AndroidStringNameFor = getRoot().getResources().getString(R.string.nameFormat, firstName, lastName);
+        }
+        if ((dirtyFlags & 0b100010L) != 0) {
+            // read large~
+            large = large;
+            if((dirtyFlags & 0b100010L) != 0) {
+                if (large) {
+                    dirtyFlags |= 0b10000000L;
+                } else {
+                    dirtyFlags |= 0b1000000L;
+                }}
+        
+            // read ?:large~~int~@android:dimen/largePadding~~int~@android:dimen/smallPadding~
+            LargeIntAndroidDimen = large ? (int) getRoot().getResources().getDimension(R.dimen.largePadding) : (int) getRoot().getResources().getDimension(R.dimen.smallPadding);
+        }
+        if ((dirtyFlags & 0b101000L) != 0) {
+            // read bananaCount~
+            bananaCount = bananaCount;
+        
+            // read @android:plurals/banana~bananaCount~
+            AndroidPluralsBanana = getRoot().getResources().getQuantityString(R.plurals.banana, bananaCount);
+        }
+        if ((dirtyFlags & 0b110000L) != 0) {
+            // read orangeCount~
+            orangeCount = orangeCount;
+        
+            // read @android:plurals/orange~orangeCount~~orangeCount~
+            AndroidPluralsOrange = getRoot().getResources().getQuantityString(R.plurals.orange, orangeCount, orangeCount);
+            // read @android:plurals/orange~orangeCount~~orangeCount~
+            AndroidPluralsOrange = getRoot().getResources().getQuantityString(R.plurals.orange, orangeCount, orangeCount);
+        }
+        // batch finished
+        if ((dirtyFlags & 0b100010L) != 0) {
+            // api target 1
+            android.databinding.adapters.ViewBindingAdapter.setPadding(this.mboundView1, LargeIntAndroidDimen);
+        }
+        if ((dirtyFlags & 0b100101L) != 0) {
+            // api target 1
+            this.mboundView2.setText(AndroidStringNameFor);
+        }
+        if ((dirtyFlags & 0b101000L) != 0) {
+            // api target 1
+            this.mboundView3.setText(AndroidPluralsBanana);
+        }
+        if ((dirtyFlags & 0b110000L) != 0) {
+            // api target 1
+            this.mboundView4.setText(AndroidPluralsOrange);
+        }
+    }
+    // Listener Stub Implementations
+    // dirty flag
+    private  long mDirtyFlags = 0b1111111111111111111111111111111111111111111111111111111111111111L;
+    
+    public static ResourceBinding inflate(android.view.LayoutInflater inflater, android.view.ViewGroup root, boolean attachToRoot) {
+        return inflate(inflater, root, attachToRoot, android.databinding.DataBindingUtil.getDefaultComponent());
+    }
+    public static ResourceBinding inflate(android.view.LayoutInflater inflater, android.view.ViewGroup root, boolean attachToRoot, android.databinding.DataBindingComponent bindingComponent) {
+        return android.databinding.DataBindingUtil.<ResourceBinding>inflate(inflater, com.liangfeizc.databinding.R.layout.activity_resource, root, attachToRoot, bindingComponent);
+    }
+    public static ResourceBinding inflate(android.view.LayoutInflater inflater) {
+        return inflate(inflater, android.databinding.DataBindingUtil.getDefaultComponent());
+    }
+    public static ResourceBinding inflate(android.view.LayoutInflater inflater, android.databinding.DataBindingComponent bindingComponent) {
+        return bind(inflater.inflate(com.liangfeizc.databinding.R.layout.activity_resource, null, false), bindingComponent);
+    }
+    public static ResourceBinding bind(android.view.View view) {
+        return bind(view, android.databinding.DataBindingUtil.getDefaultComponent());
+    }
+    public static ResourceBinding bind(android.view.View view, android.databinding.DataBindingComponent bindingComponent) {
+        if (!"layout/activity_resource_0".equals(view.getTag())) {
+            throw new RuntimeException("view tag isn't correct on view:" + view.getTag());
+        }
+        return new ResourceBinding(bindingComponent, view);
+    }
+}
+    /* flag mapping
+        flag 0: lastName~
+        flag 1: large~
+        flag 2: firstName~
+        flag 3: bananaCount~
+        flag 4: orangeCount~
+        flag 5: INVALIDATE ANY
+        flag 6: ?:large~~int~@android:dimen/largePadding~~int~@android:dimen/smallPadding~== false
+        flag 7: ?:large~~int~@android:dimen/largePadding~~int~@android:dimen/smallPadding~== true
+    flag mapping end*/
+    //end

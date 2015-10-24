@@ -1,8 +1,8 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
-        <import type="com.liangfeizc.databindingsamples.basic.User" />
-        <import type="com.liangfeizc.databindingsamples.utils.MyStringUtils" alias="StringUtils" />
+        <import type="com.liangfeizc.databinding.model.User" />
+        <import type="com.liangfeizc.databinding.utils.MyStringUtils" alias="StringUtils" />
         <import type="android.view.View" />
 
         <variable name="user" type="User" />

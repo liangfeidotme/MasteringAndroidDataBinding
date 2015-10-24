@@ -1,0 +1,1237 @@
+
+#### Start: Footprint Computation for DataBinderMapper$InnerBrLookup.<init>() ####
+Adding summary for Object.<init>()
+  void Object.<init>()(class java.lang.Object *this)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.001963 s TIMEOUT:N SYMOPS:10 CALLS:288,0
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited: 30] ---------------------------
+  PRE:
+  this = val$1:
+  POST 1 of 1:
+  this = val$1: ; 
+  return = val$2:
+  ----------------------------------------------------------------
+  
+#### [FUNCTION DataBinderMapper$InnerBrLookup.<init>()] ... OK #####
+#### Finished: Footprint Computation for DataBinderMapper$InnerBrLookup.<init>() (5 nodes containing 4 states) ####
+#### [FUNCTION DataBinderMapper$InnerBrLookup.<init>()] Footprint Analysis result ####
+PROP 1:[path: linear paths: -1. max length: -1 has repetitions: 1 of node 4
+n4(s1).n29(s2).n30(s3).n5]
+old_this = @f$0: ; 
+return = _t$0:
+[footprint
+   this = @f$0:  ]
+
+Specs changed: added new pre
+this = val$1:
+Adding summary for DataBinderMapper$InnerBrLookup.<init>()
+  void DataBinderMapper$InnerBrLookup.<init>()(class android.databinding.DataBinderMapper$InnerBrLookup *this)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: FOOTRPRINT
+  Dependency_map: 
+  TIME:0.006494 s TIMEOUT:N SYMOPS:9 CALLS:0,1
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited: 137] ---------------------------
+  PRE:
+  this = val$1:
+  POST 1 of 1:
+  this = val$1: ; 
+  return = val$2:
+  ----------------------------------------------------------------
+  
+Transition DataBinderMapper$InnerBrLookup.<init>() from footprint to re-exe
+Adding summary for DataBinderMapper$InnerBrLookup.<init>()
+  void DataBinderMapper$InnerBrLookup.<init>()(class android.databinding.DataBinderMapper$InnerBrLookup *this)
+  Timestamp: 0
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.006494 s TIMEOUT:N SYMOPS:9 CALLS:0,1
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited:] ---------------------------
+  PRE:
+  this = val$1:
+  
+  ----------------------------------------------------------------
+  
+
+#### Start: Re-Execution for DataBinderMapper$InnerBrLookup.<init>() ####
+Finished re-execution for precondition 1 (5 nodes containing 4 states) (pass)
+#### [FUNCTION DataBinderMapper$InnerBrLookup.<init>()] ... OK #####
+#### Finished: Re-Execution for DataBinderMapper$InnerBrLookup.<init>() ####
+
+
+================================================
+ *** CANDIDATE PRECONDITIONS FOR DataBinderMapper$InnerBrLookup.<init>(): 
+================================================
+
+PROP 1:
+this = val$1: 
+
+
+
+================================================
+ *** VALID PRECONDITIONS FOR DataBinderMapper$InnerBrLookup.<init>(): 
+================================================
+
+PROP 1:
+this = val$1: 
+
+Specs changed: added new post
+PROP 1 of 1:
+return = val$2:
+Adding summary for DataBinderMapper$InnerBrLookup.<init>()
+  void DataBinderMapper$InnerBrLookup.<init>()(class android.databinding.DataBinderMapper$InnerBrLookup *this)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.006988 s TIMEOUT:N SYMOPS:18 CALLS:0,1
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited: 137] ---------------------------
+  PRE:
+  this = val$1:
+  POST 1 of 1:
+  this = val$1: ; 
+  return = val$2:
+  ----------------------------------------------------------------
+  
+
+#### Start: Footprint Computation for DataBinderMapper.<init>() ####
+#### [FUNCTION DataBinderMapper.<init>()] ... OK #####
+#### Finished: Footprint Computation for DataBinderMapper.<init>() (5 nodes containing 4 states) ####
+#### [FUNCTION DataBinderMapper.<init>()] Footprint Analysis result ####
+PROP 1:[path: linear paths: -1. max length: -1 has repetitions: 1 of node 31
+n31(s1).n46(s2).n47(s3).n32]
+old_this = @f$0: ; 
+return = _t$0:
+[footprint
+   this = @f$0:  ]
+
+Specs changed: added new pre
+this = val$1:
+Adding summary for DataBinderMapper.<init>()
+  void DataBinderMapper.<init>()(class android.databinding.DataBinderMapper *this)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: FOOTRPRINT
+  Dependency_map: 
+  TIME:0.000618 s TIMEOUT:N SYMOPS:9 CALLS:0,1
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited: 6 7] ---------------------------
+  PRE:
+  this = val$1:
+  POST 1 of 1:
+  this = val$1: ; 
+  return = val$2:
+  ----------------------------------------------------------------
+  
+Transition DataBinderMapper.<init>() from footprint to re-exe
+Adding summary for DataBinderMapper.<init>()
+  void DataBinderMapper.<init>()(class android.databinding.DataBinderMapper *this)
+  Timestamp: 0
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.000618 s TIMEOUT:N SYMOPS:9 CALLS:0,1
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited:] ---------------------------
+  PRE:
+  this = val$1:
+  
+  ----------------------------------------------------------------
+  
+
+#### Start: Re-Execution for DataBinderMapper.<init>() ####
+Finished re-execution for precondition 1 (5 nodes containing 4 states) (pass)
+#### [FUNCTION DataBinderMapper.<init>()] ... OK #####
+#### Finished: Re-Execution for DataBinderMapper.<init>() ####
+
+
+================================================
+ *** CANDIDATE PRECONDITIONS FOR DataBinderMapper.<init>(): 
+================================================
+
+PROP 1:
+this = val$1: 
+
+
+
+================================================
+ *** VALID PRECONDITIONS FOR DataBinderMapper.<init>(): 
+================================================
+
+PROP 1:
+this = val$1: 
+
+Specs changed: added new post
+PROP 1 of 1:
+return = val$2:
+Adding summary for DataBinderMapper.<init>()
+  void DataBinderMapper.<init>()(class android.databinding.DataBinderMapper *this)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.001121 s TIMEOUT:N SYMOPS:18 CALLS:0,1
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited: 6 7] ---------------------------
+  PRE:
+  this = val$1:
+  POST 1 of 1:
+  this = val$1: ; 
+  return = val$2:
+  ----------------------------------------------------------------
+  
+
+#### Start: Footprint Computation for int DataBinderMapper.getLayoutId(String) ####
+Adding summary for boolean String.equals(Object)
+  _Bool boolean String.equals(Object)(class java.lang.String *this, class java.lang.Object *anObject)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.003385 s TIMEOUT:N SYMOPS:76 CALLS:0,0
+  ERRORS: 
+  --------------------------- 1 of 2 [nvisited: 48 49] ---------------------------
+  PRE:
+  anObject != this ;
+  this = val$1: ; 
+  anObject = val$2:
+  POST 1 of 1:
+  anObject != this ;
+  this = val$1: ; 
+  return = 0: ; 
+  anObject = val$2:
+  ----------------------------------------------------------------
+  --------------------------- 2 of 2 [nvisited: 48 49] ---------------------------
+  PRE:
+  this = val$1: ; 
+  anObject = val$1:
+  POST 1 of 1:
+  this = val$1: ; 
+  return = 1: ; 
+  anObject = val$1:
+  ----------------------------------------------------------------
+  
+#### [FUNCTION int DataBinderMapper.getLayoutId(String)] ... OK #####
+#### Finished: Footprint Computation for int DataBinderMapper.getLayoutId(String) (110 nodes containing 72 states) ####
+#### [FUNCTION int DataBinderMapper.getLayoutId(String)] Footprint Analysis result ####
+
+Adding summary for int DataBinderMapper.getLayoutId(String)
+  int int DataBinderMapper.getLayoutId(String)(class android.databinding.DataBinderMapper *this, class java.lang.String *tag)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: FOOTRPRINT
+  Dependency_map: 
+  TIME:0.037304 s TIMEOUT:Y SYMOPS:334 CALLS:0,2
+  ERRORS: 
+  
+Transition int DataBinderMapper.getLayoutId(String) from footprint to re-exe
+Adding summary for int DataBinderMapper.getLayoutId(String)
+  int int DataBinderMapper.getLayoutId(String)(class android.databinding.DataBinderMapper *this, class java.lang.String *tag)
+  Timestamp: 0
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.037304 s TIMEOUT:Y SYMOPS:334 CALLS:0,2
+  ERRORS: 
+  
+
+#### Start: Re-Execution for int DataBinderMapper.getLayoutId(String) ####
+#### [FUNCTION int DataBinderMapper.getLayoutId(String)] ... OK #####
+#### Finished: Re-Execution for int DataBinderMapper.getLayoutId(String) ####
+
+
+================================================
+ *** CANDIDATE PRECONDITIONS FOR int DataBinderMapper.getLayoutId(String): 
+================================================
+
+ 
+
+
+
+================================================
+ *** VALID PRECONDITIONS FOR int DataBinderMapper.getLayoutId(String): 
+================================================
+
+ 
+
+Adding summary for int DataBinderMapper.getLayoutId(String)
+  int int DataBinderMapper.getLayoutId(String)(class android.databinding.DataBinderMapper *this, class java.lang.String *tag)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.037365 s TIMEOUT:Y SYMOPS:334 CALLS:0,2
+  ERRORS: 
+  
+
+#### Start: Footprint Computation for ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,android.view.View[],int) ####
+Adding summary for NameCardBinding.<init>(DataBindingComponent,android.view.View[])
+  void NameCardBinding.<init>(DataBindingComponent,android.view.View[])(class com.liangfeizc.databinding.databinding.NameCardBinding *this, class android.databinding.DataBindingComponent *bindingComponent, class android.view.View *(*root)[_t$0])
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: void NameCardBinding.invalidateAll()=0 
+  TIME:0.301639 s TIMEOUT:N SYMOPS:117 CALLS:0,6
+  ERRORS: CLASS_CAST_EXCEPTION 
+  
+#### [FUNCTION ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,android.view.View[],int)] ... OK #####
+#### Finished: Footprint Computation for ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,android.view.View[],int) (8 nodes containing 8 states) ####
+#### [FUNCTION ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,android.view.View[],int)] Footprint Analysis result ####
+PROP 1:[path: linear paths: -1. max length: -1 has repetitions: 1 of node 43
+n43(s1).n256(s5).n260(s6).n44]
+old_layoutId != 2130968614 ;
+old_views = @f$0: ; 
+old_this = @f$1: ; 
+return = null: ; 
+old_layoutId = @f$2: ; 
+old_bindingComponent = @f$3:
+[footprint
+   old_layoutId != 2130968614 *
+   views = @f$0: ; 
+   this = @f$1: ; 
+   layoutId = @f$2: ; 
+   bindingComponent = @f$3:  ]
+PROP 2:[path: linear paths: -1. max length: -1 has repetitions: 1 of node 43
+n43(s1).n257(s2).n258(s3).n259(s4).n44]
+old_views = @f$0: ; 
+old_this = @f$1: ; 
+return = _t$0: ; 
+old_layoutId = 2130968614: ; 
+old_bindingComponent = @f$2: ;
+return|->{android.databinding.ViewDataBinding.mBindingComponent:0, android.databinding.ViewDataBinding.mChoreographer:0, android.databinding.ViewDataBinding.mFrameCallback:0, android.databinding.ViewDataBinding.mIsExecutingPendingBindings:0, android.databinding.ViewDataBinding.mLocalFieldObservers:0, android.databinding.ViewDataBinding.mPendingRebind:0, android.databinding.ViewDataBinding.mRebindCallbacks:0, android.databinding.ViewDataBinding.mRebindHalted:0, android.databinding.ViewDataBinding.mRebindRunnable:0, android.databinding.ViewDataBinding.mRoot:0, android.databinding.ViewDataBinding.mUIThreadHandler:0, com.liangfeizc.databinding.databinding.NameCardBinding.mDirtyFlags:0, com.liangfeizc.databinding.databinding.NameCardBinding.mFirstName:0, com.liangfeizc.databinding.databinding.NameCardBinding.mLastName:0, com.liangfeizc.databinding.databinding.NameCardBinding.mboundView0:0, com.liangfeizc.databinding.databinding.NameCardBinding.mboundView1:0, com.liangfeizc.databinding.databinding.NameCardBinding.mboundView2:0}:
+[footprint
+   views = @f$0: ; 
+   this = @f$1: ; 
+   layoutId = 2130968614: ; 
+   bindingComponent = @f$2:  ]
+
+Specs changed: added new pre
+layoutId != 2130968614 ;
+views = val$1: ; 
+this = val$2: ; 
+layoutId = val$3: ; 
+bindingComponent = val$4:
+Specs changed: added new pre
+views = val$1: ; 
+this = val$2: ; 
+layoutId = 2130968614: ; 
+bindingComponent = val$3:
+Adding summary for ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,android.view.View[],int)
+  class android.databinding.ViewDataBinding *ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,android.view.View[],int)(class android.databinding.DataBinderMapper *this, class android.databinding.DataBindingComponent *bindingComponent, class android.view.View *(*views)[_t$1], int layoutId)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: FOOTRPRINT
+  Dependency_map: 
+  TIME:0.016622 s TIMEOUT:N SYMOPS:32 CALLS:0,1
+  ERRORS: 
+  --------------------------- 1 of 2 [nvisited: 47 48 52] ---------------------------
+  PRE:
+  layoutId != 2130968614 ;
+  views = val$1: ; 
+  this = val$2: ; 
+  layoutId = val$3: ; 
+  bindingComponent = val$4:
+  POST 1 of 1:
+  layoutId != 2130968614 ;
+  views = val$1: ; 
+  this = val$2: ; 
+  return = null: ; 
+  layoutId = val$3: ; 
+  bindingComponent = val$4:
+  ----------------------------------------------------------------
+  --------------------------- 2 of 2 [nvisited: 47 48 50 52] ---------------------------
+  PRE:
+  views = val$1: ; 
+  this = val$2: ; 
+  layoutId = 2130968614: ; 
+  bindingComponent = val$3:
+  POST 1 of 1:
+  views = val$1: ; 
+  this = val$2: ; 
+  return = val$4: ; 
+  layoutId = 2130968614: ; 
+  bindingComponent = val$3: ;
+  return|->{android.databinding.ViewDataBinding.mBindingComponent:0, android.databinding.ViewDataBinding.mChoreographer:0, android.databinding.ViewDataBinding.mFrameCallback:0, android.databinding.ViewDataBinding.mIsExecutingPendingBindings:0, android.databinding.ViewDataBinding.mLocalFieldObservers:0, android.databinding.ViewDataBinding.mPendingRebind:0, android.databinding.ViewDataBinding.mRebindCallbacks:0, android.databinding.ViewDataBinding.mRebindHalted:0, android.databinding.ViewDataBinding.mRebindRunnable:0, android.databinding.ViewDataBinding.mRoot:0, android.databinding.ViewDataBinding.mUIThreadHandler:0, com.liangfeizc.databinding.databinding.NameCardBinding.mDirtyFlags:0, com.liangfeizc.databinding.databinding.NameCardBinding.mFirstName:0, com.liangfeizc.databinding.databinding.NameCardBinding.mLastName:0, com.liangfeizc.databinding.databinding.NameCardBinding.mboundView0:0, com.liangfeizc.databinding.databinding.NameCardBinding.mboundView1:0, com.liangfeizc.databinding.databinding.NameCardBinding.mboundView2:0}:
+  ----------------------------------------------------------------
+  
+Transition ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,android.view.View[],int) from footprint to re-exe
+Adding summary for ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,android.view.View[],int)
+  class android.databinding.ViewDataBinding *ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,android.view.View[],int)(class android.databinding.DataBinderMapper *this, class android.databinding.DataBindingComponent *bindingComponent, class android.view.View *(*views)[_t$1], int layoutId)
+  Timestamp: 0
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.016622 s TIMEOUT:N SYMOPS:32 CALLS:0,1
+  ERRORS: 
+  --------------------------- 1 of 2 [nvisited:] ---------------------------
+  PRE:
+  views = val$1: ; 
+  this = val$2: ; 
+  layoutId = 2130968614: ; 
+  bindingComponent = val$3:
+  
+  ----------------------------------------------------------------
+  --------------------------- 2 of 2 [nvisited:] ---------------------------
+  PRE:
+  layoutId != 2130968614 ;
+  views = val$1: ; 
+  this = val$2: ; 
+  layoutId = val$3: ; 
+  bindingComponent = val$4:
+  
+  ----------------------------------------------------------------
+  
+
+#### Start: Re-Execution for ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,android.view.View[],int) ####
+Finished re-execution for precondition 1 (8 nodes containing 6 states) (pass)
+Finished re-execution for precondition 2 (8 nodes containing 5 states) (pass)
+#### [FUNCTION ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,android.view.View[],int)] ... OK #####
+#### Finished: Re-Execution for ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,android.view.View[],int) ####
+
+
+================================================
+ *** CANDIDATE PRECONDITIONS FOR ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,android.view.View[],int): 
+================================================
+
+PROP 1:
+views = val$1: ; 
+this = val$2: ; 
+layoutId = 2130968614: ; 
+bindingComponent = val$3:
+PROP 2:
+layoutId != 2130968614 ;
+views = val$1: ; 
+this = val$2: ; 
+layoutId = val$3: ; 
+bindingComponent = val$4: 
+
+
+
+================================================
+ *** VALID PRECONDITIONS FOR ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,android.view.View[],int): 
+================================================
+
+PROP 1:
+views = val$1: ; 
+this = val$2: ; 
+layoutId = 2130968614: ; 
+bindingComponent = val$3:
+PROP 2:
+layoutId != 2130968614 ;
+views = val$1: ; 
+this = val$2: ; 
+layoutId = val$3: ; 
+bindingComponent = val$4: 
+
+Specs changed: added new post
+PROP 1 of 1:
+return = val$4: ;
+return|->{android.databinding.ViewDataBinding.mBindingComponent:0, android.databinding.ViewDataBinding.mChoreographer:0, android.databinding.ViewDataBinding.mFrameCallback:0, android.databinding.ViewDataBinding.mIsExecutingPendingBindings:0, android.databinding.ViewDataBinding.mLocalFieldObservers:0, android.databinding.ViewDataBinding.mPendingRebind:0, android.databinding.ViewDataBinding.mRebindCallbacks:0, android.databinding.ViewDataBinding.mRebindHalted:0, android.databinding.ViewDataBinding.mRebindRunnable:0, android.databinding.ViewDataBinding.mRoot:0, android.databinding.ViewDataBinding.mUIThreadHandler:0, com.liangfeizc.databinding.databinding.NameCardBinding.mDirtyFlags:0, com.liangfeizc.databinding.databinding.NameCardBinding.mFirstName:0, com.liangfeizc.databinding.databinding.NameCardBinding.mLastName:0, com.liangfeizc.databinding.databinding.NameCardBinding.mboundView0:0, com.liangfeizc.databinding.databinding.NameCardBinding.mboundView1:0, com.liangfeizc.databinding.databinding.NameCardBinding.mboundView2:0}:
+Specs changed: added new post
+PROP 1 of 1:
+val$3 != 2130968614 ;
+return = null:
+Adding summary for ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,android.view.View[],int)
+  class android.databinding.ViewDataBinding *ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,android.view.View[],int)(class android.databinding.DataBinderMapper *this, class android.databinding.DataBindingComponent *bindingComponent, class android.view.View *(*views)[_t$1], int layoutId)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.029556 s TIMEOUT:N SYMOPS:71 CALLS:0,1
+  ERRORS: 
+  --------------------------- 1 of 2 [nvisited: 47 48 52] ---------------------------
+  PRE:
+  layoutId != 2130968614 ;
+  views = val$1: ; 
+  this = val$2: ; 
+  layoutId = val$3: ; 
+  bindingComponent = val$4:
+  POST 1 of 1:
+  layoutId != 2130968614 ;
+  views = val$1: ; 
+  this = val$2: ; 
+  return = null: ; 
+  layoutId = val$3: ; 
+  bindingComponent = val$4:
+  ----------------------------------------------------------------
+  --------------------------- 2 of 2 [nvisited: 47 48 50 52] ---------------------------
+  PRE:
+  views = val$1: ; 
+  this = val$2: ; 
+  layoutId = 2130968614: ; 
+  bindingComponent = val$3:
+  POST 1 of 1:
+  views = val$1: ; 
+  this = val$2: ; 
+  return = val$4: ; 
+  layoutId = 2130968614: ; 
+  bindingComponent = val$3: ;
+  return|->{android.databinding.ViewDataBinding.mBindingComponent:0, android.databinding.ViewDataBinding.mChoreographer:0, android.databinding.ViewDataBinding.mFrameCallback:0, android.databinding.ViewDataBinding.mIsExecutingPendingBindings:0, android.databinding.ViewDataBinding.mLocalFieldObservers:0, android.databinding.ViewDataBinding.mPendingRebind:0, android.databinding.ViewDataBinding.mRebindCallbacks:0, android.databinding.ViewDataBinding.mRebindHalted:0, android.databinding.ViewDataBinding.mRebindRunnable:0, android.databinding.ViewDataBinding.mRoot:0, android.databinding.ViewDataBinding.mUIThreadHandler:0, com.liangfeizc.databinding.databinding.NameCardBinding.mDirtyFlags:0, com.liangfeizc.databinding.databinding.NameCardBinding.mFirstName:0, com.liangfeizc.databinding.databinding.NameCardBinding.mLastName:0, com.liangfeizc.databinding.databinding.NameCardBinding.mboundView0:0, com.liangfeizc.databinding.databinding.NameCardBinding.mboundView1:0, com.liangfeizc.databinding.databinding.NameCardBinding.mboundView2:0}:
+  ----------------------------------------------------------------
+  
+
+#### Start: Footprint Computation for ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,View,int) ####
+Adding summary for ActivityAttributeSettersBinding ActivityAttributeSettersBinding.bind(View,DataBindingComponent)
+  class com.liangfeizc.databinding.databinding.ActivityAttributeSettersBinding *ActivityAttributeSettersBinding ActivityAttributeSettersBinding.bind(View,DataBindingComponent)(class android.view.View *view, class android.databinding.DataBindingComponent *bindingComponent)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: ActivityAttributeSettersBinding.<init>(DataBindingComponent,View)=0 
+  TIME:0.154906 s TIMEOUT:Y SYMOPS:334 CALLS:3,14
+  ERRORS: 
+  
+Adding summary for ActivityBasicBinding ActivityBasicBinding.bind(View,DataBindingComponent)
+  class com.liangfeizc.databinding.databinding.ActivityBasicBinding *ActivityBasicBinding ActivityBasicBinding.bind(View,DataBindingComponent)(class android.view.View *view, class android.databinding.DataBindingComponent *bindingComponent)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: ActivityBasicBinding.<init>(DataBindingComponent,View)=0 
+  TIME:0.154297 s TIMEOUT:N SYMOPS:151 CALLS:3,14
+  ERRORS: 
+  --------------------------- 1 of 2 [nvisited:] ---------------------------
+  PRE:
+  val$3 != 0 ;  val$3 != "layout/activity_basic_0" ;
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  
+  ----------------------------------------------------------------
+  --------------------------- 2 of 2 [nvisited: 181 182 185] ---------------------------
+  PRE:
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  POST 1 of 1:
+  view = val$1: ; 
+  return = val$3: ; 
+  bindingComponent = val$2: ;
+  view|->{}: ; 
+  return|->{android.databinding.ViewDataBinding.mBindingComponent:0, android.databinding.ViewDataBinding.mChoreographer:0, android.databinding.ViewDataBinding.mFrameCallback:0, android.databinding.ViewDataBinding.mIsExecutingPendingBindings:0, android.databinding.ViewDataBinding.mLocalFieldObservers:0, android.databinding.ViewDataBinding.mPendingRebind:0, android.databinding.ViewDataBinding.mRebindCallbacks:0, android.databinding.ViewDataBinding.mRebindHalted:0, android.databinding.ViewDataBinding.mRebindRunnable:0, android.databinding.ViewDataBinding.mRoot:0, android.databinding.ViewDataBinding.mUIThreadHandler:0, com.liangfeizc.databinding.databinding.ActivityBasicBinding.mDirtyFlags:0, com.liangfeizc.databinding.databinding.ActivityBasicBinding.mUser:0, com.liangfeizc.databinding.databinding.ActivityBasicBinding.mboundView0:0, com.liangfeizc.databinding.databinding.ActivityBasicBinding.mboundView1:0, com.liangfeizc.databinding.databinding.ActivityBasicBinding.mboundView2:0, com.liangfeizc.databinding.databinding.ActivityBasicBinding.mboundView3:0, com.liangfeizc.databinding.databinding.ActivityBasicBinding.mboundView4:0, com.liangfeizc.databinding.databinding.ActivityBasicBinding.mboundView5:0}:
+  ----------------------------------------------------------------
+  
+Adding summary for CollectionsBinding CollectionsBinding.bind(View,DataBindingComponent)
+  class com.liangfeizc.databinding.databinding.CollectionsBinding *CollectionsBinding CollectionsBinding.bind(View,DataBindingComponent)(class android.view.View *view, class android.databinding.DataBindingComponent *bindingComponent)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: CollectionsBinding.<init>(DataBindingComponent,View)=0 
+  TIME:0.197364 s TIMEOUT:N SYMOPS:151 CALLS:3,14
+  ERRORS: 
+  --------------------------- 1 of 2 [nvisited:] ---------------------------
+  PRE:
+  val$3 != 0 ;  val$3 != "layout/activity_collection_0" ;
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  
+  ----------------------------------------------------------------
+  --------------------------- 2 of 2 [nvisited: 246 247 250] ---------------------------
+  PRE:
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  POST 1 of 1:
+  view = val$1: ; 
+  return = val$3: ; 
+  bindingComponent = val$2: ;
+  view|->{}: ; 
+  return|->{android.databinding.ViewDataBinding.mBindingComponent:0, android.databinding.ViewDataBinding.mChoreographer:0, android.databinding.ViewDataBinding.mFrameCallback:0, android.databinding.ViewDataBinding.mIsExecutingPendingBindings:0, android.databinding.ViewDataBinding.mLocalFieldObservers:0, android.databinding.ViewDataBinding.mPendingRebind:0, android.databinding.ViewDataBinding.mRebindCallbacks:0, android.databinding.ViewDataBinding.mRebindHalted:0, android.databinding.ViewDataBinding.mRebindRunnable:0, android.databinding.ViewDataBinding.mRoot:0, android.databinding.ViewDataBinding.mUIThreadHandler:0, com.liangfeizc.databinding.databinding.CollectionsBinding.mDirtyFlags:0, com.liangfeizc.databinding.databinding.CollectionsBinding.mIndex:0, com.liangfeizc.databinding.databinding.CollectionsBinding.mKey:0, com.liangfeizc.databinding.databinding.CollectionsBinding.mList:0, com.liangfeizc.databinding.databinding.CollectionsBinding.mMap:0, com.liangfeizc.databinding.databinding.CollectionsBinding.mSparse:0, com.liangfeizc.databinding.databinding.CollectionsBinding.mboundView0:0, com.liangfeizc.databinding.databinding.CollectionsBinding.mboundView1:0, com.liangfeizc.databinding.databinding.CollectionsBinding.mboundView2:0, com.liangfeizc.databinding.databinding.CollectionsBinding.mboundView3:0, com.liangfeizc.databinding.databinding.CollectionsBinding.mboundView4:0, com.liangfeizc.databinding.databinding.CollectionsBinding.mboundView5:0, com.liangfeizc.databinding.databinding.CollectionsBinding.mboundView6:0}:
+  ----------------------------------------------------------------
+  
+Adding summary for ActivityConversionsBinding ActivityConversionsBinding.bind(View,DataBindingComponent)
+  class com.liangfeizc.databinding.databinding.ActivityConversionsBinding *ActivityConversionsBinding ActivityConversionsBinding.bind(View,DataBindingComponent)(class android.view.View *view, class android.databinding.DataBindingComponent *bindingComponent)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: ActivityConversionsBinding.<init>(DataBindingComponent,View)=0 
+  TIME:0.157744 s TIMEOUT:N SYMOPS:151 CALLS:3,14
+  ERRORS: 
+  --------------------------- 1 of 2 [nvisited:] ---------------------------
+  PRE:
+  val$3 != 0 ;  val$3 != "layout/activity_conversions_0" ;
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  
+  ----------------------------------------------------------------
+  --------------------------- 2 of 2 [nvisited: 177 178 181] ---------------------------
+  PRE:
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  POST 1 of 1:
+  view = val$1: ; 
+  return = val$3: ; 
+  bindingComponent = val$2: ;
+  view|->{}: ; 
+  return|->{android.databinding.ViewDataBinding.mBindingComponent:0, android.databinding.ViewDataBinding.mChoreographer:0, android.databinding.ViewDataBinding.mFrameCallback:0, android.databinding.ViewDataBinding.mIsExecutingPendingBindings:0, android.databinding.ViewDataBinding.mLocalFieldObservers:0, android.databinding.ViewDataBinding.mPendingRebind:0, android.databinding.ViewDataBinding.mRebindCallbacks:0, android.databinding.ViewDataBinding.mRebindHalted:0, android.databinding.ViewDataBinding.mRebindRunnable:0, android.databinding.ViewDataBinding.mRoot:0, android.databinding.ViewDataBinding.mUIThreadHandler:0, com.liangfeizc.databinding.databinding.ActivityConversionsBinding.mDirtyFlags:0, com.liangfeizc.databinding.databinding.ActivityConversionsBinding.mHeight:0.000000, com.liangfeizc.databinding.databinding.ActivityConversionsBinding.mIsError:0, com.liangfeizc.databinding.databinding.ActivityConversionsBinding.mboundView0:0, com.liangfeizc.databinding.databinding.ActivityConversionsBinding.mboundView1:0, com.liangfeizc.databinding.databinding.ActivityConversionsBinding.mboundView2:0}:
+  ----------------------------------------------------------------
+  
+Adding summary for ContractBinding ContractBinding.bind(View,DataBindingComponent)
+  class com.liangfeizc.databinding.ContractBinding *ContractBinding ContractBinding.bind(View,DataBindingComponent)(class android.view.View *view, class android.databinding.DataBindingComponent *bindingComponent)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: ContractBinding.<init>(DataBindingComponent,View)=0 
+  TIME:0.164833 s TIMEOUT:N SYMOPS:151 CALLS:3,14
+  ERRORS: 
+  --------------------------- 1 of 2 [nvisited:] ---------------------------
+  PRE:
+  val$3 != 0 ;  val$3 != "layout/activity_custom_binding_0" ;
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  
+  ----------------------------------------------------------------
+  --------------------------- 2 of 2 [nvisited: 129 132] ---------------------------
+  PRE:
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  POST 1 of 1:
+  view = val$1: ; 
+  return = val$3: ; 
+  bindingComponent = val$2: ;
+  view|->{}: ; 
+  return|->{android.databinding.ViewDataBinding.mBindingComponent:0, android.databinding.ViewDataBinding.mChoreographer:0, android.databinding.ViewDataBinding.mFrameCallback:0, android.databinding.ViewDataBinding.mIsExecutingPendingBindings:0, android.databinding.ViewDataBinding.mLocalFieldObservers:0, android.databinding.ViewDataBinding.mPendingRebind:0, android.databinding.ViewDataBinding.mRebindCallbacks:0, android.databinding.ViewDataBinding.mRebindHalted:0, android.databinding.ViewDataBinding.mRebindRunnable:0, android.databinding.ViewDataBinding.mRoot:0, android.databinding.ViewDataBinding.mUIThreadHandler:0, com.liangfeizc.databinding.ContractBinding.mContact:0, com.liangfeizc.databinding.ContractBinding.mDirtyFlags:0, com.liangfeizc.databinding.ContractBinding.mboundView0:0, com.liangfeizc.databinding.ContractBinding.mboundView1:0, com.liangfeizc.databinding.ContractBinding.mboundView2:0}:
+  ----------------------------------------------------------------
+  
+Adding summary for ActivityDynamicBinding ActivityDynamicBinding.bind(View,DataBindingComponent)
+  class com.liangfeizc.databinding.databinding.ActivityDynamicBinding *ActivityDynamicBinding ActivityDynamicBinding.bind(View,DataBindingComponent)(class android.view.View *view, class android.databinding.DataBindingComponent *bindingComponent)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: ActivityDynamicBinding.<init>(DataBindingComponent,View)=0 
+  TIME:0.161286 s TIMEOUT:N SYMOPS:151 CALLS:3,14
+  ERRORS: 
+  --------------------------- 1 of 2 [nvisited:] ---------------------------
+  PRE:
+  val$3 != 0 ;  val$3 != "layout/activity_dynamic_0" ;
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  
+  ----------------------------------------------------------------
+  --------------------------- 2 of 2 [nvisited: 90 91 94] ---------------------------
+  PRE:
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  POST 1 of 1:
+  view = val$1: ; 
+  return = val$3: ; 
+  bindingComponent = val$2: ;
+  view|->{}: ; 
+  return|->{android.databinding.ViewDataBinding.mBindingComponent:0, android.databinding.ViewDataBinding.mChoreographer:0, android.databinding.ViewDataBinding.mFrameCallback:0, android.databinding.ViewDataBinding.mIsExecutingPendingBindings:0, android.databinding.ViewDataBinding.mLocalFieldObservers:0, android.databinding.ViewDataBinding.mPendingRebind:0, android.databinding.ViewDataBinding.mRebindCallbacks:0, android.databinding.ViewDataBinding.mRebindHalted:0, android.databinding.ViewDataBinding.mRebindRunnable:0, android.databinding.ViewDataBinding.mRoot:0, android.databinding.ViewDataBinding.mUIThreadHandler:0, com.liangfeizc.databinding.databinding.ActivityDynamicBinding.mDirtyFlags:0, com.liangfeizc.databinding.databinding.ActivityDynamicBinding.mboundView0:0, com.liangfeizc.databinding.databinding.ActivityDynamicBinding.recyclerView:0}:
+  ----------------------------------------------------------------
+  
+Adding summary for ActivityIncludeBinding ActivityIncludeBinding.bind(View,DataBindingComponent)
+  class com.liangfeizc.databinding.databinding.ActivityIncludeBinding *ActivityIncludeBinding ActivityIncludeBinding.bind(View,DataBindingComponent)(class android.view.View *view, class android.databinding.DataBindingComponent *bindingComponent)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: ActivityIncludeBinding.<init>(DataBindingComponent,View)=0 
+  TIME:0.137716 s TIMEOUT:N SYMOPS:151 CALLS:3,16
+  ERRORS: 
+  --------------------------- 1 of 2 [nvisited:] ---------------------------
+  PRE:
+  val$3 != 0 ;  val$3 != "layout/activity_include_0" ;
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  
+  ----------------------------------------------------------------
+  --------------------------- 2 of 2 [nvisited: 153 154 157] ---------------------------
+  PRE:
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  POST 1 of 1:
+  view = val$1: ; 
+  return = val$3: ; 
+  bindingComponent = val$2: ;
+  view|->{}: ; 
+  return|->{android.databinding.ViewDataBinding.mBindingComponent:0, android.databinding.ViewDataBinding.mChoreographer:0, android.databinding.ViewDataBinding.mFrameCallback:0, android.databinding.ViewDataBinding.mIsExecutingPendingBindings:0, android.databinding.ViewDataBinding.mLocalFieldObservers:0, android.databinding.ViewDataBinding.mPendingRebind:0, android.databinding.ViewDataBinding.mRebindCallbacks:0, android.databinding.ViewDataBinding.mRebindHalted:0, android.databinding.ViewDataBinding.mRebindRunnable:0, android.databinding.ViewDataBinding.mRoot:0, android.databinding.ViewDataBinding.mUIThreadHandler:0, com.liangfeizc.databinding.databinding.ActivityIncludeBinding.mContact:0, com.liangfeizc.databinding.databinding.ActivityIncludeBinding.mDirtyFlags:0, com.liangfeizc.databinding.databinding.ActivityIncludeBinding.mUser:0, com.liangfeizc.databinding.databinding.ActivityIncludeBinding.mboundView0:0, com.liangfeizc.databinding.databinding.ActivityIncludeBinding.mboundView01:0, com.liangfeizc.databinding.databinding.ActivityIncludeBinding.mboundView02:0}:
+  ----------------------------------------------------------------
+  
+Adding summary for ActivityMainBinding ActivityMainBinding.bind(View,DataBindingComponent)
+  class com.liangfeizc.databinding.databinding.ActivityMainBinding *ActivityMainBinding ActivityMainBinding.bind(View,DataBindingComponent)(class android.view.View *view, class android.databinding.DataBindingComponent *bindingComponent)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: ActivityMainBinding.<init>(DataBindingComponent,View)=0 
+  TIME:0.172249 s TIMEOUT:N SYMOPS:140 CALLS:3,14
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited:] ---------------------------
+  PRE:
+  val$3 != 0 ;  val$3 != "layout/activity_main_0" ;
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  
+  ----------------------------------------------------------------
+  
+Adding summary for ActivityObservableBinding ActivityObservableBinding.bind(View,DataBindingComponent)
+  class com.liangfeizc.databinding.databinding.ActivityObservableBinding *ActivityObservableBinding ActivityObservableBinding.bind(View,DataBindingComponent)(class android.view.View *view, class android.databinding.DataBindingComponent *bindingComponent)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: ActivityObservableBinding.<init>(DataBindingComponent,View)=0 
+  TIME:0.170827 s TIMEOUT:N SYMOPS:151 CALLS:3,14
+  ERRORS: 
+  --------------------------- 1 of 2 [nvisited:] ---------------------------
+  PRE:
+  val$3 != 0 ;  val$3 != "layout/activity_observable_0" ;
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  
+  ----------------------------------------------------------------
+  --------------------------- 2 of 2 [nvisited: 315 316 319] ---------------------------
+  PRE:
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  POST 1 of 1:
+  view = val$1: ; 
+  return = val$3: ; 
+  bindingComponent = val$2: ;
+  view|->{}: ; 
+  return|->{android.databinding.ViewDataBinding.mBindingComponent:0, android.databinding.ViewDataBinding.mChoreographer:0, android.databinding.ViewDataBinding.mFrameCallback:0, android.databinding.ViewDataBinding.mIsExecutingPendingBindings:0, android.databinding.ViewDataBinding.mLocalFieldObservers:0, android.databinding.ViewDataBinding.mPendingRebind:0, android.databinding.ViewDataBinding.mRebindCallbacks:0, android.databinding.ViewDataBinding.mRebindHalted:0, android.databinding.ViewDataBinding.mRebindRunnable:0, android.databinding.ViewDataBinding.mRoot:0, android.databinding.ViewDataBinding.mUIThreadHandler:0, com.liangfeizc.databinding.databinding.ActivityObservableBinding.mDirtyFlags:0, com.liangfeizc.databinding.databinding.ActivityObservableBinding.mMapUser:0, com.liangfeizc.databinding.databinding.ActivityObservableBinding.mPlainUser:0, com.liangfeizc.databinding.databinding.ActivityObservableBinding.mUser:0, com.liangfeizc.databinding.databinding.ActivityObservableBinding.mboundView0:0, com.liangfeizc.databinding.databinding.ActivityObservableBinding.mboundView1:0, com.liangfeizc.databinding.databinding.ActivityObservableBinding.mboundView2:0, com.liangfeizc.databinding.databinding.ActivityObservableBinding.mboundView3:0}:
+  ----------------------------------------------------------------
+  
+Adding summary for ResourceBinding ResourceBinding.bind(View,DataBindingComponent)
+  class com.liangfeizc.databinding.databinding.ResourceBinding *ResourceBinding ResourceBinding.bind(View,DataBindingComponent)(class android.view.View *view, class android.databinding.DataBindingComponent *bindingComponent)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: ResourceBinding.<init>(DataBindingComponent,View)=0 
+  TIME:0.178241 s TIMEOUT:N SYMOPS:151 CALLS:3,14
+  ERRORS: 
+  --------------------------- 1 of 2 [nvisited:] ---------------------------
+  PRE:
+  val$3 != 0 ;  val$3 != "layout/activity_resource_0" ;
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  
+  ----------------------------------------------------------------
+  --------------------------- 2 of 2 [nvisited: 234 235 238] ---------------------------
+  PRE:
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  POST 1 of 1:
+  view = val$1: ; 
+  return = val$3: ; 
+  bindingComponent = val$2: ;
+  view|->{}: ; 
+  return|->{android.databinding.ViewDataBinding.mBindingComponent:0, android.databinding.ViewDataBinding.mChoreographer:0, android.databinding.ViewDataBinding.mFrameCallback:0, android.databinding.ViewDataBinding.mIsExecutingPendingBindings:0, android.databinding.ViewDataBinding.mLocalFieldObservers:0, android.databinding.ViewDataBinding.mPendingRebind:0, android.databinding.ViewDataBinding.mRebindCallbacks:0, android.databinding.ViewDataBinding.mRebindHalted:0, android.databinding.ViewDataBinding.mRebindRunnable:0, android.databinding.ViewDataBinding.mRoot:0, android.databinding.ViewDataBinding.mUIThreadHandler:0, com.liangfeizc.databinding.databinding.ResourceBinding.mBananaCount:0, com.liangfeizc.databinding.databinding.ResourceBinding.mDirtyFlags:0, com.liangfeizc.databinding.databinding.ResourceBinding.mFirstName:0, com.liangfeizc.databinding.databinding.ResourceBinding.mLarge:0, com.liangfeizc.databinding.databinding.ResourceBinding.mLastName:0, com.liangfeizc.databinding.databinding.ResourceBinding.mOrangeCount:0, com.liangfeizc.databinding.databinding.ResourceBinding.mboundView0:0, com.liangfeizc.databinding.databinding.ResourceBinding.mboundView1:0, com.liangfeizc.databinding.databinding.ResourceBinding.mboundView2:0, com.liangfeizc.databinding.databinding.ResourceBinding.mboundView3:0, com.liangfeizc.databinding.databinding.ResourceBinding.mboundView4:0}:
+  ----------------------------------------------------------------
+  
+Adding summary for ActivityViewStubBinding ActivityViewStubBinding.bind(View,DataBindingComponent)
+  class com.liangfeizc.databinding.databinding.ActivityViewStubBinding *ActivityViewStubBinding ActivityViewStubBinding.bind(View,DataBindingComponent)(class android.view.View *view, class android.databinding.DataBindingComponent *bindingComponent)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: ActivityViewStubBinding.<init>(DataBindingComponent,View)=0 
+  TIME:0.173155 s TIMEOUT:N SYMOPS:151 CALLS:3,16
+  ERRORS: 
+  --------------------------- 1 of 2 [nvisited:] ---------------------------
+  PRE:
+  val$3 != 0 ;  val$3 != "layout/activity_view_stub_0" ;
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  
+  ----------------------------------------------------------------
+  --------------------------- 2 of 2 [nvisited: 94 95 98] ---------------------------
+  PRE:
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  POST 1 of 1:
+  view = val$1: ; 
+  return = val$3: ; 
+  bindingComponent = val$2: ;
+  view|->{}: ; 
+  return|->{android.databinding.ViewDataBinding.mBindingComponent:0, android.databinding.ViewDataBinding.mChoreographer:0, android.databinding.ViewDataBinding.mFrameCallback:0, android.databinding.ViewDataBinding.mIsExecutingPendingBindings:0, android.databinding.ViewDataBinding.mLocalFieldObservers:0, android.databinding.ViewDataBinding.mPendingRebind:0, android.databinding.ViewDataBinding.mRebindCallbacks:0, android.databinding.ViewDataBinding.mRebindHalted:0, android.databinding.ViewDataBinding.mRebindRunnable:0, android.databinding.ViewDataBinding.mRoot:0, android.databinding.ViewDataBinding.mUIThreadHandler:0, com.liangfeizc.databinding.databinding.ActivityViewStubBinding.mDirtyFlags:0, com.liangfeizc.databinding.databinding.ActivityViewStubBinding.mboundView0:0, com.liangfeizc.databinding.databinding.ActivityViewStubBinding.viewStub:0}:
+  ----------------------------------------------------------------
+  
+Adding summary for ActivityViewWithIdsBinding ActivityViewWithIdsBinding.bind(View,DataBindingComponent)
+  class com.liangfeizc.databinding.databinding.ActivityViewWithIdsBinding *ActivityViewWithIdsBinding ActivityViewWithIdsBinding.bind(View,DataBindingComponent)(class android.view.View *view, class android.databinding.DataBindingComponent *bindingComponent)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: ActivityViewWithIdsBinding.<init>(DataBindingComponent,View)=0 
+  TIME:0.167530 s TIMEOUT:N SYMOPS:151 CALLS:3,14
+  ERRORS: 
+  --------------------------- 1 of 2 [nvisited:] ---------------------------
+  PRE:
+  val$3 != 0 ;  val$3 != "layout/activity_view_with_ids_0" ;
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  
+  ----------------------------------------------------------------
+  --------------------------- 2 of 2 [nvisited: 93 94 97] ---------------------------
+  PRE:
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  POST 1 of 1:
+  view = val$1: ; 
+  return = val$3: ; 
+  bindingComponent = val$2: ;
+  view|->{}: ; 
+  return|->{android.databinding.ViewDataBinding.mBindingComponent:0, android.databinding.ViewDataBinding.mChoreographer:0, android.databinding.ViewDataBinding.mFrameCallback:0, android.databinding.ViewDataBinding.mIsExecutingPendingBindings:0, android.databinding.ViewDataBinding.mLocalFieldObservers:0, android.databinding.ViewDataBinding.mPendingRebind:0, android.databinding.ViewDataBinding.mRebindCallbacks:0, android.databinding.ViewDataBinding.mRebindHalted:0, android.databinding.ViewDataBinding.mRebindRunnable:0, android.databinding.ViewDataBinding.mRoot:0, android.databinding.ViewDataBinding.mUIThreadHandler:0, com.liangfeizc.databinding.databinding.ActivityViewWithIdsBinding.firstName:0, com.liangfeizc.databinding.databinding.ActivityViewWithIdsBinding.lastName:0, com.liangfeizc.databinding.databinding.ActivityViewWithIdsBinding.mDirtyFlags:0, com.liangfeizc.databinding.databinding.ActivityViewWithIdsBinding.mboundView0:0}:
+  ----------------------------------------------------------------
+  
+Adding summary for ContactBinding ContactBinding.bind(View,DataBindingComponent)
+  class com.liangfeizc.databinding.databinding.ContactBinding *ContactBinding ContactBinding.bind(View,DataBindingComponent)(class android.view.View *view, class android.databinding.DataBindingComponent *bindingComponent)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: ContactBinding.<init>(DataBindingComponent,View)=0 
+  TIME:0.164135 s TIMEOUT:N SYMOPS:151 CALLS:3,14
+  ERRORS: 
+  --------------------------- 1 of 2 [nvisited:] ---------------------------
+  PRE:
+  val$3 != 0 ;  val$3 != "layout/contact_0" ;
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  
+  ----------------------------------------------------------------
+  --------------------------- 2 of 2 [nvisited: 121 122 125] ---------------------------
+  PRE:
+  view = val$1: ; 
+  bindingComponent = val$2: ;
+  view|->{}:
+  POST 1 of 1:
+  view = val$1: ; 
+  return = val$3: ; 
+  bindingComponent = val$2: ;
+  view|->{}: ; 
+  return|->{android.databinding.ViewDataBinding.mBindingComponent:0, android.databinding.ViewDataBinding.mChoreographer:0, android.databinding.ViewDataBinding.mFrameCallback:0, android.databinding.ViewDataBinding.mIsExecutingPendingBindings:0, android.databinding.ViewDataBinding.mLocalFieldObservers:0, android.databinding.ViewDataBinding.mPendingRebind:0, android.databinding.ViewDataBinding.mRebindCallbacks:0, android.databinding.ViewDataBinding.mRebindHalted:0, android.databinding.ViewDataBinding.mRebindRunnable:0, android.databinding.ViewDataBinding.mRoot:0, android.databinding.ViewDataBinding.mUIThreadHandler:0, com.liangfeizc.databinding.databinding.ContactBinding.mContact:0, com.liangfeizc.databinding.databinding.ContactBinding.mDirtyFlags:0, com.liangfeizc.databinding.databinding.ContactBinding.mboundView0:0, com.liangfeizc.databinding.databinding.ContactBinding.mboundView1:0}:
+  ----------------------------------------------------------------
+  
+#### [FUNCTION ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,View,int)] ... OK #####
+#### Finished: Footprint Computation for ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,View,int) (98 nodes containing 62 states) ####
+#### [FUNCTION ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,View,int)] Footprint Analysis result ####
+
+Adding summary for ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,View,int)
+  class android.databinding.ViewDataBinding *ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,View,int)(class android.databinding.DataBinderMapper *this, class android.databinding.DataBindingComponent *bindingComponent, class android.view.View *view, int layoutId)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: FOOTRPRINT
+  Dependency_map: 
+  TIME:0.317101 s TIMEOUT:Y SYMOPS:334 CALLS:0,17
+  ERRORS: 
+  
+Transition ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,View,int) from footprint to re-exe
+Adding summary for ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,View,int)
+  class android.databinding.ViewDataBinding *ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,View,int)(class android.databinding.DataBinderMapper *this, class android.databinding.DataBindingComponent *bindingComponent, class android.view.View *view, int layoutId)
+  Timestamp: 0
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.317101 s TIMEOUT:Y SYMOPS:334 CALLS:0,17
+  ERRORS: 
+  
+
+#### Start: Re-Execution for ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,View,int) ####
+#### [FUNCTION ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,View,int)] ... OK #####
+#### Finished: Re-Execution for ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,View,int) ####
+
+
+================================================
+ *** CANDIDATE PRECONDITIONS FOR ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,View,int): 
+================================================
+
+ 
+
+
+
+================================================
+ *** VALID PRECONDITIONS FOR ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,View,int): 
+================================================
+
+ 
+
+Adding summary for ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,View,int)
+  class android.databinding.ViewDataBinding *ViewDataBinding DataBinderMapper.getDataBinder(DataBindingComponent,View,int)(class android.databinding.DataBinderMapper *this, class android.databinding.DataBindingComponent *bindingComponent, class android.view.View *view, int layoutId)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.317146 s TIMEOUT:Y SYMOPS:334 CALLS:0,17
+  ERRORS: 
+  
+
+#### Start: Footprint Computation for String DataBinderMapper.convertBrIdToString(int) ####
+#### [FUNCTION String DataBinderMapper.convertBrIdToString(int)] ... OK #####
+#### Finished: Footprint Computation for String DataBinderMapper.convertBrIdToString(int) (9 nodes containing 11 states) ####
+#### [FUNCTION String DataBinderMapper.convertBrIdToString(int)] Footprint Analysis result ####
+PROP 1:[path: linear paths: -1. max length: -1 has repetitions: 1 of node 40
+n40(s1).n251(s2).n254(s3).n41]
+(old_id <= -1) ;
+old_this = @f$0: ; 
+return = null: ; 
+old_id = @f$1:
+[footprint
+   (old_id <= -1) *
+   this = @f$0: ; 
+   id = @f$1:  ]
+PROP 2:[path: linear paths: -1. max length: -1 has repetitions: 1 of node 40
+n40(s1).n250(s4).n252(s7).n254(s8).n41]
+(-1 < old_id) ;  ((_t$0 - old_id) <= 0) ;
+old_this = @f$0: ; 
+return = null: ; 
+old_id = @f$1: ; 
+#GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:@f$2}: ;
+@f$2|->[_t$0|]:
+[footprint
+   (-1 < old_id) *
+   this = @f$0: ; 
+   id = @f$1: ; 
+   #GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:@f$2}: ;
+   @f$2|->[@f$3|]:  ]
+PROP 3:[path: linear paths: -1. max length: -1 has repetitions: 1 of node 40
+n40(s1).n250(s4).n253(s5).n255(s6).n41]
+(-1 < old_id) ;  ((old_id - _t$0) <= -1) ;
+old_this = @f$0: ; 
+return = @f$1: ; 
+old_id = @f$2: ; 
+#GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:@f$3}: ;
+@f$3|->[_t$0|]:
+[footprint
+   (-1 < old_id) *
+   this = @f$0: ; 
+   id = @f$2: ; 
+   #GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:@f$3}: ;
+   @f$3|->[@f$4|]:  ]
+
+Specs changed: added new pre
+(-1 < id) ;
+this = val$1: ; 
+id = val$2: ; 
+#GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$3}: ;
+val$3|->[val$4|]:
+Specs changed: added new post
+PROP 1 of 2:
+(-1 < val$2) ;  ((val$5 - val$2) <= 0) ;
+return = null: ; 
+#GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$3}: ;
+val$3|->[val$5|]:
+PROP 2 of 2:
+(-1 < val$2) ;  ((val$2 - val$6) <= -1) ;
+return = val$5: ; 
+#GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$3}: ;
+val$3|->[val$6|]:
+Specs changed: added new pre
+(id <= -1) ;
+this = val$1: ; 
+id = val$2:
+Adding summary for String DataBinderMapper.convertBrIdToString(int)
+  class java.lang.String *String DataBinderMapper.convertBrIdToString(int)(class android.databinding.DataBinderMapper *this, int id)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: FOOTRPRINT
+  Dependency_map: 
+  TIME:0.003363 s TIMEOUT:N SYMOPS:44 CALLS:0,0
+  ERRORS: 
+  --------------------------- 1 of 2 [nvisited: 131 132 133 135] ---------------------------
+  PRE:
+  (-1 < id) ;
+  this = val$1: ; 
+  id = val$2: ; 
+  #GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$3}: ;
+  val$3|->[val$4|]:
+  POST 1 of 2:
+  (-1 < id) ;  ((id - val$6) <= -1) ;
+  this = val$1: ; 
+  return = val$5: ; 
+  id = val$2: ; 
+  #GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$3}: ;
+  val$3|->[val$6|]:
+  POST 2 of 2:
+  (-1 < id) ;  ((val$5 - id) <= 0) ;
+  this = val$1: ; 
+  return = null: ; 
+  id = val$2: ; 
+  #GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$3}: ;
+  val$3|->[val$5|]:
+  ----------------------------------------------------------------
+  --------------------------- 2 of 2 [nvisited: 131 132 133 135] ---------------------------
+  PRE:
+  (id <= -1) ;
+  this = val$1: ; 
+  id = val$2:
+  POST 1 of 1:
+  (id <= -1) ;
+  this = val$1: ; 
+  return = null: ; 
+  id = val$2:
+  ----------------------------------------------------------------
+  
+Transition String DataBinderMapper.convertBrIdToString(int) from footprint to re-exe
+Adding summary for String DataBinderMapper.convertBrIdToString(int)
+  class java.lang.String *String DataBinderMapper.convertBrIdToString(int)(class android.databinding.DataBinderMapper *this, int id)
+  Timestamp: 0
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.003363 s TIMEOUT:N SYMOPS:44 CALLS:0,0
+  ERRORS: 
+  --------------------------- 1 of 2 [nvisited:] ---------------------------
+  PRE:
+  (id <= -1) ;
+  this = val$1: ; 
+  id = val$2:
+  
+  ----------------------------------------------------------------
+  --------------------------- 2 of 2 [nvisited:] ---------------------------
+  PRE:
+  (-1 < id) ;
+  this = val$1: ; 
+  id = val$2: ; 
+  #GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$3}: ;
+  val$3|->[val$4|]:
+  
+  ----------------------------------------------------------------
+  
+
+#### Start: Re-Execution for String DataBinderMapper.convertBrIdToString(int) ####
+Finished re-execution for precondition 1 (9 nodes containing 5 states) (pass)
+Finished re-execution for precondition 2 (9 nodes containing 10 states) (pass)
+#### [FUNCTION String DataBinderMapper.convertBrIdToString(int)] ... OK #####
+#### Finished: Re-Execution for String DataBinderMapper.convertBrIdToString(int) ####
+
+
+================================================
+ *** CANDIDATE PRECONDITIONS FOR String DataBinderMapper.convertBrIdToString(int): 
+================================================
+
+PROP 1:
+(id <= -1) ;
+this = val$1: ; 
+id = val$2:
+PROP 2:
+(-1 < id) ;
+this = val$1: ; 
+id = val$2: ; 
+#GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$3}: ;
+val$3|->[val$4|]: 
+
+
+
+================================================
+ *** VALID PRECONDITIONS FOR String DataBinderMapper.convertBrIdToString(int): 
+================================================
+
+PROP 1:
+(id <= -1) ;
+this = val$1: ; 
+id = val$2:
+PROP 2:
+(-1 < id) ;
+this = val$1: ; 
+id = val$2: ; 
+#GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$3}: ;
+val$3|->[val$4|]: 
+
+Specs changed: added new post
+PROP 1 of 1:
+(val$2 <= -1) ;
+return = null:
+Specs changed: added new post
+PROP 1 of 2:
+(-1 < val$2) ;  ((val$4 - val$2) <= 0) ;
+return = null: ; 
+#GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$3}: ;
+val$3|->[val$4|]:
+PROP 2 of 2:
+(-1 < val$2) ;  ((val$2 - val$4) <= -1) ;
+return = val$5: ; 
+#GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$3}: ;
+val$3|->[val$4|val$2:return]:
+Adding summary for String DataBinderMapper.convertBrIdToString(int)
+  class java.lang.String *String DataBinderMapper.convertBrIdToString(int)(class android.databinding.DataBinderMapper *this, int id)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.007479 s TIMEOUT:N SYMOPS:102 CALLS:0,0
+  ERRORS: 
+  --------------------------- 1 of 2 [nvisited: 131 132 133 135] ---------------------------
+  PRE:
+  (-1 < id) ;
+  this = val$1: ; 
+  id = val$2: ; 
+  #GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$3}: ;
+  val$3|->[val$4|]:
+  POST 1 of 2:
+  (-1 < id) ;  ((id - val$4) <= -1) ;
+  this = val$1: ; 
+  return = val$5: ; 
+  id = val$2: ; 
+  #GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$3}: ;
+  val$3|->[val$4|id:return]:
+  POST 2 of 2:
+  (-1 < id) ;  ((val$4 - id) <= 0) ;
+  this = val$1: ; 
+  return = null: ; 
+  id = val$2: ; 
+  #GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$3}: ;
+  val$3|->[val$4|]:
+  ----------------------------------------------------------------
+  --------------------------- 2 of 2 [nvisited: 131 132 133 135] ---------------------------
+  PRE:
+  (id <= -1) ;
+  this = val$1: ; 
+  id = val$2:
+  POST 1 of 1:
+  (id <= -1) ;
+  this = val$1: ; 
+  return = null: ; 
+  id = val$2:
+  ----------------------------------------------------------------
+  
+
+#### Start: Footprint Computation for void DataBinderMapper$InnerBrLookup.<clinit>() ####
+#### [FUNCTION void DataBinderMapper$InnerBrLookup.<clinit>()] ... OK #####
+#### Finished: Footprint Computation for void DataBinderMapper$InnerBrLookup.<clinit>() (25 nodes containing 24 states) ####
+#### [FUNCTION void DataBinderMapper$InnerBrLookup.<clinit>()] Footprint Analysis result ####
+PROP 1:[path: linear paths: -1. max length: -1 has repetitions: 1 of node 1
+n1(s1).n7(s2).n8(s3).n9(s4).n10(s5).n11(s6).n12(s7).n13(s8).n14(s9).n15(s10).n16(s11).n17(s12).n18(s13).n19(s14).n20(s15).n21(s16).n22(s17).n23(s18).n24(s19).n25(s20).n26(s21).n27(s22).n28(s23).n2]
+MEMna<new[]:138>(_t$1) ;
+return = _t$0: ; 
+old_field = @f$0: ; 
+#GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:_t$1}: ;
+_t$1|->[19|]:
+[footprint
+   field = @f$0: ; 
+   #GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:@f$1}:  ]
+
+Specs changed: added new pre
+field = val$1: ; 
+#GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$2}:
+Adding summary for void DataBinderMapper$InnerBrLookup.<clinit>()
+  class java.lang.Object *void DataBinderMapper$InnerBrLookup.<clinit>()(class java.lang.String *field)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: FOOTRPRINT
+  Dependency_map: 
+  TIME:0.004364 s TIMEOUT:N SYMOPS:70 CALLS:0,0
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited: 138] ---------------------------
+  PRE:
+  field = val$1: ; 
+  #GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$2}:
+  POST 1 of 1:
+  MEMna<new[]:138>(val$4) ;
+  return = val$3: ; 
+  field = val$1: ; 
+  #GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$4}: ;
+  val$4|->[19|]:
+  ----------------------------------------------------------------
+  
+Transition void DataBinderMapper$InnerBrLookup.<clinit>() from footprint to re-exe
+Adding summary for void DataBinderMapper$InnerBrLookup.<clinit>()
+  class java.lang.Object *void DataBinderMapper$InnerBrLookup.<clinit>()(class java.lang.String *field)
+  Timestamp: 0
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.004364 s TIMEOUT:N SYMOPS:70 CALLS:0,0
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited:] ---------------------------
+  PRE:
+  field = val$1: ; 
+  #GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$2}:
+  
+  ----------------------------------------------------------------
+  
+
+#### Start: Re-Execution for void DataBinderMapper$InnerBrLookup.<clinit>() ####
+Finished re-execution for precondition 1 (25 nodes containing 24 states) (pass)
+#### [FUNCTION void DataBinderMapper$InnerBrLookup.<clinit>()] ... OK #####
+#### Finished: Re-Execution for void DataBinderMapper$InnerBrLookup.<clinit>() ####
+
+
+================================================
+ *** CANDIDATE PRECONDITIONS FOR void DataBinderMapper$InnerBrLookup.<clinit>(): 
+================================================
+
+PROP 1:
+field = val$1: ; 
+#GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$2}: 
+
+
+
+================================================
+ *** VALID PRECONDITIONS FOR void DataBinderMapper$InnerBrLookup.<clinit>(): 
+================================================
+
+PROP 1:
+field = val$1: ; 
+#GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$2}: 
+
+Specs changed: added new post
+PROP 1 of 1:
+MEMna<new[]:138>(val$4) ;
+return = val$3: ; 
+#GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$4}: ;
+val$4|->[19|]:
+Adding summary for void DataBinderMapper$InnerBrLookup.<clinit>()
+  class java.lang.Object *void DataBinderMapper$InnerBrLookup.<clinit>()(class java.lang.String *field)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.010061 s TIMEOUT:N SYMOPS:140 CALLS:0,0
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited: 138] ---------------------------
+  PRE:
+  field = val$1: ; 
+  #GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$2}:
+  POST 1 of 1:
+  MEMna<new[]:138>(val$4) ;
+  return = val$3: ; 
+  field = val$1: ; 
+  #GB$android.databinding.DataBinderMapper$InnerBrLookup = {android.databinding.DataBinderMapper$InnerBrLookup.sKeys:val$4}: ;
+  val$4|->[19|]:
+  ----------------------------------------------------------------
+  
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
++ FILE: /Users/rufi/github/liangfei/AndroidDataBinding/app/build/intermediates/classes/debug/android/databinding/DataBinderMapper.java  LOC: 159  VISITED: 47/52 SYMOPS: 1017
++  num_procs: 7 (5 ok, 2 timeouts, 0 errors, 0 warnings, 4 infos)
++  detail procs:
++    - No Errors and No Specs: 2
++    - Some Errors and No Specs: 0
++    - No Errors and Some Specs: 5
++    - Some Errors and Some Specs: 0
++  errors: 
++  warnings: 
++  infos:  SKIP_FUNCTION:4
++  specs: 7
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Detailed errors during footprint phase:
+
+Detailed errors during re-execution phase:
+
+Detailed warnings during footprint phase:
+
+Detailed warnings during re-execution phase:
+Interprocedural footprint analysis terminated in 0.419114 sec

@@ -1,0 +1,8 @@
+n$53=_fun___new(sizeof():) [line 1]
+*&Bundle:=n$53 [line 2]
+n$54=*&Bundle: [line 3]
+n$55=_fun___new(sizeof():) [line 4]
+_fun_BaseActivity.<init>()(n$55:) [line 5]
+*&BaseActivity:=n$55 [line 6]
+n$56=*&BaseActivity: [line 7]
+_fun_void BaseActivity.onCreate(Bundle)(n$56:,n$54:) virtual [line 8]

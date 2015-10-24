@@ -1,0 +1,26 @@
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
++ FILE: /Users/rufi/github/liangfei/AndroidDataBinding/app/src/main/java/com/liangfeizc/databinding/sample/collections/CollectionActivity.java  LOC: 47  VISITED: 32/34 SYMOPS: 618
++  num_procs: 2 (2 ok, 0 timeouts, 0 errors, 2 warnings, 5 infos)
++  detail procs:
++    - No Errors and No Specs: 0
++    - Some Errors and No Specs: 0
++    - No Errors and Some Specs: 2
++    - Some Errors and Some Specs: 0
++  errors: 
++  warnings:  RETURN_VALUE_IGNORED:2
++  infos:  SKIP_FUNCTION:5
++  specs: 2
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Detailed errors during footprint phase:
+
+Detailed errors during re-execution phase:
+
+Detailed warnings during footprint phase:
+/Users/rufi/github/liangfei/AndroidDataBinding/app/src/main/java/com/liangfeizc/databinding/sample/collections/CollectionActivity.java:38: WARNING: RETURN_VALUE_IGNORED after call to put(...) at line 38
+/Users/rufi/github/liangfei/AndroidDataBinding/app/src/main/java/com/liangfeizc/databinding/sample/collections/CollectionActivity.java:39: WARNING: RETURN_VALUE_IGNORED after call to put(...) at line 39
+
+Detailed warnings during re-execution phase:
+/Users/rufi/github/liangfei/AndroidDataBinding/app/src/main/java/com/liangfeizc/databinding/sample/collections/CollectionActivity.java:38: WARNING: RETURN_VALUE_IGNORED after call to put(...) at line 38
+/Users/rufi/github/liangfei/AndroidDataBinding/app/src/main/java/com/liangfeizc/databinding/sample/collections/CollectionActivity.java:39: WARNING: RETURN_VALUE_IGNORED after call to put(...) at line 39

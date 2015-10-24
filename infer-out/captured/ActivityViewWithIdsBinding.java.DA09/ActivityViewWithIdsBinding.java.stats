@@ -1,0 +1,24 @@
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
++ FILE: /Users/rufi/github/liangfei/AndroidDataBinding/app/build/intermediates/classes/debug/com/liangfeizc/databinding/databinding/ActivityViewWithIdsBinding.java  LOC: 103  VISITED: 61/106 SYMOPS: 705
++  num_procs: 13 (11 ok, 0 timeouts, 0 errors, 0 warnings, 21 infos)
++  detail procs:
++    - No Errors and No Specs: 2
++    - Some Errors and No Specs: 0
++    - No Errors and Some Specs: 11
++    - Some Errors and Some Specs: 0
++  errors: 
++  warnings: 
++  infos:  SKIP_FUNCTION:21
++  specs: 13
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Detailed errors during footprint phase:
+
+Detailed errors during re-execution phase:
+/Users/rufi/github/liangfei/AndroidDataBinding/app/build/intermediates/classes/debug/com/liangfeizc/databinding/databinding/ActivityViewWithIdsBinding.java:26: ERROR: CLASS_CAST_EXCEPTION class java.lang.Object  cannot be cast to class android.widget.TextView   in expression *bindings[1]  at line 26
+
+Detailed warnings during footprint phase:
+
+Detailed warnings during re-execution phase:
+/Users/rufi/github/liangfei/AndroidDataBinding/app/build/intermediates/classes/debug/com/liangfeizc/databinding/databinding/ActivityViewWithIdsBinding.java:85: WARNING: PRECONDITION_NOT_MET in call to inflate(...) at line 85

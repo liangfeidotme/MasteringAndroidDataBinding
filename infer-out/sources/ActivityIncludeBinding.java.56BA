@@ -1,0 +1,165 @@
+package com.liangfeizc.databinding.databinding;
+import com.liangfeizc.databinding.R;
+import com.liangfeizc.databinding.BR;
+import android.view.View;
+public class ActivityIncludeBinding extends android.databinding.ViewDataBinding {
+    
+    private static final android.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = new android.databinding.ViewDataBinding.IncludedLayouts(3);
+        sIncludes.setIncludes(0, 
+            new String[] {"user", "contact"},
+            new int[] {1, 2},
+            new int[] {R.layout.user, R.layout.contact});
+        sViewsWithIds = null;
+    }
+    // views
+    private final com.liangfeizc.databinding.databinding.UserBinding mboundView0;
+    private final android.widget.LinearLayout mboundView01;
+    private final com.liangfeizc.databinding.databinding.ContactBinding mboundView02;
+    // variables
+    private com.liangfeizc.databinding.model.Contact mContact;
+    private com.liangfeizc.databinding.model.User mUser;
+    // values
+    // listeners
+    
+    public ActivityIncludeBinding(android.databinding.DataBindingComponent bindingComponent, View root) {
+        super(bindingComponent, root, 0);
+        final Object[] bindings = mapBindings(bindingComponent, root, 3, sIncludes, sViewsWithIds);
+        this.mboundView0 = (com.liangfeizc.databinding.databinding.UserBinding) bindings[1];
+        this.mboundView01 = (android.widget.LinearLayout) bindings[0];
+        this.mboundView01.setTag(null);
+        this.mboundView02 = (com.liangfeizc.databinding.databinding.ContactBinding) bindings[2];
+        setRootTag(root);
+        invalidateAll();
+    }
+    
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+            mDirtyFlags = 0b100L;
+        }
+        mboundView0.invalidateAll();
+        mboundView02.invalidateAll();
+        requestRebind();
+    }
+    
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        if (mboundView0.hasPendingBindings()) {
+            return true;
+        }
+        if (mboundView02.hasPendingBindings()) {
+            return true;
+        }
+        return false;
+    }
+    
+    public boolean setVariable(int variableId, Object variable) {
+        switch(variableId) {
+            case BR.contact :
+                setContact((com.liangfeizc.databinding.model.Contact) variable);
+                return true;
+            case BR.user :
+                setUser((com.liangfeizc.databinding.model.User) variable);
+                return true;
+        }
+        return false;
+    }
+    
+    public void setContact(com.liangfeizc.databinding.model.Contact contact) {
+        this.mContact = contact;
+        synchronized(this) {
+            mDirtyFlags |= 0b1L;
+        }
+        super.requestRebind();
+    }
+    public com.liangfeizc.databinding.model.Contact getContact() {
+        return mContact;
+    }
+    public void setUser(com.liangfeizc.databinding.model.User user) {
+        this.mUser = user;
+        synchronized(this) {
+            mDirtyFlags |= 0b10L;
+        }
+        super.requestRebind();
+    }
+    public com.liangfeizc.databinding.model.User getUser() {
+        return mUser;
+    }
+    
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+        }
+        return false;
+    }
+    
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        com.liangfeizc.databinding.model.Contact contact = mContact;
+        com.liangfeizc.databinding.model.User user = mUser;
+    
+        if ((dirtyFlags & 0b101L) != 0) {
+            // read contact~
+            contact = contact;
+        }
+        if ((dirtyFlags & 0b110L) != 0) {
+            // read user~
+            user = user;
+        }
+        // batch finished
+        if ((dirtyFlags & 0b110L) != 0) {
+            // api target 1
+            this.mboundView0.setUser(user);
+        }
+        if ((dirtyFlags & 0b101L) != 0) {
+            // api target 1
+            this.mboundView02.setContact(contact);
+        }
+        mboundView0.executePendingBindings();
+        mboundView02.executePendingBindings();
+    }
+    // Listener Stub Implementations
+    // dirty flag
+    private  long mDirtyFlags = 0b1111111111111111111111111111111111111111111111111111111111111111L;
+    
+    public static ActivityIncludeBinding inflate(android.view.LayoutInflater inflater, android.view.ViewGroup root, boolean attachToRoot) {
+        return inflate(inflater, root, attachToRoot, android.databinding.DataBindingUtil.getDefaultComponent());
+    }
+    public static ActivityIncludeBinding inflate(android.view.LayoutInflater inflater, android.view.ViewGroup root, boolean attachToRoot, android.databinding.DataBindingComponent bindingComponent) {
+        return android.databinding.DataBindingUtil.<ActivityIncludeBinding>inflate(inflater, com.liangfeizc.databinding.R.layout.activity_include, root, attachToRoot, bindingComponent);
+    }
+    public static ActivityIncludeBinding inflate(android.view.LayoutInflater inflater) {
+        return inflate(inflater, android.databinding.DataBindingUtil.getDefaultComponent());
+    }
+    public static ActivityIncludeBinding inflate(android.view.LayoutInflater inflater, android.databinding.DataBindingComponent bindingComponent) {
+        return bind(inflater.inflate(com.liangfeizc.databinding.R.layout.activity_include, null, false), bindingComponent);
+    }
+    public static ActivityIncludeBinding bind(android.view.View view) {
+        return bind(view, android.databinding.DataBindingUtil.getDefaultComponent());
+    }
+    public static ActivityIncludeBinding bind(android.view.View view, android.databinding.DataBindingComponent bindingComponent) {
+        if (!"layout/activity_include_0".equals(view.getTag())) {
+            throw new RuntimeException("view tag isn't correct on view:" + view.getTag());
+        }
+        return new ActivityIncludeBinding(bindingComponent, view);
+    }
+}
+    /* flag mapping
+        flag 0: contact~
+        flag 1: user~
+        flag 2: INVALIDATE ANY
+    flag mapping end*/
+    //end

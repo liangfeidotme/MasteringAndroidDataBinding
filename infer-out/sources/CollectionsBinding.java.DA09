@@ -1,0 +1,261 @@
+package com.liangfeizc.databinding.databinding;
+import com.liangfeizc.databinding.R;
+import com.liangfeizc.databinding.BR;
+import android.view.View;
+public class CollectionsBinding extends android.databinding.ViewDataBinding {
+    
+    private static final android.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = null;
+    }
+    // views
+    private final android.widget.LinearLayout mboundView0;
+    private final android.widget.TextView mboundView1;
+    private final android.widget.TextView mboundView2;
+    private final android.widget.TextView mboundView3;
+    private final android.widget.TextView mboundView4;
+    private final android.widget.TextView mboundView5;
+    private final android.widget.TextView mboundView6;
+    // variables
+    private android.util.SparseArray<java.lang.String> mSparse;
+    private java.lang.String mKey;
+    private java.util.Map<java.lang.String,java.lang.String> mMap;
+    private java.util.List<java.lang.String> mList;
+    private int mIndex;
+    // values
+    // listeners
+    
+    public CollectionsBinding(android.databinding.DataBindingComponent bindingComponent, View root) {
+        super(bindingComponent, root, 0);
+        final Object[] bindings = mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds);
+        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
+        this.mboundView0.setTag(null);
+        this.mboundView1 = (android.widget.TextView) bindings[1];
+        this.mboundView1.setTag(null);
+        this.mboundView2 = (android.widget.TextView) bindings[2];
+        this.mboundView2.setTag(null);
+        this.mboundView3 = (android.widget.TextView) bindings[3];
+        this.mboundView3.setTag(null);
+        this.mboundView4 = (android.widget.TextView) bindings[4];
+        this.mboundView4.setTag(null);
+        this.mboundView5 = (android.widget.TextView) bindings[5];
+        this.mboundView5.setTag(null);
+        this.mboundView6 = (android.widget.TextView) bindings[6];
+        this.mboundView6.setTag(null);
+        setRootTag(root);
+        invalidateAll();
+    }
+    
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+            mDirtyFlags = 0b100000L;
+        }
+        requestRebind();
+    }
+    
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    public boolean setVariable(int variableId, Object variable) {
+        switch(variableId) {
+            case BR.sparse :
+                setSparse((android.util.SparseArray<java.lang.String>) variable);
+                return true;
+            case BR.key :
+                setKey((java.lang.String) variable);
+                return true;
+            case BR.map :
+                setMap((java.util.Map<java.lang.String,java.lang.String>) variable);
+                return true;
+            case BR.list :
+                setList((java.util.List<java.lang.String>) variable);
+                return true;
+            case BR.index :
+                setIndex((int) variable);
+                return true;
+        }
+        return false;
+    }
+    
+    public void setSparse(android.util.SparseArray<java.lang.String> sparse) {
+        this.mSparse = sparse;
+        synchronized(this) {
+            mDirtyFlags |= 0b1L;
+        }
+        super.requestRebind();
+    }
+    public android.util.SparseArray<java.lang.String> getSparse() {
+        return mSparse;
+    }
+    public void setKey(java.lang.String key) {
+        this.mKey = key;
+        synchronized(this) {
+            mDirtyFlags |= 0b10L;
+        }
+        super.requestRebind();
+    }
+    public java.lang.String getKey() {
+        return mKey;
+    }
+    public void setMap(java.util.Map<java.lang.String,java.lang.String> map) {
+        this.mMap = map;
+        synchronized(this) {
+            mDirtyFlags |= 0b100L;
+        }
+        super.requestRebind();
+    }
+    public java.util.Map<java.lang.String,java.lang.String> getMap() {
+        return mMap;
+    }
+    public void setList(java.util.List<java.lang.String> list) {
+        this.mList = list;
+        synchronized(this) {
+            mDirtyFlags |= 0b1000L;
+        }
+        super.requestRebind();
+    }
+    public java.util.List<java.lang.String> getList() {
+        return mList;
+    }
+    public void setIndex(int index) {
+        this.mIndex = index;
+        synchronized(this) {
+            mDirtyFlags |= 0b10000L;
+        }
+        super.requestRebind();
+    }
+    public int getIndex() {
+        return mIndex;
+    }
+    
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+        }
+        return false;
+    }
+    
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        java.lang.String sparseIndex = null;
+        android.util.SparseArray<java.lang.String> sparse = mSparse;
+        java.lang.String mapStringFirstName = null;
+        java.lang.String mapKey = null;
+        java.lang.String key = mKey;
+        java.lang.String listIndex = null;
+        java.util.Map<java.lang.String,java.lang.String> map = mMap;
+        java.util.List<java.lang.String> list = mList;
+        int index = mIndex;
+    
+        if ((dirtyFlags & 0b110001L) != 0) {
+            // read sparse~
+            sparse = sparse;
+        }
+        if ((dirtyFlags & 0b100110L) != 0) {
+            // read key~
+            key = key;
+            // read map~
+            map = map;
+        
+            if ((dirtyFlags & 0b100100L) != 0) {
+                if (map != null) {
+                    // read map~~$~String"firstName"~$
+                    mapStringFirstName = map.get("firstName");
+                }
+            }
+            if (map != null) {
+                // read map~~$~key~~$
+                mapKey = map.get(key);
+            }
+        }
+        if ((dirtyFlags & 0b111000L) != 0) {
+            // read list~
+            list = list;
+        }
+        if ((dirtyFlags & 0b111001L) != 0) {
+            // read index~
+            index = index;
+        
+            if ((dirtyFlags & 0b110001L) != 0) {
+                if (sparse != null) {
+                    // read sparse~~$~index~~$
+                    sparseIndex = sparse.get(index);
+                }
+            }
+            if ((dirtyFlags & 0b111000L) != 0) {
+                if (list != null) {
+                    // read list~~$~index~~$
+                    listIndex = getFromList(list, index);
+                }
+            }
+        }
+        // batch finished
+        if ((dirtyFlags & 0b111000L) != 0) {
+            // api target 1
+            this.mboundView1.setText(listIndex);
+        }
+        if ((dirtyFlags & 0b110001L) != 0) {
+            // api target 1
+            this.mboundView2.setText(sparseIndex);
+        }
+        if ((dirtyFlags & 0b100110L) != 0) {
+            // api target 1
+            this.mboundView3.setText(mapKey);
+        }
+        if ((dirtyFlags & 0b100100L) != 0) {
+            // api target 1
+            this.mboundView4.setText(mapStringFirstName);
+            this.mboundView5.setText(mapStringFirstName);
+            this.mboundView6.setText(mapStringFirstName);
+        }
+    }
+    // Listener Stub Implementations
+    // dirty flag
+    private  long mDirtyFlags = 0b1111111111111111111111111111111111111111111111111111111111111111L;
+    
+    public static CollectionsBinding inflate(android.view.LayoutInflater inflater, android.view.ViewGroup root, boolean attachToRoot) {
+        return inflate(inflater, root, attachToRoot, android.databinding.DataBindingUtil.getDefaultComponent());
+    }
+    public static CollectionsBinding inflate(android.view.LayoutInflater inflater, android.view.ViewGroup root, boolean attachToRoot, android.databinding.DataBindingComponent bindingComponent) {
+        return android.databinding.DataBindingUtil.<CollectionsBinding>inflate(inflater, com.liangfeizc.databinding.R.layout.activity_collection, root, attachToRoot, bindingComponent);
+    }
+    public static CollectionsBinding inflate(android.view.LayoutInflater inflater) {
+        return inflate(inflater, android.databinding.DataBindingUtil.getDefaultComponent());
+    }
+    public static CollectionsBinding inflate(android.view.LayoutInflater inflater, android.databinding.DataBindingComponent bindingComponent) {
+        return bind(inflater.inflate(com.liangfeizc.databinding.R.layout.activity_collection, null, false), bindingComponent);
+    }
+    public static CollectionsBinding bind(android.view.View view) {
+        return bind(view, android.databinding.DataBindingUtil.getDefaultComponent());
+    }
+    public static CollectionsBinding bind(android.view.View view, android.databinding.DataBindingComponent bindingComponent) {
+        if (!"layout/activity_collection_0".equals(view.getTag())) {
+            throw new RuntimeException("view tag isn't correct on view:" + view.getTag());
+        }
+        return new CollectionsBinding(bindingComponent, view);
+    }
+}
+    /* flag mapping
+        flag 0: sparse~
+        flag 1: key~
+        flag 2: map~
+        flag 3: list~
+        flag 4: index~
+        flag 5: INVALIDATE ANY
+    flag mapping end*/
+    //end

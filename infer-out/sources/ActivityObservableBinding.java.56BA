@@ -1,0 +1,333 @@
+package com.liangfeizc.databinding.databinding;
+import com.liangfeizc.databinding.R;
+import com.liangfeizc.databinding.BR;
+import android.view.View;
+public class ActivityObservableBinding extends android.databinding.ViewDataBinding {
+    
+    private static final android.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = null;
+    }
+    // views
+    private final android.widget.LinearLayout mboundView0;
+    private final android.widget.TextView mboundView1;
+    private final android.widget.TextView mboundView2;
+    private final android.widget.TextView mboundView3;
+    // variables
+    private com.liangfeizc.databinding.model.PlainUser mPlainUser;
+    private com.liangfeizc.databinding.model.ObservableUser mUser;
+    private android.databinding.ObservableMap<java.lang.String,java.lang.Object> mMapUser;
+    // values
+    // listeners
+    
+    public ActivityObservableBinding(android.databinding.DataBindingComponent bindingComponent, View root) {
+        super(bindingComponent, root, 5);
+        final Object[] bindings = mapBindings(bindingComponent, root, 4, sIncludes, sViewsWithIds);
+        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
+        this.mboundView0.setTag(null);
+        this.mboundView1 = (android.widget.TextView) bindings[1];
+        this.mboundView1.setTag(null);
+        this.mboundView2 = (android.widget.TextView) bindings[2];
+        this.mboundView2.setTag(null);
+        this.mboundView3 = (android.widget.TextView) bindings[3];
+        this.mboundView3.setTag(null);
+        setRootTag(root);
+        invalidateAll();
+    }
+    
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+            mDirtyFlags = 0b100000000L;
+        }
+        requestRebind();
+    }
+    
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    public boolean setVariable(int variableId, Object variable) {
+        switch(variableId) {
+            case BR.plainUser :
+                setPlainUser((com.liangfeizc.databinding.model.PlainUser) variable);
+                return true;
+            case BR.user :
+                setUser((com.liangfeizc.databinding.model.ObservableUser) variable);
+                return true;
+            case BR.mapUser :
+                setMapUser((android.databinding.ObservableMap<java.lang.String,java.lang.Object>) variable);
+                return true;
+        }
+        return false;
+    }
+    
+    public void setPlainUser(com.liangfeizc.databinding.model.PlainUser plainUser) {
+        this.mPlainUser = plainUser;
+        synchronized(this) {
+            mDirtyFlags |= 0b100000L;
+        }
+        super.requestRebind();
+    }
+    public com.liangfeizc.databinding.model.PlainUser getPlainUser() {
+        return mPlainUser;
+    }
+    public void setUser(com.liangfeizc.databinding.model.ObservableUser user) {
+        updateRegistration(2, user);
+        this.mUser = user;
+        synchronized(this) {
+            mDirtyFlags |= 0b100L;
+        }
+        super.requestRebind();
+    }
+    public com.liangfeizc.databinding.model.ObservableUser getUser() {
+        return mUser;
+    }
+    public void setMapUser(android.databinding.ObservableMap<java.lang.String,java.lang.Object> mapUser) {
+        updateRegistration(3, mapUser);
+        this.mMapUser = mapUser;
+        synchronized(this) {
+            mDirtyFlags |= 0b1000L;
+        }
+        super.requestRebind();
+    }
+    public android.databinding.ObservableMap<java.lang.String,java.lang.Object> getMapUser() {
+        return mMapUser;
+    }
+    
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+            case 0 :
+                return onChangeFirstNamePla((android.databinding.ObservableField<java.lang.String>) object, fieldId);
+            case 1 :
+                return onChangeLastNamePlai((android.databinding.ObservableField<java.lang.String>) object, fieldId);
+            case 2 :
+                return onChangeUser((com.liangfeizc.databinding.model.ObservableUser) object, fieldId);
+            case 3 :
+                return onChangeMapUser((android.databinding.ObservableMap<java.lang.String,java.lang.Object>) object, fieldId);
+            case 4 :
+                return onChangeAgePlainUser((android.databinding.ObservableInt) object, fieldId);
+        }
+        return false;
+    }
+    private boolean onChangeFirstNamePla(android.databinding.ObservableField<java.lang.String> firstNamePlainUser, int fieldId) {
+        switch (fieldId) {
+            case BR._all:
+                synchronized(this) {
+                    mDirtyFlags |= 0b1L;
+                }
+                return true;
+        }
+        return false;
+    }
+    private boolean onChangeLastNamePlai(android.databinding.ObservableField<java.lang.String> lastNamePlainUser, int fieldId) {
+        switch (fieldId) {
+            case BR._all:
+                synchronized(this) {
+                    mDirtyFlags |= 0b10L;
+                }
+                return true;
+        }
+        return false;
+    }
+    private boolean onChangeUser(com.liangfeizc.databinding.model.ObservableUser user, int fieldId) {
+        switch (fieldId) {
+            case BR.firstName:
+                synchronized(this) {
+                    mDirtyFlags |= 0b1000000L;
+                }
+                return true;
+            case BR.lastName:
+                synchronized(this) {
+                    mDirtyFlags |= 0b10000000L;
+                }
+                return true;
+            case BR._all:
+                synchronized(this) {
+                    mDirtyFlags |= 0b100L;
+                }
+                return true;
+        }
+        return false;
+    }
+    private boolean onChangeMapUser(android.databinding.ObservableMap<java.lang.String,java.lang.Object> mapUser, int fieldId) {
+        switch (fieldId) {
+            case BR._all:
+                synchronized(this) {
+                    mDirtyFlags |= 0b1000L;
+                }
+                return true;
+        }
+        return false;
+    }
+    private boolean onChangeAgePlainUser(android.databinding.ObservableInt agePlainUser, int fieldId) {
+        switch (fieldId) {
+            case BR._all:
+                synchronized(this) {
+                    mDirtyFlags |= 0b10000L;
+                }
+                return true;
+        }
+        return false;
+    }
+    
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        java.lang.String lastNamePlainUser = null;
+        int agePlainUser = 0;
+        android.databinding.ObservableField<java.lang.String> firstNamePlainUser = null;
+        java.lang.Integer IntegerMapUserString = null;
+        java.lang.String firstNamePlainUser1 = null;
+        com.liangfeizc.databinding.model.PlainUser plainUser = mPlainUser;
+        java.lang.String AndroidStringNameFor = null;
+        android.databinding.ObservableField<java.lang.String> lastNamePlainUser1 = null;
+        com.liangfeizc.databinding.model.ObservableUser user = mUser;
+        java.lang.String AndroidStringNameFor1 = null;
+        java.lang.Object mapUserStringAge = null;
+        int int1IntegerMapUserSt = 0;
+        java.lang.Object mapUserStringFirstNa = null;
+        java.lang.String firstNameUser = null;
+        android.databinding.ObservableMap<java.lang.String,java.lang.Object> mapUser = mMapUser;
+        java.lang.String lastNameUser = null;
+        android.databinding.ObservableInt agePlainUser1 = null;
+        java.lang.Object mapUserStringLastNam = null;
+        java.lang.String AndroidStringNameFor2 = null;
+    
+        if ((dirtyFlags & 0b100110011L) != 0) {
+            // read plainUser~
+            plainUser = plainUser;
+        
+            if (plainUser != null) {
+                // read firstName~..~plainUser~
+                firstNamePlainUser = plainUser.firstName;
+                // read lastName~..~plainUser~
+                lastNamePlainUser1 = plainUser.lastName;
+                // read age~..~plainUser~
+                agePlainUser1 = plainUser.age;
+            }
+            updateRegistration(0, firstNamePlainUser);
+            updateRegistration(1, lastNamePlainUser1);
+            updateRegistration(4, agePlainUser1);
+        
+            if (firstNamePlainUser != null) {
+                // read firstName~.~plainUser~
+                firstNamePlainUser1 = firstNamePlainUser.get();
+            }
+            if (lastNamePlainUser1 != null) {
+                // read lastName~.~plainUser~
+                lastNamePlainUser = lastNamePlainUser1.get();
+            }
+            if (agePlainUser1 != null) {
+                // read age~.~plainUser~
+                agePlainUser = agePlainUser1.get();
+            }
+        
+            // read @android:string/nameFormatWithAge~firstName~.~plainUser~~lastName~.~plainUser~~age~.~plainUser~
+            AndroidStringNameFor2 = getRoot().getResources().getString(R.string.nameFormatWithAge, firstNamePlainUser1, lastNamePlainUser, agePlainUser);
+        }
+        if ((dirtyFlags & 0b111000100L) != 0) {
+            // read user~
+            user = user;
+            updateRegistration(2, user);
+        
+            if (user != null) {
+                // read firstName~.~user~
+                firstNameUser = user.getFirstName();
+                // read lastName~.~user~
+                lastNameUser = user.getLastName();
+            }
+        
+            // read @android:string/nameFormat~firstName~.~user~~lastName~.~user~
+            AndroidStringNameFor = getRoot().getResources().getString(R.string.nameFormat, firstNameUser, lastNameUser);
+        }
+        if ((dirtyFlags & 0b100001000L) != 0) {
+            // read mapUser~
+            mapUser = mapUser;
+            updateRegistration(3, mapUser);
+        
+            if (mapUser != null) {
+                // read mapUser~~$~String"age"~$
+                mapUserStringAge = mapUser.get("age");
+                // read mapUser~~$~String"firstName"~$
+                mapUserStringFirstNa = mapUser.get("firstName");
+                // read mapUser~~$~String"lastName"~$
+                mapUserStringLastNam = mapUser.get("lastName");
+            }
+        
+            if (mapUserStringAge != null) {
+                // read Integer~mapUser~~$~String"age"~$
+                IntegerMapUserString = (java.lang.Integer) mapUserStringAge;
+            }
+        
+            // read int1~+~Integer~mapUser~~$~String"age"~$
+            int1IntegerMapUserSt = 1+IntegerMapUserString;
+        
+            // read @android:string/nameFormatWithAge~mapUser~~$~String"firstName"~$~mapUser~~$~String"lastName"~$~int1~+~Integer~mapUser~~$~String"age"~$
+            AndroidStringNameFor1 = getRoot().getResources().getString(R.string.nameFormatWithAge, mapUserStringFirstNa, mapUserStringLastNam, int1IntegerMapUserSt);
+        }
+        // batch finished
+        if ((dirtyFlags & 0b111000100L) != 0) {
+            // api target 1
+            this.mboundView1.setText(AndroidStringNameFor);
+        }
+        if ((dirtyFlags & 0b100110011L) != 0) {
+            // api target 1
+            this.mboundView2.setText(AndroidStringNameFor2);
+        }
+        if ((dirtyFlags & 0b100001000L) != 0) {
+            // api target 1
+            this.mboundView3.setText(AndroidStringNameFor1);
+        }
+    }
+    // Listener Stub Implementations
+    // dirty flag
+    private  long mDirtyFlags = 0b1111111111111111111111111111111111111111111111111111111111111111L;
+    
+    public static ActivityObservableBinding inflate(android.view.LayoutInflater inflater, android.view.ViewGroup root, boolean attachToRoot) {
+        return inflate(inflater, root, attachToRoot, android.databinding.DataBindingUtil.getDefaultComponent());
+    }
+    public static ActivityObservableBinding inflate(android.view.LayoutInflater inflater, android.view.ViewGroup root, boolean attachToRoot, android.databinding.DataBindingComponent bindingComponent) {
+        return android.databinding.DataBindingUtil.<ActivityObservableBinding>inflate(inflater, com.liangfeizc.databinding.R.layout.activity_observable, root, attachToRoot, bindingComponent);
+    }
+    public static ActivityObservableBinding inflate(android.view.LayoutInflater inflater) {
+        return inflate(inflater, android.databinding.DataBindingUtil.getDefaultComponent());
+    }
+    public static ActivityObservableBinding inflate(android.view.LayoutInflater inflater, android.databinding.DataBindingComponent bindingComponent) {
+        return bind(inflater.inflate(com.liangfeizc.databinding.R.layout.activity_observable, null, false), bindingComponent);
+    }
+    public static ActivityObservableBinding bind(android.view.View view) {
+        return bind(view, android.databinding.DataBindingUtil.getDefaultComponent());
+    }
+    public static ActivityObservableBinding bind(android.view.View view, android.databinding.DataBindingComponent bindingComponent) {
+        if (!"layout/activity_observable_0".equals(view.getTag())) {
+            throw new RuntimeException("view tag isn't correct on view:" + view.getTag());
+        }
+        return new ActivityObservableBinding(bindingComponent, view);
+    }
+}
+    /* flag mapping
+        flag 0: firstName~..~plainUser~
+        flag 1: lastName~..~plainUser~
+        flag 2: user~
+        flag 3: mapUser~
+        flag 4: age~..~plainUser~
+        flag 5: plainUser~
+        flag 6: firstName~.~user~
+        flag 7: lastName~.~user~
+        flag 8: INVALIDATE ANY
+    flag mapping end*/
+    //end

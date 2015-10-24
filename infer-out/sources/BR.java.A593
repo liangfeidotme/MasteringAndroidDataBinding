@@ -1,0 +1,23 @@
+package com.android.databinding.library.baseAdapters;
+
+public class BR {
+    public static final int _all = 0;
+    public static final int activity = 1;
+    public static final int bananaCount = 2;
+    public static final int contact = 3;
+    public static final int firstName = 4;
+    public static final int height = 5;
+    public static final int imageUrl = 6;
+    public static final int index = 7;
+    public static final int isError = 8;
+    public static final int key = 9;
+    public static final int large = 10;
+    public static final int lastName = 11;
+    public static final int list = 12;
+    public static final int map = 13;
+    public static final int mapUser = 14;
+    public static final int orangeCount = 15;
+    public static final int plainUser = 16;
+    public static final int sparse = 17;
+    public static final int user = 18;
+}

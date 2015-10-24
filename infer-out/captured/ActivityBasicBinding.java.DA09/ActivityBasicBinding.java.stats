@@ -1,0 +1,25 @@
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
++ FILE: /Users/rufi/github/liangfei/AndroidDataBinding/app/build/intermediates/classes/debug/com/liangfeizc/databinding/databinding/ActivityBasicBinding.java  LOC: 196  VISITED: 65/111 SYMOPS: 1120
++  num_procs: 15 (12 ok, 1 timeouts, 1 errors, 0 warnings, 30 infos)
++  detail procs:
++    - No Errors and No Specs: 2
++    - Some Errors and No Specs: 1
++    - No Errors and Some Specs: 12
++    - Some Errors and Some Specs: 0
++  errors:  NULL_DEREFERENCE:1
++  warnings: 
++  infos:  SKIP_FUNCTION:30
++  specs: 15
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Detailed errors during footprint phase:
+/Users/rufi/github/liangfei/AndroidDataBinding/app/build/intermediates/classes/debug/com/liangfeizc/databinding/databinding/ActivityBasicBinding.java:138: ERROR: NULL_DEREFERENCE [B1] object firstNameUser last assigned on line 104 could be null and is dereferenced by call to capitalize(...) at line 138
+
+Detailed errors during re-execution phase:
+/Users/rufi/github/liangfei/AndroidDataBinding/app/build/intermediates/classes/debug/com/liangfeizc/databinding/databinding/ActivityBasicBinding.java:28: ERROR: CLASS_CAST_EXCEPTION class java.lang.Object  cannot be cast to class android.widget.TableLayout   in expression *bindings  at line 28
+
+Detailed warnings during footprint phase:
+
+Detailed warnings during re-execution phase:
+/Users/rufi/github/liangfei/AndroidDataBinding/app/build/intermediates/classes/debug/com/liangfeizc/databinding/databinding/ActivityBasicBinding.java:173: WARNING: PRECONDITION_NOT_MET in call to inflate(...) at line 173

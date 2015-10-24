@@ -3,14 +3,14 @@
 
     <data>
 
-        <import type="com.liangfeizc.databindingsamples.basic.User" />
+        <import type="com.liangfeizc.databinding.model.User" />
         <variable
             name="user"
             type="User" />
 
         <variable
             name="contact"
-            type="com.liangfeizc.databindingsamples.custombindings.Contact" />
+            type="com.liangfeizc.databinding.model.Contact" />
     </data>
 
     <LinearLayout

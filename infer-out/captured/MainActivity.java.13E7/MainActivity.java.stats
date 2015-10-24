@@ -1,0 +1,22 @@
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
++ FILE: /Users/rufi/github/liangfei/AndroidDataBinding/app/src/main/java/com/liangfeizc/databinding/sample/MainActivity.java  LOC: 72  VISITED: 64/77 SYMOPS: 440
++  num_procs: 13 (13 ok, 0 timeouts, 0 errors, 0 warnings, 25 infos)
++  detail procs:
++    - No Errors and No Specs: 0
++    - Some Errors and No Specs: 0
++    - No Errors and Some Specs: 13
++    - Some Errors and Some Specs: 0
++  errors: 
++  warnings: 
++  infos:  SKIP_FUNCTION:25
++  specs: 13
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Detailed errors during footprint phase:
+
+Detailed errors during re-execution phase:
+
+Detailed warnings during footprint phase:
+
+Detailed warnings during re-execution phase:

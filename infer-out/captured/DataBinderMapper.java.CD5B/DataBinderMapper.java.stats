@@ -1,0 +1,22 @@
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
++ FILE: /Users/rufi/github/liangfei/AndroidDataBinding/app/build/intermediates/classes/debug/android/databinding/DataBinderMapper.java  LOC: 159  VISITED: 47/52 SYMOPS: 1017
++  num_procs: 7 (5 ok, 2 timeouts, 0 errors, 0 warnings, 4 infos)
++  detail procs:
++    - No Errors and No Specs: 2
++    - Some Errors and No Specs: 0
++    - No Errors and Some Specs: 5
++    - Some Errors and Some Specs: 0
++  errors: 
++  warnings: 
++  infos:  SKIP_FUNCTION:4
++  specs: 7
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Detailed errors during footprint phase:
+
+Detailed errors during re-execution phase:
+
+Detailed warnings during footprint phase:
+
+Detailed warnings during re-execution phase:

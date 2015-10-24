@@ -2,9 +2,9 @@
 
     <data>
 
-        <import type="com.liangfeizc.databindingsamples.observable.PlainUser" />
+        <import type="com.liangfeizc.databinding.model.PlainUser" />
         <import type="android.databinding.ObservableMap" />
-        <variable name="user" type="com.liangfeizc.databindingsamples.observable.ObservableUser" />
+        <variable name="user" type="com.liangfeizc.databinding.model.ObservableUser" />
         <variable name="plainUser" type="PlainUser" />
         <variable name="mapUser" type="ObservableMap&lt;String, Object>" />
     </data>

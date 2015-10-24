@@ -1,10 +1,10 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <data class=".ContactBinding">
+    <data class=".ContractBinding">
 
         <variable
             name="contact"
-            type="com.liangfeizc.databindingsamples.custombindings.Contact" />
+            type="com.liangfeizc.databinding.model.Contact" />
     </data>
 
     <LinearLayout

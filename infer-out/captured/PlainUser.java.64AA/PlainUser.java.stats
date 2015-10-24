@@ -1,0 +1,22 @@
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
++ FILE: /Users/rufi/github/liangfei/AndroidDataBinding/app/src/main/java/com/liangfeizc/databinding/model/PlainUser.java  LOC: 13  VISITED: 10/11 SYMOPS: 74
++  num_procs: 1 (1 ok, 0 timeouts, 0 errors, 0 warnings, 3 infos)
++  detail procs:
++    - No Errors and No Specs: 0
++    - Some Errors and No Specs: 0
++    - No Errors and Some Specs: 1
++    - Some Errors and Some Specs: 0
++  errors: 
++  warnings: 
++  infos:  SKIP_FUNCTION:3
++  specs: 1
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Detailed errors during footprint phase:
+
+Detailed errors during re-execution phase:
+
+Detailed warnings during footprint phase:
+
+Detailed warnings during re-execution phase:

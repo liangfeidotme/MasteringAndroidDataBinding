@@ -1,0 +1,24 @@
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
++ FILE: /Users/rufi/github/liangfei/AndroidDataBinding/app/build/intermediates/classes/debug/com/liangfeizc/databinding/databinding/UserBinding.java  LOC: 132  VISITED: 82/137 SYMOPS: 1219
++  num_procs: 15 (13 ok, 1 timeouts, 0 errors, 0 warnings, 21 infos)
++  detail procs:
++    - No Errors and No Specs: 2
++    - Some Errors and No Specs: 0
++    - No Errors and Some Specs: 13
++    - Some Errors and Some Specs: 0
++  errors: 
++  warnings: 
++  infos:  SKIP_FUNCTION:21
++  specs: 16
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Detailed errors during footprint phase:
+
+Detailed errors during re-execution phase:
+/Users/rufi/github/liangfei/AndroidDataBinding/app/build/intermediates/classes/debug/com/liangfeizc/databinding/databinding/UserBinding.java:24: ERROR: CLASS_CAST_EXCEPTION class java.lang.Object  cannot be cast to class android.widget.LinearLayout   in expression *bindings  at line 24
+
+Detailed warnings during footprint phase:
+
+Detailed warnings during re-execution phase:
+/Users/rufi/github/liangfei/AndroidDataBinding/app/build/intermediates/classes/debug/com/liangfeizc/databinding/databinding/UserBinding.java:113: WARNING: PRECONDITION_NOT_MET in call to inflate(...) at line 113

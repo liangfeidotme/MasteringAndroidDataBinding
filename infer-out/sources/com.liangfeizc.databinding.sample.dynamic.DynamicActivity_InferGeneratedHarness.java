@@ -1,0 +1,8 @@
+n$65=_fun___new(sizeof():) [line 1]
+*&Bundle:=n$65 [line 2]
+n$66=*&Bundle: [line 3]
+n$67=_fun___new(sizeof():) [line 4]
+_fun_DynamicActivity.<init>()(n$67:) [line 5]
+*&DynamicActivity:=n$67 [line 6]
+n$68=*&DynamicActivity: [line 7]
+_fun_void DynamicActivity.onCreate(Bundle)(n$68:,n$66:) virtual [line 8]

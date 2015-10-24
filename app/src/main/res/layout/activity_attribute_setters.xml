@@ -1,29 +1,39 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+        xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-        <import type="com.liangfeizc.databindingsamples.attributesetters.AttributeSettersActivity" />
-        <variable name="activity" type="AttributeSettersActivity"/>
-        <variable name="imageUrl" type="String" />
+
+        <import type="com.liangfeizc.databinding.sample.attributesetters.AttributeSettersActivity"/>
+
+        <variable
+            name="activity"
+            type="AttributeSettersActivity"/>
+
+        <variable
+            name="imageUrl"
+            type="String"/>
     </data>
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <com.liangfeizc.databindingsamples.attributesetters.UserView
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.liangfeizc.databinding.view.NameCard
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="@dimen/largePadding"
-            app:onClickListener="@{activity.clickListener}"
+            android:paddingStart="@dimen/largePadding"
+            app:age="27"
             app:firstName="@{@string/firstName}"
             app:lastName="@{@string/lastName}"
-            app:age="27" />
+            app:onClickListener="@{activity.avatarClickListener}"/>
 
-        <ImageView
-            app:imageUrl="@{imageUrl}"
-            app:error="@{@drawable/error}"
+        <com.liangfeizc.avatarview.AvatarView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            app:error="@{@drawable/error}"
+            app:imageUrl="@{imageUrl}"/>
 
     </LinearLayout>
 </layout>

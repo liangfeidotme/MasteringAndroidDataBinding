@@ -1,0 +1,6 @@
+package android.databinding.layouts;
+
+import android.databinding.BindingBuildInfo;
+
+@BindingBuildInfo(buildId="d28a4e44-b793-4f23-a7b3-13dd8387d6a2", modulePackage="com.liangfeizc.databinding", sdkRoot="/Users/rufi/Library/Android/sdk",layoutInfoDir="/Users/rufi/github/liangfei/AndroidDataBinding/app/build/layout-info/debug",exportClassListTo="",isLibrary=false,minSdk=16,enableDebugLogs=true,printEncodedError=false)
+public class DataBindingInfo {}

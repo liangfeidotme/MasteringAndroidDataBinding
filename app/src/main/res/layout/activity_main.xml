@@ -4,7 +4,7 @@
 
         <import
             alias="StringUtils"
-            type="com.liangfeizc.databindingsamples.utils.MyStringUtils" />
+            type="com.liangfeizc.databinding.utils.MyStringUtils" />
     </data>
 
     <ScrollView

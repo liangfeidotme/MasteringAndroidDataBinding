@@ -5,7 +5,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <declare-styleable name="UserView">
+    <declare-styleable name="NameCard">
         <attr name="age" format="integer" />
     </declare-styleable>
 </resources>

@@ -1,0 +1,8 @@
+n$24=_fun___new(sizeof():) [line 1]
+*&Bundle:=n$24 [line 2]
+n$25=*&Bundle: [line 3]
+n$26=_fun___new(sizeof():) [line 4]
+_fun_IncludeActivity.<init>()(n$26:) [line 5]
+*&IncludeActivity:=n$26 [line 6]
+n$27=*&IncludeActivity: [line 7]
+_fun_void IncludeActivity.onCreate(Bundle)(n$27:,n$25:) virtual [line 8]

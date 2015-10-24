@@ -1,0 +1,159 @@
+
+package android.databinding;
+import com.liangfeizc.databinding.BR;
+class DataBinderMapper {
+    final static int TARGET_MIN_SDK = 16;
+    public DataBinderMapper() {
+    }
+    public android.databinding.ViewDataBinding getDataBinder(android.databinding.DataBindingComponent bindingComponent, android.view.View view, int layoutId) {
+        switch(layoutId) {
+            case com.liangfeizc.databinding.R.layout.name_card:
+                return new com.liangfeizc.databinding.databinding.NameCardBinding(bindingComponent, new android.view.View[]{view});
+            case com.liangfeizc.databinding.R.layout.activity_include:
+                return com.liangfeizc.databinding.databinding.ActivityIncludeBinding.bind(view, bindingComponent);
+            case com.liangfeizc.databinding.R.layout.activity_observable:
+                return com.liangfeizc.databinding.databinding.ActivityObservableBinding.bind(view, bindingComponent);
+            case com.liangfeizc.databinding.R.layout.activity_custom_binding:
+                return com.liangfeizc.databinding.ContractBinding.bind(view, bindingComponent);
+            case com.liangfeizc.databinding.R.layout.activity_attribute_setters:
+                return com.liangfeizc.databinding.databinding.ActivityAttributeSettersBinding.bind(view, bindingComponent);
+            case com.liangfeizc.databinding.R.layout.contact:
+                return com.liangfeizc.databinding.databinding.ContactBinding.bind(view, bindingComponent);
+            case com.liangfeizc.databinding.R.layout.activity_view_stub:
+                return com.liangfeizc.databinding.databinding.ActivityViewStubBinding.bind(view, bindingComponent);
+            case com.liangfeizc.databinding.R.layout.activity_collection:
+                return com.liangfeizc.databinding.databinding.CollectionsBinding.bind(view, bindingComponent);
+            case com.liangfeizc.databinding.R.layout.user_item:
+                return com.liangfeizc.databinding.databinding.UserItemBinding.bind(view, bindingComponent);
+            case com.liangfeizc.databinding.R.layout.activity_conversions:
+                return com.liangfeizc.databinding.databinding.ActivityConversionsBinding.bind(view, bindingComponent);
+            case com.liangfeizc.databinding.R.layout.activity_dynamic:
+                return com.liangfeizc.databinding.databinding.ActivityDynamicBinding.bind(view, bindingComponent);
+            case com.liangfeizc.databinding.R.layout.activity_resource:
+                return com.liangfeizc.databinding.databinding.ResourceBinding.bind(view, bindingComponent);
+            case com.liangfeizc.databinding.R.layout.activity_view_with_ids:
+                return com.liangfeizc.databinding.databinding.ActivityViewWithIdsBinding.bind(view, bindingComponent);
+            case com.liangfeizc.databinding.R.layout.activity_basic:
+                return com.liangfeizc.databinding.databinding.ActivityBasicBinding.bind(view, bindingComponent);
+            case com.liangfeizc.databinding.R.layout.user:
+                return com.liangfeizc.databinding.databinding.UserBinding.bind(view, bindingComponent);
+            case com.liangfeizc.databinding.R.layout.view_stub:
+                return com.liangfeizc.databinding.databinding.ViewStubBinding.bind(view, bindingComponent);
+            case com.liangfeizc.databinding.R.layout.activity_main:
+                return com.liangfeizc.databinding.databinding.ActivityMainBinding.bind(view, bindingComponent);
+        }
+        return null;
+    }
+    android.databinding.ViewDataBinding getDataBinder(android.databinding.DataBindingComponent bindingComponent, android.view.View[] views, int layoutId) {
+        switch(layoutId) {
+            case com.liangfeizc.databinding.R.layout.name_card:
+                return new com.liangfeizc.databinding.databinding.NameCardBinding(bindingComponent, views);
+        }
+        return null;
+    }
+    int getLayoutId(String tag) {
+        if (tag == null) {
+            return 0;
+        }
+        final int code = tag.hashCode();
+        switch(code) {
+            case -1068135536:
+                if(tag.equals("layout/name_card_0"))
+                    return com.liangfeizc.databinding.R.layout.name_card;
+                break;
+            case -124731346:
+                if(tag.equals("layout/activity_include_0"))
+                    return com.liangfeizc.databinding.R.layout.activity_include;
+                break;
+            case -1191836097:
+                if(tag.equals("layout/activity_observable_0"))
+                    return com.liangfeizc.databinding.R.layout.activity_observable;
+                break;
+            case 750528051:
+                if(tag.equals("layout/activity_custom_binding_0"))
+                    return com.liangfeizc.databinding.R.layout.activity_custom_binding;
+                break;
+            case 58383415:
+                if(tag.equals("layout/activity_attribute_setters_0"))
+                    return com.liangfeizc.databinding.R.layout.activity_attribute_setters;
+                break;
+            case 521993004:
+                if(tag.equals("layout/contact_0"))
+                    return com.liangfeizc.databinding.R.layout.contact;
+                break;
+            case 259184718:
+                if(tag.equals("layout/activity_view_stub_0"))
+                    return com.liangfeizc.databinding.R.layout.activity_view_stub;
+                break;
+            case 963040474:
+                if(tag.equals("layout/activity_collection_0"))
+                    return com.liangfeizc.databinding.R.layout.activity_collection;
+                break;
+            case -1353761389:
+                if(tag.equals("layout/user_item_0"))
+                    return com.liangfeizc.databinding.R.layout.user_item;
+                break;
+            case -1989718557:
+                if(tag.equals("layout/activity_conversions_0"))
+                    return com.liangfeizc.databinding.R.layout.activity_conversions;
+                break;
+            case -1130872315:
+                if(tag.equals("layout/activity_dynamic_0"))
+                    return com.liangfeizc.databinding.R.layout.activity_dynamic;
+                break;
+            case -1757522678:
+                if(tag.equals("layout/activity_resource_0"))
+                    return com.liangfeizc.databinding.R.layout.activity_resource;
+                break;
+            case 966632351:
+                if(tag.equals("layout/activity_view_with_ids_0"))
+                    return com.liangfeizc.databinding.R.layout.activity_view_with_ids;
+                break;
+            case -912070796:
+                if(tag.equals("layout/activity_basic_0"))
+                    return com.liangfeizc.databinding.R.layout.activity_basic;
+                break;
+            case 793121601:
+                if(tag.equals("layout/user_0"))
+                    return com.liangfeizc.databinding.R.layout.user;
+                break;
+            case -774703020:
+                if(tag.equals("layout/view_stub_0"))
+                    return com.liangfeizc.databinding.R.layout.view_stub;
+                break;
+            case 423753077:
+                if(tag.equals("layout/activity_main_0"))
+                    return com.liangfeizc.databinding.R.layout.activity_main;
+                break;
+        }
+        return 0;
+    }
+    String convertBrIdToString(int id) {
+        if (id < 0 || id >= InnerBrLookup.sKeys.length) {
+            return null;
+        }
+        return InnerBrLookup.sKeys[id];
+    }
+    private static class InnerBrLookup {
+        static String[] sKeys = new String[]{
+            "_all"
+            ,"activity"
+            ,"bananaCount"
+            ,"contact"
+            ,"firstName"
+            ,"height"
+            ,"imageUrl"
+            ,"index"
+            ,"isError"
+            ,"key"
+            ,"large"
+            ,"lastName"
+            ,"list"
+            ,"map"
+            ,"mapUser"
+            ,"orangeCount"
+            ,"plainUser"
+            ,"sparse"
+            ,"user"};
+    }
+}
