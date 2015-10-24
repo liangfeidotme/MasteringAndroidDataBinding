@@ -1,8 +1,8 @@
-# 完全掌握 Android Data Binding
+# 精通 Android Data Binding
 
-> 微博求粉 [liangfeizc-Android](http://weibo.com/u/1670598115)
+* 欢迎关注[我的微博](http://weibo.com/u/1670598115)，干货多多，精彩不断
 
-本教程是跟着 [Data Binding Guide](https://developer.android.com/tools/data-binding/guide.html) 学习过程中得出的一些实践经验，同时修改了官方教程的一些错误，每一个知识点都有对应的源码，争取做到实践与理论相结合。
+官方虽然已经给出了教程 - [Data Binding Guide](https://developer.android.com/tools/data-binding/guide.html) ，但是实践之后发现槽点实在太多，于是就有了这个教程，针对每个知识点给出更详实的例子同时也总结了遇到的一些坑，希望对你有所帮助：）
 
 Data Binding 解决了 Android UI 编程中的一个痛点，官方原生支持 MVVM 模型可以让我们在不改变既有代码框架的前提下，非常容易地使用这些新特性。
 
