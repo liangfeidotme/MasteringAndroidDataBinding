@@ -318,7 +318,7 @@ public class PlainUser {
     android:layout_height="wrap_content" />
 ```
 
-上面代码中定义了一个 ID 为 *firstName** 的 `TextView`，那么它对应的变量就是 
+上面代码中定义了一个 ID 为 *firstName** 的 `TextView`，那么它对应的变量就是
 
 ```java
 public final TextView firstName;
@@ -394,7 +394,7 @@ public void onBindViewHolder(BindingHolder holder, int position) {
     holder.getBinding().setVariable(BR.user, user);
     holder.getBinding().executePendingBindings();
 }
-```	
+```
 
 注意此处 `DataBindingUtil` 的用法：
 
@@ -404,6 +404,57 @@ ViewDataBinding binding = DataBindingUtil.inflate(
 	R.layout.list_item,
 	viewGroup,
 	false);
+```
+
+---
+
+还有另外一种比较简洁的方式，直接在构造 Holder 时把 View 与自动生成的 XXXBinding 进行绑定。
+
+```java
+public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserHolder> {
+    private static final int USER_COUNT = 10;
+
+    @NonNull
+    private List<User> mUsers;
+
+    public UserAdapter() {
+        mUsers = new ArrayList<>(10);
+        for (int i = 0; i < USER_COUNT; i ++) {
+            User user = new User(RandomNames.nextFirstName(), RandomNames.nextLastName());
+            mUsers.add(user);
+        }
+    }
+
+    public static class UserHolder extends RecyclerView.ViewHolder {
+        private UserItemBinding mBinding;
+
+        public UserHolder(View itemView) {
+            super(itemView);
+            mBinding = UserItemBinding.bind(itemView);
+        }
+
+        public void bind(@NonNull User user) {
+            mBinding.setUser(user);
+        }
+    }
+
+    @Override
+    public UserHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
+        View itemView = LayoutInflater.from(viewGroup.getContext())
+                .inflate(R.layout.user_item, viewGroup, false);
+        return new UserHolder(itemView);
+    }
+
+    @Override
+    public void onBindViewHolder(UserHolder holder, int position) {
+        holder.bind(mUsers.get(position));
+    }
+
+    @Override
+    public int getItemCount() {
+        return mUsers.size();
+    }
+}
 ```
 
 ## Attribute setters
