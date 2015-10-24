@@ -1,8 +1,0 @@
-n$69=_fun___new(sizeof():) [line 1]
-*&Bundle:=n$69 [line 2]
-n$70=*&Bundle: [line 3]
-n$71=_fun___new(sizeof():) [line 4]
-_fun_ResourceActivity.<init>()(n$71:) [line 5]
-*&ResourceActivity:=n$71 [line 6]
-n$72=*&ResourceActivity: [line 7]
-_fun_void ResourceActivity.onCreate(Bundle)(n$72:,n$70:) virtual [line 8]

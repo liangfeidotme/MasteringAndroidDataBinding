@@ -1,8 +1,0 @@
-n$16=_fun___new(sizeof():) [line 1]
-*&Bundle:=n$16 [line 2]
-n$17=*&Bundle: [line 3]
-n$18=_fun___new(sizeof():) [line 4]
-_fun_ObservableActivity.<init>()(n$18:) [line 5]
-*&ObservableActivity:=n$18 [line 6]
-n$19=*&ObservableActivity: [line 7]
-_fun_void ObservableActivity.onCreate(Bundle)(n$19:,n$17:) virtual [line 8]

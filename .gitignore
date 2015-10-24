@@ -32,3 +32,4 @@ proguard/
 .DS_Store
 /build
 /captures
+/infer-out

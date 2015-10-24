@@ -1,8 +1,0 @@
-n$36=_fun___new(sizeof():) [line 1]
-*&Bundle:=n$36 [line 2]
-n$37=*&Bundle: [line 3]
-n$38=_fun___new(sizeof():) [line 4]
-_fun_CollectionActivity.<init>()(n$38:) [line 5]
-*&CollectionActivity:=n$38 [line 6]
-n$39=*&CollectionActivity: [line 7]
-_fun_void CollectionActivity.onCreate(Bundle)(n$39:,n$37:) virtual [line 8]

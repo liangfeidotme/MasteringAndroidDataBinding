@@ -1,1 +1,0 @@
-{"int": {"files": 0, "NULL_DEREFERENCE": 1, "lines": 0}, "float": {"reporting_time": 0.19341206550598145, "capture_time": 0.0, "analysis_time": 5.089095115661621}, "normal": {"infer_version": "d0ea01e3540dfc56e174113439c1bc058c1237d4", "analyzer": "infer"}}

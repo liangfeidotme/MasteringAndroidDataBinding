@@ -1,3 +1,0 @@
-/Users/rufi/github/liangfei/AndroidDataBinding/app/build/intermediates/classes/debug/com/liangfeizc/databinding/databinding/ActivityBasicBinding.java:138: error: NULL_DEREFERENCE
-   object firstNameUser last assigned on line 104 could be null and is dereferenced by call to capitalize(...) at line 138
-
