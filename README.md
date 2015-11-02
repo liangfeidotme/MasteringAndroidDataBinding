@@ -61,7 +61,7 @@ apply plugin: 'com.android.databinding'
 
 ### 数据对象
 
-添加一个 POJO 类 - `User`，非常简单，四个属性以及他们的 getter 和 setter。
+添加一个 POJO 类 - `User`，非常简单，两个属性以及他们的 getter 和 setter。
 
 ```java
 public class User {
