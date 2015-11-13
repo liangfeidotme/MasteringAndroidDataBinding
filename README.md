@@ -1,29 +1,23 @@
 # 精通 Android Data Binding
 
-* 欢迎关注[我的微博](http://weibo.com/u/1670598115)，干货多多，精彩不断
+* [微博 - liangfeizc-Android](http://weibo.com/u/1670598115)
+* [CSDN博客 - 码农的自留地](http://blog.csdn.net/feelang)
+
+---
 
 官方虽然已经给出了教程 - [Data Binding Guide](https://developer.android.com/tools/data-binding/guide.html) ，但是实践之后发现槽点实在太多，于是就有了这个教程，针对每个知识点给出更详实的例子同时也总结了遇到的一些坑，希望对你有所帮助：）
 
-Data Binding 解决了 Android UI 编程中的一个痛点，官方原生支持 MVVM 模型可以让我们在不改变既有代码框架的前提下，非常容易地使用这些新特性。
+Data Binding 解决了 Android UI 编程的一个痛点，官方**原生支持** MVVM 模型可以让我们在不改变既有代码框架的前提下，非常容易地使用这些新特性。
 
-Data Binding 框架一出，是不是也意味着像 *RoboGuice、ButterKnife* 这样的依赖注入框架也会慢慢失去市场，因为在 Java 代码中直接使用 `View` 变量的情况会越来越少。
+Data Binding 框架如果能够推广开来，也许 *RoboGuice、ButterKnife* 这样的依赖注入框架会慢慢失去市场，因为在 Java 代码中直接使用 `View` 变量的情况会越来越少。
 
 ## 准备
 
-### Android Studio 更新到 1.3 版本
-
-打开 Preferences，找到 **Appearances & Behavior** 下的 **Updates** 选项，把 **Automatically Check updates for** 修改成 **Canary Channel**。
-
-<img src="http://img01.taobaocdn.com/imgextra/i1/160310864/TB2mN_5cVXXXXaEXpXXXXXXXXXX_!!160310864.png" style="width:100%" />
-
-**注意**
-
-*Data Binding 是一个 support 包，因此与 Android M 没什么关系，可以不用下载 Android MNC Preview 的 SDK。*
-
+确保使用新版 Android Studio （至少 1.3.0）
 
 ### 新建一个 Project
 
-修改 Project 的 [build.gradle](https://github.com/LyndonChin/MasteringAndroidDataBinding/blob/master/build.gradle)，保持 `gradle` 和 `dataBinder` 都是最新版，否则会由于 Android Studio 的一次升级导致 Data Binding 失效。
+首先修改 Project 的 [build.gradle](build.gradle)，保证 `gradle` 和 `dataBinder` 插件都是最新版，否则升级 Android Studio 可能会导致 Data Binding 失效。
 
 
 ```groovy
@@ -31,7 +25,7 @@ classpath 'com.android.tools.build:gradle:1.3.+'
 classpath 'com.android.databinding:dataBinder:1.+'
 ```
 
-为用到 Data Binding 的模块(Module)添加插件，修改对应的 [build.gradle](https://github.com/LyndonChin/MasteringAndroidDataBinding/blob/master/app/build.gradle)。
+然后修改对应模块（Module）的 [build.gradle](app/build.gradle)
 
 ```groovy
 apply plugin: 'com.android.databinding'
@@ -55,7 +49,7 @@ apply plugin: 'com.android.databinding'
     </LinearLayout>
 </layout>
 ```
-要实现 MVVM 的 ViewModel 就需要把数据与UI进行绑定，`data` 节点就为此提供了一个桥梁，我们先在 `data` 中声明一个 `variable`，这个变量会为 UI 元素提供数据（例如 TextView 的 android:text），然后在 Java 代码中把"后台"数据与这个 `variable` 进行绑定。
+要实现 MVVM 的 ViewModel 就需要把数据与UI进行绑定，`data` 节点就为此提供了一个桥梁，我们先在 `data` 中声明一个 `variable`，这个变量会为 UI 元素提供数据（例如 TextView 的 android:text），然后在 Java 代码中把『后台』数据与这个 `variable` 进行绑定。
 
 如果要用一个表格来展示用户的基本信息，用 Data Binding 应该怎么实现呢？
 
@@ -517,10 +511,3 @@ public static int convertColorToString(int color) {
 用法可以参考代码 [IncludeActivity.java](https://github.com/LyndonChin/MasteringAndroidDataBinding/blob/master/app/src/main/java/com/liangfeizc/databindingsamples/includes/IncludeActivity.java)。
 
 如果在非根节点的 ViewGroup 中使用 `include` 会导致 crash，已经在 StackOverflow 上提了一个问题[Android Data Binding makes app crash when using include tag in a non-root ViewGroup](http://stackoverflow.com/questions/30887906/android-data-binding-makes-app-crash-when-using-include-tag-in-a-non-root-viewgr)
-
----
-
-* [我的微博](http://weibo.com/u/1670598115)
-* [个人博客](http://www.liangfeizc.com)
-* [twitter](https://twitter.com/JpRyouhi)
-* [facebook](https://www.facebook.com/fee.lang.zc)
