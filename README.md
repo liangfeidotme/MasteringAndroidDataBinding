@@ -486,13 +486,9 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserHolder> {
 
 ## 转换器 (Converters)
 
----
+> **非常重要**
 
-**非常重要**
-
-使用 **Converter** 一定要保证它不会影响到其他的属性，例如这个 `@BindingConversion`- [convertColorToString](app/src/main/java/com/liangfeizc/databinding/sample/converter/ConversionsActivity.java#L50-L63) 就会影响到[android:visibility](app/src/main/res/layout/activity_basic.xml#L76), 因为他们都是都符合从 int 到 int 的转换。
-
----
+> 使用 **Converter** 一定要保证它不会影响到其他的属性，例如这个 `@BindingConversion`- [convertColorToString](app/src/main/java/com/liangfeizc/databinding/sample/converter/ConversionsActivity.java#L50-L63) 就会影响到[android:visibility](app/src/main/res/layout/activity_basic.xml#L76), 因为他们都是都符合从 int 到 int 的转换。
 
 
 在 xml 中为属性赋值时，如果变量的类型与属性不一致，通过 **DataBinding** 可以进行转换。
