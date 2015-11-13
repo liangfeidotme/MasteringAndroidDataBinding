@@ -17,7 +17,7 @@ Data Binding 框架如果能够推广开来，也许 *RoboGuice、ButterKnife* �
 
 ### 新建一个 Project
 
-首先修改 Project 的 [build.gradle](build.gradle)，保证 `gradle` 和 `dataBinder` 插件都是最新版，否则升级 Android Studio 可能会导致 Data Binding 失效。
+首先修改 Project 的 [build.gradle](build.gradle#L8-9)，保证 `gradle` 和 `dataBinder` 插件都是最新版，否则升级 Android Studio 可能会导致 Data Binding 失效。
 
 
 ```groovy
