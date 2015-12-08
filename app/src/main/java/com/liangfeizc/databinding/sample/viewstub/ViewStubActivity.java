@@ -1,6 +1,7 @@
 package com.liangfeizc.databinding.sample.viewstub;
 
 import android.databinding.DataBindingUtil;
+import android.databinding.ViewStubProxy;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewStub;
@@ -35,8 +36,9 @@ public class ViewStubActivity extends BaseActivity {
      * Don't panic for red error reporting. Just ignore it and run the app. Surprise never ends.
      */
     public void inflateViewStub(View view) {
-        if (!mBinding.viewStub.isInflated()) {
-            mBinding.viewStub.getViewStub().inflate();
+        ViewStubProxy viewStubProxy = (ViewStubProxy)(Object)mBinding.viewStub;
+        if (!viewStubProxy.isInflated()) {
+            viewStubProxy.getViewStub().inflate();
         }
     }
 }
