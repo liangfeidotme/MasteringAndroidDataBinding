@@ -19,13 +19,13 @@ import java.util.List;
  * Created by rufi on 6/5/15.
  */
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserHolder> {
-    private static final int USER_COUNT = 10;
+    private static final int USER_COUNT = 100;
 
     @NonNull
     private List<User> mUsers;
 
     public UserAdapter() {
-        mUsers = new ArrayList<>(10);
+        mUsers = new ArrayList<>(USER_COUNT);
         for (int i = 0; i < USER_COUNT; i ++) {
             User user = new User(Randoms.nextFirstName(), Randoms.nextLastName());
             mUsers.add(user);
