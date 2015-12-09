@@ -4,8 +4,8 @@ package com.liangfeizc.databinding.model;
  * Created by liangfeizc on 6/2/15.
  */
 public class User {
-    private final String firstName;
-    private final String lastName;
+    private String firstName;
+    private String lastName;
     private String displayName;
     private int age;
 
@@ -25,6 +25,10 @@ public class User {
 
     public String getFirstName() {
         return firstName;
+    }
+
+    public void setFirstName(String v) {
+        firstName = v;
     }
 
     public String getLastName() {

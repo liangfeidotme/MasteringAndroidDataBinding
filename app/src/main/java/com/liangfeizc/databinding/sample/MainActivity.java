@@ -69,4 +69,8 @@ public class MainActivity extends AppCompatActivity {
     public void openConverters(View view) {
         startActivity(new Intent(this, ConversionsActivity.class));
     }
+
+    public void openViewDataBinding(View view) {
+        startActivity(new Intent(this, ViewDataBindingActivity.class));
+    }
 }

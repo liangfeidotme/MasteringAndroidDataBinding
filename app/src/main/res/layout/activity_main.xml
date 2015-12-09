@@ -84,6 +84,12 @@
                 android:layout_height="wrap_content"
                 android:onClick="openConverters"
                 android:text="Converters" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="openViewDataBinding"
+                android:textAllCaps="false"
+                android:text="ViewDataBinding" />
         </LinearLayout>
     </ScrollView>
 </layout>
