@@ -63,6 +63,8 @@
             android:name="com.liangfeizc.databinding.sample.converter.ConversionsActivity"
             android:label="@string/title_activity_conversions" >
         </activity>
+        <activity android:name=".sample.ViewDataBindingActivity" >
+        </activity>
     </application>
 
 </manifest>

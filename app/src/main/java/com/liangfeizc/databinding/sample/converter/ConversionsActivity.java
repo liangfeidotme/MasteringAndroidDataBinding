@@ -10,30 +10,37 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.liangfeizc.databinding.R;
-import com.liangfeizc.databinding.sample.BaseActivity;
 import com.liangfeizc.databinding.databinding.ActivityConversionsBinding;
+import com.liangfeizc.databinding.sample.BaseActivity;
 import com.liangfeizc.databinding.utils.ScreenUtils;
 
 public class ConversionsActivity extends BaseActivity {
 
-    private ObservableBoolean mIsError = new ObservableBoolean();
+    private boolean mIsError;
+    private ObservableBoolean mIsErrorObservable = new ObservableBoolean();
+    private ActivityConversionsBinding mBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ActivityConversionsBinding binding =
-                DataBindingUtil.setContentView(this, R.layout.activity_conversions);
+        mBinding = DataBindingUtil.setContentView(this, R.layout.activity_conversions);
 
-        mIsError.set(true);
+        mIsError = true;
+        mBinding.setIsError(mIsError);
+        mBinding.setHeight(ScreenUtils.dp2px(this, 100));
 
-        binding.setIsError(mIsError);
-        binding.setHeight(ScreenUtils.dp2px(this, 200));
-
+        mIsErrorObservable.set(true);
+        mBinding.setIsErrorObservable(mIsErrorObservable);
     }
 
     public void toggleIsError(View view) {
-        mIsError.set(!mIsError.get());
+        mIsError = !mIsError;
+        mBinding.setIsError(mIsError);
+    }
+
+    public void toggleIsErrorObservable(View view) {
+         mIsErrorObservable.set(!mIsErrorObservable.get());
     }
 
     @BindingConversion
