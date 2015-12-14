@@ -13,21 +13,18 @@ Data Binding 框架如果能够推广开来，也许 *RoboGuice、ButterKnife* �
 
 ## 准备
 
-确保使用新版 Android Studio （至少 1.3.0）
-
-### 新建一个 Project
-
-首先修改 Project 的 [build.gradle](build.gradle#L8-L9)，保证 `gradle` 和 `dataBinder` 插件都是最新版，否则升级 Android Studio 可能会导致 Data Binding 失效。
+新建一个 Project，确保 [Android 的 Gradle 插件](build.gradle#L8)版本不低于 **1.5.0-alpha1**：
 
 ```groovy
-classpath 'com.android.tools.build:gradle:1.3.+'
-classpath 'com.android.databinding:dataBinder:1.+'
+classpath 'com.android.tools.build:gradle:1.5.0'
 ```
 
-然后修改对应模块（Module）的 [build.gradle](app/build.gradle#L2)，添加 databinding 插件。
+然后修改对应模块（Module）的 [build.gradle](app/build.gradle#L7-L9)：
 
 ```groovy
-apply plugin: 'com.android.databinding'
+dataBinding {
+    enabled true
+}
 ```
 
 ## 基础
@@ -519,5 +516,4 @@ public static ColorDrawable convertColorToDrawable(int color) {
 用法可以参考代码 [IncludeActivity.java](/app/src/main/java/com/liangfeizc/databinding/sample/include/IncludeActivity.java)
 
 如果在非根节点的 ViewGroup 中使用 `include` 会导致 crash，已经在 StackOverflow 上提了一个问题[Android Data Binding makes app crash when using include tag in a non-root ViewGroup](http://stackoverflow.com/questions/30887906/android-data-binding-makes-app-crash-when-using-include-tag-in-a-non-root-viewgr)，直されたそうですけど。
-
 
