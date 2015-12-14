@@ -1,9 +1,12 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.android.databinding'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    buildToolsVersion "23.0.2"
+
+    dataBinding {
+        enabled true
+    }
 
     defaultConfig {
         applicationId "com.liangfeizc.databinding"
