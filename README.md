@@ -506,7 +506,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserHolder> {
 @BindingConversion
 public static ColorDrawable convertColorToDrawable(int color) {
     return new ColorDrawable(color);
-    }
+}
 ```
 
 具体代码可参考 [ConversionsActivity.java](app/src/main/java/com/liangfeizc/databinding/sample/converter/ConversionsActivity.java)。
