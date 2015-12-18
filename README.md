@@ -194,7 +194,7 @@ public class MyStringUtils {
 <TextView
 	android:layout_width="wrap_content"
 	android:layout_height="wrap_content"
-	android:text="@{StringUtils.capitalize(user.firstName)}" />
+	android:text="@{MyStringUtils.capitalize(user.firstName)}" />
 ```
 
 ### 类型别名
