@@ -32,3 +32,4 @@ proguard/
 /build
 /captures
 /infer-out
+*.iml
