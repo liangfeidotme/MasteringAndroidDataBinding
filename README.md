@@ -2,6 +2,7 @@
 
 * [微博 - liangfeizc-Android](http://weibo.com/u/1670598115)
 * [CSDN博客 - 码农的自留地](http://blog.csdn.net/feelang)
+* QQ 交流群：**324112728**
 
 ---
 
