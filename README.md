@@ -1,4 +1,4 @@
-# 精通 Android Data Binding
+# 精通 Android Data Binding [![Build Status](https://travis-ci.org/LyndonChin/MasteringAndroidDataBinding.svg)](https://travis-ci.org/LyndonChin/MasteringAndroidDataBinding)
 
 * [微博 - liangfeizc-Android](http://weibo.com/u/1670598115)
 * [CSDN博客 - 码农的自留地](http://blog.csdn.net/feelang)
