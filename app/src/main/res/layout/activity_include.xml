@@ -7,10 +7,6 @@
         <variable
             name="user"
             type="User" />
-
-        <variable
-            name="contact"
-            type="com.liangfeizc.databinding.model.Contact" />
     </data>
 
     <LinearLayout
@@ -19,12 +15,12 @@
         android:orientation="vertical">
 
         <include
-            layout="@layout/user"
-            bind:user="@{user}" />
+            android:id="@+id/layout_input"
+            layout="@layout/layout_input" />
 
         <include
-            layout="@layout/contact"
-            bind:contact="@{contact}" />
+            layout="@layout/user"
+            bind:user="@{user}" />
     </LinearLayout>
 </layout>
 
