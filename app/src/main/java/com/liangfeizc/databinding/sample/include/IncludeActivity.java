@@ -4,13 +4,16 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
+import android.widget.Toast;
 
 import com.liangfeizc.databinding.R;
 import com.liangfeizc.databinding.databinding.ActivityIncludeBinding;
+import com.liangfeizc.databinding.listener.OkListener;
 import com.liangfeizc.databinding.model.User;
 import com.liangfeizc.databinding.sample.BaseActivity;
 
-public class IncludeActivity extends BaseActivity {
+public class IncludeActivity extends BaseActivity implements OkListener {
 
     private ActivityIncludeBinding binding;
 
@@ -19,6 +22,9 @@ public class IncludeActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(
                 this, R.layout.activity_include);
+
+        binding.setListener(this);
+        binding.setOkText("to toast");
 
         //in order to get the etName, you must define an id for the include tag.
         binding.layoutInput.etName.addTextChangedListener(new TextWatcher() {
@@ -39,6 +45,11 @@ public class IncludeActivity extends BaseActivity {
 
             }
         });
+    }
+
+    @Override
+    public void onClickOk(View view) {
+        Toast.makeText(this, "the btn clicked!", Toast.LENGTH_SHORT).show();
     }
 }
 
