@@ -41,7 +41,7 @@ public class ConversionsActivity extends BaseActivity {
         return new ColorDrawable(color);
     }
 
-    @BindingAdapter("bind:layout_height")
+    @BindingAdapter("layout_height")
     public static void setLayoutHeight(View view, float height) {
         ViewGroup.LayoutParams params = view.getLayoutParams();
         params.height = (int) height;
