@@ -9,7 +9,7 @@
             type="User" />
         <variable
             name="listener"
-            type="com.liangfeizc.databinding.sample.include.IncludeActivity" />
+            type="com.liangfeizc.databinding.listener.OkListener" />
         <variable
             name="okText"
             type="String" />
