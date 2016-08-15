@@ -49,7 +49,7 @@ dataBinding {
 </layout>
 ```
 
-要实现 MVVM 的 `ViewModel` 就需要把数据（Model）与 UI（View） 进行绑定，`data` 节点的作用就像一个桥梁，搭建了 View 和 Model 之间的通路。 
+要实现 MVVM 的 `ViewModel` 就需要把数据（Model）与 UI（View） 进行绑定，`data` 节点的作用就像一个桥梁，搭建了 View 和 Model 之间的通路。
 
 我们先在 xml 布局文件的 `data` 节点中声明一个 `variable`，这个变量会为 UI 元素提供数据（例如 `TextView` 的 `android:text`），然后在 Java 代码中把『后台』数据与这个 `variable` 进行绑定。
 
@@ -437,7 +437,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserHolder> {
 
         public UserHolder(View itemView) {
             super(itemView);
-            mBinding = UserItemBinding.bind(itemView);
+            mBinding = DataBindingUtil.bind(itemView);
         }
 
         public void bind(@NonNull User user) {
@@ -519,4 +519,3 @@ public static ColorDrawable convertColorToDrawable(int color) {
 用法可以参考代码 [IncludeActivity.java](/app/src/main/java/com/liangfeizc/databinding/sample/include/IncludeActivity.java)
 
 如果在非根节点的 ViewGroup 中使用 `include` 会导致 crash，已经在 StackOverflow 上提了一个问题[Android Data Binding makes app crash when using include tag in a non-root ViewGroup](http://stackoverflow.com/questions/30887906/android-data-binding-makes-app-crash-when-using-include-tag-in-a-non-root-viewgr)，直されたそうですけど。
-
