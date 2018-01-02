@@ -1,9 +1,8 @@
-# 精通 Android Data Binding [![Build Status](https://travis-ci.org/LyndonChin/MasteringAndroidDataBinding.svg)](https://travis-ci.org/LyndonChin/MasteringAndroidDataBinding)
+# 精通 Android Data Binding
 
-[![Join the chat at https://gitter.im/LyndonChin/MasteringAndroidDataBinding](https://badges.gitter.im/LyndonChin/MasteringAndroidDataBinding.svg)](https://gitter.im/LyndonChin/MasteringAndroidDataBinding?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/LyndonChin/MasteringAndroidDataBinding.svg)](https://travis-ci.org/LyndonChin/MasteringAndroidDataBinding)
 
-* [微博 - liangfeizc-Android](http://weibo.com/u/1670598115)
-* [CSDN博客 - 码农的自留地](http://blog.csdn.net/feelang)
+* 更多干货可移步至[个人主页](http://www.liangfei.me)
 * QQ 交流群：**324112728** ，或者[点击链接加入QQ群](http://jq.qq.com/?_wv=1027&k=2CokoRt)
 
 ---
