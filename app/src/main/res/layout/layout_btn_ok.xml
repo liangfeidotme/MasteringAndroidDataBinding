@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:onClick="@{listener.onClickOk}"
+            android:onClick="@{listener::onClickOk}"
             tools:text="ok"
             android:text="@{okText}"/>
     </LinearLayout>
