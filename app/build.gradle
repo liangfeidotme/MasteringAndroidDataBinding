@@ -31,4 +31,5 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "com.squareup.picasso:picasso:2.5.2"
     implementation "com.liangfeizc:avatarview:0.0.1@aar"
+    implementation 'com.google.android.material:material:1.0.0'
 }
