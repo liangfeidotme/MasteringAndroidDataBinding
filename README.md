@@ -11,9 +11,7 @@
 
 官方虽然已经给出了教程 - [Data Binding Guide](https://developer.android.com/tools/data-binding/guide.html) [（中文版 - Data Binding（数据绑定）用户指南）](http://www.jianshu.com/p/b1df61a4df77) ，但是实践之后发现槽点实在太多，于是就有了这个教程，针对每个知识点给出更详实的例子同时也总结了遇到的一些坑，希望对你有所帮助：）
 
-Data Binding 解决了 Android UI 编程的一个痛点，官方**原生支持** MVVM 模型可以让我们在不改变既有代码框架的前提下，非常容易地使用这些新特性。
-
-Data Binding 框架如果能够推广开来，也许 *RoboGuice、ButterKnife* 这样的依赖注入框架会慢慢失去市场，因为在 Java 代码中直接使用 `View` 变量的情况会越来越少。
+> 我现在转行做纯前端开发了，写了几个月 React/Vue 之后发现，DataBinding 真是一个伟大的 MVVM 框架，它缩小了 Native 开发和前端开发之间的距离，技术会过时，但是理念会长存。
 
 ## 准备
 
