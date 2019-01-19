@@ -1,11 +1,11 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
-        <import type="com.liangfeizc.databinding.model.User" />
-        <import type="com.liangfeizc.databinding.utils.MyStringUtils" alias="StringUtils" />
+        <import type="me.liangfei.databinding.model.User" />
+        <import type="me.liangfei.databinding.utils.MyStringUtils" alias="StringUtils" />
         <import type="android.view.View" />
 
-        <variable name="user" type="User" />
+        <variable name="user" type="me.liangfei.databinding.model.User" />
     </data>
 
     <TableLayout

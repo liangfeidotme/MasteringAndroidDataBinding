@@ -3,11 +3,11 @@
 
     <data>
 
-        <import type="com.liangfeizc.databinding.sample.attributesetter.AttributeSettersActivity"/>
+        <import type="me.liangfei.databinding.sample.attributesetter.AttributeSettersActivity"/>
 
         <variable
             name="activity"
-            type="AttributeSettersActivity"/>
+            type="me.liangfei.databinding.sample.attributesetter.AttributeSettersActivity"/>
 
         <variable
             name="imageUrl"
@@ -19,7 +19,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.liangfeizc.databinding.view.NameCard
+        <me.liangfei.databinding.view.NameCard
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginEnd="@dimen/largePadding"

@@ -3,13 +3,13 @@
 
     <data>
 
-        <import type="com.liangfeizc.databinding.model.User" />
+        <import type="me.liangfei.databinding.model.User" />
         <variable
             name="user"
-            type="User" />
+            type="me.liangfei.databinding.model.User" />
         <variable
             name="listener"
-            type="com.liangfeizc.databinding.listener.OkListener" />
+            type="me.liangfei.databinding.listener.OkListener" />
         <variable
             name="okText"
             type="String" />

@@ -5,7 +5,7 @@
 
         <variable
             name="user"
-            type="com.liangfeizc.databinding.model.User" />
+            type="me.liangfei.databinding.model.User" />
     </data>
 
     <LinearLayout

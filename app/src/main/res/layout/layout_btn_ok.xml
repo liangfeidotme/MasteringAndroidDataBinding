@@ -10,7 +10,7 @@
 
         <variable
             name="listener"
-            type="com.liangfeizc.databinding.listener.OkListener"/>
+            type="me.liangfei.databinding.listener.OkListener"/>
     </data>
 
     <LinearLayout

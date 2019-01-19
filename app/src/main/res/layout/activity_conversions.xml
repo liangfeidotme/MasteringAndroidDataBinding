@@ -2,7 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-        <variable name="isError" type="android.databinding.ObservableBoolean" />
+        <variable name="isError" type="androidx.databinding.ObservableBoolean" />
         <variable name="height" type="float" />
     </data>
     <LinearLayout
@@ -16,14 +16,14 @@
 
         <!--android:layout_width="@{isError.get() ? @string/large : @string/small}"-->
         <View
-            android:background="@{isError.get() ? @color/red : @color/white}"
+            android:background="@{isError ? @color/red : @color/white}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_height="@{height}" />
 
         <Button
             android:onClick="toggleIsError"
-            android:text="@{isError.get() ? @string/red : @string/white}"
+            android:text="@{isError ? @string/red : @string/white}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>

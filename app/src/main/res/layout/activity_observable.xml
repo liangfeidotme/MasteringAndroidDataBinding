@@ -2,10 +2,10 @@
 
     <data>
 
-        <import type="com.liangfeizc.databinding.model.PlainUser" />
-        <import type="android.databinding.ObservableMap" />
-        <variable name="user" type="com.liangfeizc.databinding.model.ObservableUser" />
-        <variable name="plainUser" type="PlainUser" />
+        <import type="me.liangfei.databinding.model.PlainUser" />
+        <import type="androidx.databinding.ObservableMap" />
+        <variable name="user" type="me.liangfei.databinding.model.ObservableUser" />
+        <variable name="plainUser" type="me.liangfei.databinding.model.PlainUser" />
         <variable name="mapUser" type="ObservableMap&lt;String, Object>" />
     </data>
 
@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <TextView
-            android:text="@{@string/nameFormatWithAge(mapUser[`firstName`], mapUser[`lastName`], 1 + (Integer)mapUser[`age`])}"
+            android:text="@{@string/nameFormatWithAge(mapUser[`firstName`], mapUser[`lastName`], 1 + safeUnbox((Integer)mapUser[`age`]))}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <LinearLayout

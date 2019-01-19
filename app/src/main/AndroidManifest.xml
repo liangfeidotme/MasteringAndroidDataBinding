@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.liangfeizc.databinding" >
+    package="me.liangfei.databinding" >
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="com.liangfeizc.databinding.core.App"
+        android:name="me.liangfei.databinding.core.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".sample.MainActivity"
+            android:name="me.liangfei.databinding.sample.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,47 +20,47 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.liangfeizc.databinding.sample.basic.BasicActivity"
+            android:name="me.liangfei.databinding.sample.basic.BasicActivity"
             android:label="@string/title_activity_basic" >
         </activity>
         <activity
-            android:name="com.liangfeizc.databinding.sample.custombinding.CustomBindingActivity"
+            android:name="me.liangfei.databinding.sample.custombinding.CustomBindingActivity"
             android:label="@string/title_activity_custom_binding" >
         </activity>
         <activity
-            android:name="com.liangfeizc.databinding.sample.include.IncludeActivity"
+            android:name="me.liangfei.databinding.sample.include.IncludeActivity"
             android:label="@string/title_activity_include" >
         </activity>
         <activity
-            android:name="com.liangfeizc.databinding.sample.collection.CollectionActivity"
+            android:name="me.liangfei.databinding.sample.collection.CollectionActivity"
             android:label="@string/title_activity_collection" >
         </activity>
         <activity
-            android:name="com.liangfeizc.databinding.sample.resource.ResourceActivity"
+            android:name="me.liangfei.databinding.sample.resource.ResourceActivity"
             android:label="@string/title_activity_resource" >
         </activity>
         <activity
-            android:name="com.liangfeizc.databinding.sample.observable.ObservableActivity"
+            android:name="me.liangfei.databinding.sample.observable.ObservableActivity"
             android:label="@string/title_activity_observable" >
         </activity>
         <activity
-            android:name="com.liangfeizc.databinding.sample.viewid.ViewWithIDsActivity"
+            android:name="me.liangfei.databinding.sample.viewid.ViewWithIDsActivity"
             android:label="@string/title_activity_view_with_ids" >
         </activity>
         <activity
-            android:name="com.liangfeizc.databinding.sample.viewstub.ViewStubActivity"
+            android:name="me.liangfei.databinding.sample.viewstub.ViewStubActivity"
             android:label="@string/title_activity_view_stub" >
         </activity>
         <activity
-            android:name="com.liangfeizc.databinding.sample.dynamic.DynamicActivity"
+            android:name="me.liangfei.databinding.sample.dynamic.DynamicActivity"
             android:label="@string/title_activity_dynamic" >
         </activity>
         <activity
-            android:name="com.liangfeizc.databinding.sample.attributesetter.AttributeSettersActivity"
+            android:name="me.liangfei.databinding.sample.attributesetter.AttributeSettersActivity"
             android:label="@string/title_activity_attribute_setters" >
         </activity>
         <activity
-            android:name="com.liangfeizc.databinding.sample.converter.ConversionsActivity"
+            android:name="me.liangfei.databinding.sample.converter.ConversionsActivity"
             android:label="@string/title_activity_conversions" >
         </activity>
     </application>

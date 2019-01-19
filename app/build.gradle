@@ -8,7 +8,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.liangfeizc.databinding"
+        applicationId "me.liangfei.databinding"
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
@@ -25,9 +25,9 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
+    implementation 'androidx.appcompat:appcompat:1.1.0-alpha01'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0-alpha01'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "com.squareup.picasso:picasso:2.5.2"
     implementation "com.liangfeizc:avatarview:0.0.1@aar"

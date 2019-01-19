@@ -4,7 +4,7 @@
 
         <variable
             name="contact"
-            type="com.liangfeizc.databinding.model.Contact" />
+            type="me.liangfei.databinding.model.Contact" />
     </data>
 
     <LinearLayout
