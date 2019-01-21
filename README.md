@@ -11,17 +11,17 @@
 
 官方虽然已经给出了教程 - [Data Binding Guide](https://developer.android.com/tools/data-binding/guide.html) [（中文版 - Data Binding（数据绑定）用户指南）](http://www.jianshu.com/p/b1df61a4df77) ，但是实践之后发现槽点实在太多，于是就有了这个教程，针对每个知识点给出更详实的例子同时也总结了遇到的一些坑，希望对你有所帮助：）
 
-> 我现在转行做纯前端开发了，写了几个月 React/Vue 之后发现，DataBinding 真是一个伟大的 MVVM 框架，它缩小了 Native 开发和前端开发之间的距离，技术会过时，但是理念会长存。
+> 我现在转行做纯前端开发了，写了几个月 React/Vue 之后发现，DataBinding 真是一个伟大的 MVVM 框架，它缩小了 Native 开发和前端开发之间的距离，技术会过时，理念恒久远。
 
 ## 准备
 
-新建一个 Project，确保 [Android 的 Gradle 插件](build.gradle#L8)版本不低于 **1.5.0-alpha1**：
+新建一个 Project，建议使用[新版本的 Gradle 插件](build.gradle#L16)（至少要保证插件版本不低于 **1.5.0**）：
 
 ```groovy
-classpath 'com.android.tools.build:gradle:1.5.0'
+classpath 'com.android.tools.build:gradle:3.2.1'
 ```
 
-然后修改对应模块（Module）的 [build.gradle](app/build.gradle#L7-L9)：
+然后修改对应模块（Module）的 [build.gradle](app/build.gradle#L6-L8)：
 
 ```groovy
 dataBinding {
