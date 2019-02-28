@@ -1,11 +1,26 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="BaseAppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+        <item name="colorPrimary">#f29cb1</item>
+        <item name="colorPrimaryDark">#be6d82</item>
+        <item name="colorAccent">#ffcee3</item>
     </style>
 
+    <style name="AppTheme" parent="BaseAppTheme"/>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light"/>
+
+
     <declare-styleable name="NameCard">
-        <attr name="age" format="integer" />
+        <attr name="age" format="integer"/>
     </declare-styleable>
 </resources>

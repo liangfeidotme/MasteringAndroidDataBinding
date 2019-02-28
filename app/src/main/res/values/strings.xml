@@ -44,4 +44,6 @@
 
     <string name="red">red</string>
     <string name="white">white</string>
+
+    <string name="title_actor_list">Actors</string>
 </resources>

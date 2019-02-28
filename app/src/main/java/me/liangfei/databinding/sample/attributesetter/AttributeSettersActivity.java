@@ -40,7 +40,7 @@ public class AttributeSettersActivity extends BaseActivity {
 
     @BindingAdapter({"imageUrl", "error"})
     public static void loadImage(ImageView view, String url, Drawable error) {
-        Log.d(App.TAG, "load image");
+        Log.d(App.Companion.getTAG(), "load image");
         Picasso.with(view.getContext()).load(url).error(error).into(view);
     }
 }
