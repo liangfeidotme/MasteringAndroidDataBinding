@@ -7,5 +7,17 @@
     <fragment
         android:id="@+id/actorListFragment"
         android:name="me.liangfei.databinding.fragments.ActorListFragment"
-        android:label="@string/title_actor_list"/>
+        android:label="@string/title_actor_list">
+        <action
+            android:id="@+id/showActorDetail"
+            app:destination="@id/actorDetailFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/actorDetailFragment"
+        android:name="me.liangfei.databinding.fragments.ActorDetailFragment"
+        android:label="ActorDetailFragment">
+        <argument
+            android:name="actorId"
+            app:argType="string"/>
+    </fragment>
 </navigation>
