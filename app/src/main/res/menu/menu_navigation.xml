@@ -2,11 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/action_home"
+            android:id="@+id/actorListFragment"
             android:icon="@drawable/ic_home"
             android:title="@string/nav_menu_home" />
         <item
-            android:id="@+id/action_favorite"
+            android:id="@+id/actorDetailFragment"
             android:icon="@drawable/ic_favorite"
             android:title="@string/nav_menu_favorite" />
         <item

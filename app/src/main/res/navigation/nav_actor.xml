@@ -15,7 +15,7 @@
     <fragment
         android:id="@+id/actorDetailFragment"
         android:name="me.liangfei.databinding.fragments.ActorDetailFragment"
-        android:label="ActorDetailFragment">
+        android:label="@string/title_actor_detail">
         <argument
             android:name="actorId"
             app:argType="string"/>
