@@ -2,16 +2,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:title="@string/title_activity_basic" />
+            android:id="@+id/action_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/nav_menu_home" />
         <item
-            android:id="@+id/nav_gallery"
-            android:title="@string/title_activity_collection" />
+            android:id="@+id/action_favorite"
+            android:icon="@drawable/ic_favorite"
+            android:title="@string/nav_menu_favorite" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:title="@string/title_activity_conversions" />
-        <item
-            android:id="@+id/nav_manage"
-            android:title="@string/title_activity_dynamic" />
+            android:id="@+id/action_about"
+            android:icon="@drawable/ic_info"
+            android:title="@string/nav_menu_about" />
     </group>
 </menu>

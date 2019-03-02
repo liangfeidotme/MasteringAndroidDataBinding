@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DataBindingSamples</string>
+    <string name="app_name">MasteringDataBinding</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -46,4 +46,7 @@
     <string name="white">white</string>
 
     <string name="title_actor_list">Actors</string>
+    <string name="nav_menu_home">Home</string>
+    <string name="nav_menu_favorite">Favorite</string>
+    <string name="nav_menu_about">About</string>
 </resources>

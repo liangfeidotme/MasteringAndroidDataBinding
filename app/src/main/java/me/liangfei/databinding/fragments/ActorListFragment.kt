@@ -32,7 +32,7 @@ class ActorListFragment : Fragment() {
         viewModel = ViewModelProviders.of(requireActivity(), factory)
                 .get(ActorViewModel::class.java)
 
-        binding.actorListView.layoutManager = GridLayoutManager(context, 4)
+        binding.actorListView.layoutManager = GridLayoutManager(context, 3)
 
         val adapter = ActorListAdapter()
         binding.actorListView.adapter = adapter
