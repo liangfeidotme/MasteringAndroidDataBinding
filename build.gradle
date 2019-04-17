@@ -10,9 +10,9 @@ buildscript {
         recyclerViewVersion = '1.1.0-alpha02'
         materialVersion = '1.0.0'
         roomVersion = '2.1.0-alpha04'
-        workVersion = '1.0.0-rc02'
+        workVersion = '1.0.1'
         gsonVersion = '2.8.2'
-        navigationVersion = '1.0.0-rc02'
+        navigationVersion = '1.0.0'
         constraintLayoutVersion = '2.0.0-alpha3'
         glideVersion = '4.9.0'
     }
