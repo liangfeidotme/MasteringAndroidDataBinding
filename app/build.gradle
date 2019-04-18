@@ -44,4 +44,5 @@ dependencies {
     implementation "com.liangfeizc:avatarview:0.0.1@aar"
     implementation "com.google.android.material:material:$rootProject.materialVersion"
     implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
+    implementation "androidx.viewpager:viewpager:$rootProject.viewPagerVersion"
 }

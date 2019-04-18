@@ -15,6 +15,7 @@ buildscript {
         navigationVersion = '1.0.0'
         constraintLayoutVersion = '2.0.0-alpha3'
         glideVersion = '4.9.0'
+        viewPagerVersion = '1.0.0-rc02'
     }
 
     repositories {
