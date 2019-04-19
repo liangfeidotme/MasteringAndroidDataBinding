@@ -1,4 +1,4 @@
-package me.liangfei.databinding.adapter
+package me.liangfei.databinding.adapters
 
 import android.view.LayoutInflater
 import android.view.View

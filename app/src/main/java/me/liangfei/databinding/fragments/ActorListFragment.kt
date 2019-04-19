@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
-import me.liangfei.databinding.adapter.ActorListAdapter
+import me.liangfei.databinding.adapters.ActorListAdapter
 import me.liangfei.databinding.databinding.FragmentActorListBinding
 import me.liangfei.databinding.utilities.InjectorUtils
 import me.liangfei.databinding.viewmodels.ActorViewModel

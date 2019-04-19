@@ -9,7 +9,7 @@ import me.liangfei.databinding.R
 object BindingAdapters {
     @JvmStatic
     @BindingAdapter("url")
-    fun loadImage(imageView: ImageView, url: String) {
+    fun loadImage(imageView: ImageView, url: String?) {
         Glide.with(imageView)
                 .load(url)
                 .centerCrop()
