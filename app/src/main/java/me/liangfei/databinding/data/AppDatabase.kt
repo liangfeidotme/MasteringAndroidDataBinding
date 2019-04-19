@@ -5,6 +5,7 @@ import androidx.room.*
 import androidx.sqlite.db.SupportSQLiteDatabase
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
+import me.liangfei.databinding.data.entities.Actor
 import me.liangfei.databinding.utilities.DATABASE_NAME
 import me.liangfei.databinding.workers.SeedDatabaseWorker
 

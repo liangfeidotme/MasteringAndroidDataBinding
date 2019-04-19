@@ -26,7 +26,8 @@ class ActorDetailFragment : Fragment() {
 
         // init view pager
         binding.tabLayout.setupWithViewPager(binding.viewPager)
-        binding.viewPager.adapter = ActorDetailPagerAdapter(requireFragmentManager())
+        binding.viewPager.adapter = ActorDetailPagerAdapter(
+                requireFragmentManager(), params.actorId)
 
         binding.imageUrl = "http://img.mp.itc.cn/upload/20161210/7a14ce89d0e44a8591f0ec7bac09ccb5_th.jpg"
 

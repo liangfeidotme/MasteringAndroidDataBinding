@@ -4,7 +4,7 @@ package me.liangfei.databinding.data
 class ActorRepository private constructor(private val actorDao: ActorDao) {
     fun getActors() = actorDao.getActors()
 
-    fun getActor(actorId: String) = actorDao.getActor(actorId)
+    fun getActor(actorId: Int) = actorDao.getActor(actorId)
 
     companion object {
         @Volatile private var instance: ActorRepository? = null

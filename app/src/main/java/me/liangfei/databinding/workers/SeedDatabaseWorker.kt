@@ -9,7 +9,7 @@ import com.google.gson.reflect.TypeToken
 import com.google.gson.stream.JsonReader
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.coroutineScope
-import me.liangfei.databinding.data.Actor
+import me.liangfei.databinding.data.entities.Actor
 import me.liangfei.databinding.data.AppDatabase
 import me.liangfei.databinding.utilities.ACTOR_DATA_FILENAME
 

@@ -9,5 +9,5 @@ import me.liangfei.databinding.data.ActorRepository
 class ActorViewModel internal constructor(private val actorRepository: ActorRepository)
     : ViewModel() {
     val actors = actorRepository.getActors()
-    fun actorDetail(actorId: String) = actorRepository.getActor(actorId)
+    fun actorDetail(actorId: Int) = actorRepository.getActor(actorId)
 }

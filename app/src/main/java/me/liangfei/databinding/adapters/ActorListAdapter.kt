@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import me.liangfei.databinding.R
-import me.liangfei.databinding.data.Actor
+import me.liangfei.databinding.data.entities.Actor
 import me.liangfei.databinding.databinding.ListItemActorBinding
 import me.liangfei.databinding.fragments.ActorListFragmentDirections
 
@@ -33,7 +33,7 @@ class ActorListAdapter : ListAdapter<Actor, ActorListAdapter.ViewHolder>(ActorDi
         }
     }
 
-    private fun createOnClickListener(actorId: String): View.OnClickListener {
+    private fun createOnClickListener(actorId: Int): View.OnClickListener {
         return View.OnClickListener {
             val direction = ActorListFragmentDirections.showActorDetail(actorId)
             it.findNavController().navigate(direction)
@@ -46,7 +46,7 @@ class ActorListAdapter : ListAdapter<Actor, ActorListAdapter.ViewHolder>(ActorDi
         fun bind(listener: View.OnClickListener, actor: Actor) {
             with (binding) {
                 clickListener = listener
-                actorName = actor.name
+                this.actor = actor
                 executePendingBindings()
             }
         }

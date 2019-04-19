@@ -6,9 +6,9 @@ import me.liangfei.databinding.fragments.ActorProfileFragment
 import me.liangfei.databinding.fragments.ActorWorksFragment
 
 
-class ActorDetailPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
+class ActorDetailPagerAdapter(fm: FragmentManager, val actorId: Int) : FragmentStatePagerAdapter(fm) {
     override fun getItem(position: Int) = when (position) {
-        0 -> ActorProfileFragment()
+        0 -> ActorProfileFragment.newInstance(actorId)
         1 -> ActorWorksFragment()
         else -> throw IllegalStateException("no way")
     }
