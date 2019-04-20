@@ -12,7 +12,7 @@ import me.liangfei.databinding.R
 import me.liangfei.databinding.data.entities.Actor
 import me.liangfei.databinding.databinding.ListItemActorBinding
 import me.liangfei.databinding.databinding.ListItemAddBinding
-import me.liangfei.databinding.fragments.ActorListFragmentDirections
+import me.liangfei.databinding.fragments.ActorCollectionFragmentDirections
 
 
 class ActorListAdapter : ListAdapter<Actor, RecyclerView.ViewHolder>(ActorDiffCallback()) {
@@ -50,7 +50,7 @@ class ActorListAdapter : ListAdapter<Actor, RecyclerView.ViewHolder>(ActorDiffCa
 
     private fun createOnClickListener(actorId: Int): View.OnClickListener {
         return View.OnClickListener {
-            val direction = ActorListFragmentDirections.showActorDetail(actorId)
+            val direction = ActorCollectionFragmentDirections.showActorDetail(actorId)
             it.findNavController().navigate(direction)
         }
     }

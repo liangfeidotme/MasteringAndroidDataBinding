@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/nav_actor"
-            app:startDestination="@id/actorListFragment">
+            app:startDestination="@id/actorCollectionFragment">
 
     <fragment
-        android:id="@+id/actorListFragment"
-        android:name="me.liangfei.databinding.fragments.ActorListFragment"
-        android:label="@string/title_actor_list">
+        android:id="@+id/actorCollectionFragment"
+        android:name="me.liangfei.databinding.fragments.ActorCollectionFragment"
+        android:label="@string/title_actor_collection">
         <action
             android:id="@+id/showActorDetail"
             app:destination="@id/actorDetailFragment"/>
