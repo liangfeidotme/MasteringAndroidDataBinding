@@ -48,6 +48,7 @@
     <string name="title_actor_list">Actors</string>
     <string name="title_actor_detail">Detail</string>
     <string name="nav_menu_home">Home</string>
+    <string name="nav_menu_search">Browse</string>
     <string name="nav_menu_favorite">Favorite</string>
     <string name="nav_menu_about">About</string>
 </resources>
