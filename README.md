@@ -5,7 +5,7 @@
 * 更多干货可移步至[个人主页](http://liangfei.me)
 * QQ 交流群：**324112728** ，或者[点击链接加入QQ群](http://jq.qq.com/?_wv=1027&k=2CokoRt)
 
-<img width="400px" src="https://mmbiz.qpic.cn/mmbiz_jpg/a1dtA50ia6zJzViaK4qJOia6D4SFx1umQdU7fwVMME4zlReIKRIo9bHIB3A5kzIeSMoZxmnpEkXWMibrRT6q4Bd2dg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1"/>
+<img width="400px" src="https://cdn.nlark.com/yuque/0/2019/png/124977/1559045910714-8948c8b2-2b86-44a3-a600-a4415db3c01f.png"/>
 
 ---
 
